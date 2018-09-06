@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint": "5.5.0",
-    "eslint-plugin-jest": "21.22.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "5.0.7",
