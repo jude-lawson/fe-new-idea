@@ -10,12 +10,11 @@ export const Header = (props) => {
         <label htmlFor="menu">Menu</label>
         <div className="menu-content">
           <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Services</li>
-            <li><a href="#"></a>Projects</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Blog</li>
-            <li><a href="#"></a>Contacts</li>
+            <li><a href="#"></a>Notifications</li>
+            <li><a href="#"></a>Profile</li>
+            <li><a href="#"></a>Top Tech Talks</li>
+            <li><a href="#"></a>New Article</li>
+            <li><a href="#"></a>My Articles</li>
           </ul>
         </div>
       </div>

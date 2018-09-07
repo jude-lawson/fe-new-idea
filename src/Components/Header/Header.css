@@ -16,6 +16,7 @@
   top: 1rem;
   right: 1rem;
   color: #4381C1;
+  font-size: 4.5rem;
 }
 
 .menu-content {
@@ -41,6 +42,11 @@
   text-decoration: none;
 }
 
+.collapsible--menu li {
+  color: #4381C1
+
+}
+
 .collapsible--menu label {
   font-size: 45px;
   display: block;
@@ -57,4 +63,18 @@ input#menu {
 
 input:checked +label {
   background-image: url(../../resources/menu-close.svg);
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif; 
+  padding: 0 0 0 50px;
+}
+
+input:checked ~ label {
+  background-image: url(../../resources/menu-close.svg);
+}
+input:checked ~ .menu-content {
+  max-height: 100%;
 }
