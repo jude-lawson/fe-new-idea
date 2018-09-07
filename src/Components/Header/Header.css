@@ -1,0 +1,60 @@
+.thing {
+  --primary-dark-grey: #424B54;
+--primary-blue: #4381C1;
+--primary-green: #B8D8BA;
+--primary-red: #FE938C;
+--primary-white: #E8EBE4;
+}
+
+.header--container {
+  position: relative;
+  background-color: #B8D8BA
+}
+
+.app--title {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #4381C1;
+}
+
+.menu-content {
+  font-family: 'Oswald', sans-serif; 
+  padding: 0 0 0 5rem;
+}
+
+.collapsible--menu {
+  background-color: rgb(255, 255, 255);
+  padding: 0px 3rem;
+  border-bottom: 3px solid #4381C1;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+
+.collapsible--menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.collapsible--menu a {
+  display:block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.collapsible--menu label {
+  font-size: 45px;
+  display: block;
+  cursor: pointer;
+  background: url(/static/media/menu-open.34401404.svg) no-repeat left center;
+  padding: 9px 0 10px 50px;
+  color: #4381C1;
+  background-size: 40px;
+}
+
+input#menu {
+  display: none;
+}
+
+input:checked +label {
+  background-image: url(../../resources/menu-close.svg);
+}
