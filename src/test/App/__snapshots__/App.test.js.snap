@@ -36,11 +36,6 @@ ShallowWrapper {
           </code>
            and save to reload.
 </p>,
-        <button
-          onClick={undefined}
->
-          login
-</button>,
       ],
       "className": "App",
     },
@@ -105,18 +100,6 @@ ShallowWrapper {
         ],
         "type": "p",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "login",
-          "onClick": undefined,
-        },
-        "ref": null,
-        "rendered": "login",
-        "type": "button",
-      },
     ],
     "type": "div",
   },
@@ -145,11 +128,6 @@ ShallowWrapper {
             </code>
              and save to reload.
 </p>,
-          <button
-            onClick={undefined}
->
-            login
-</button>,
         ],
         "className": "App",
       },
@@ -213,18 +191,6 @@ ShallowWrapper {
             " and save to reload.",
           ],
           "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "login",
-            "onClick": undefined,
-          },
-          "ref": null,
-          "rendered": "login",
-          "type": "button",
         },
       ],
       "type": "div",
