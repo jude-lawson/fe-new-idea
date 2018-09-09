@@ -1,7 +1,7 @@
 import React from 'react';
-import { Router, Route, Switch  } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import { App } from '../Components/App/App';
+import App from '../Components/App/App';
 
 export const history = createHistory();
 
