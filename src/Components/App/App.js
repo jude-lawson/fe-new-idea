@@ -1,4 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+import { userLoginAction } from '../../actions/auth';
+import { firebaseLogin } from '../../thunks/auth';
+import { githubOAuthLogin } from '../../firebase/firebase';
+
 import './App.css';
 
 export class App extends Component {
@@ -11,9 +18,18 @@ export class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={this.handleClick}>login</button>
       </div>
     );
   }
 }
 
-export default App;
+App.propTypes = {
+  firebaseLogin: PropTypes.func
+};
+
+export const mapDispatchToProps = dispatch => ({
+  firebaseLogin: () => dispatch(firebaseLogin(githubOAuthLogin, userLoginAction))
+});
+
+export default connect(null, mapDispatchToProps)(App);
