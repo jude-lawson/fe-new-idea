@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
-import { userLoginAction } from '../../actions/auth';
 import { firebaseLogin } from '../../thunks/auth';
-import { githubOAuthLogin } from '../../firebase/firebase';
 
 import './App.css';
 
@@ -28,7 +25,7 @@ App.propTypes = {
 };
 
 export const mapDispatchToProps = dispatch => ({
-  firebaseLogin: () => dispatch(firebaseLogin(githubOAuthLogin, userLoginAction))
+  firebaseLogin: () => dispatch(firebaseLogin())
 });
 
 export default connect(null, mapDispatchToProps)(App);

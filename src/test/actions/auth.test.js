@@ -9,6 +9,7 @@ describe('userLoginAction', () => {
     displayName: name,
     photoURL: image
   };
+
  test('should have a type of LOGIN', () => {
   const expected = {
     type: 'LOGIN',

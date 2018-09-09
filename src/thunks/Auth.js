@@ -1,7 +1,10 @@
-export const firebaseLogin = (provider, action) => {
+import { userLoginAction } from '../actions/auth';
+import { githubOAuthLogin } from '../firebase/firebase';
+
+export const firebaseLogin = () => {
   return async dispatch => {
-    const newUser = await provider();
-    dispatch(action(newUser.user));
+    const newUser = await githubOAuthLogin();
+    dispatch(userLoginAction(newUser.user));
   };
 };
 
