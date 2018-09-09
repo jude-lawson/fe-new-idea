@@ -2,9 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { App } from '../../Components/App/App'
 
-jest.mock('../../firebase/firebase.js');
+jest.mock('../__mocks__/firebase/firebase.js');
 
-describe.skip('<App />', () => {
+describe('<App />', () => {
   let wrapper;
 
   beforeEach(() => wrapper = shallow(<App />))
@@ -13,4 +13,3 @@ describe.skip('<App />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-
