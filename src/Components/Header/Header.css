@@ -15,7 +15,7 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: #4381C1;
+  color: var(--primary-white);
   font-size: 4.5rem;
 }
 
@@ -25,9 +25,9 @@
 }
 
 .collapsible--menu {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--primary-blue);
   padding: 0px 3rem;
-  border-bottom: 3px solid #4381C1;
+  border-bottom: 3px solid var(--primary-white);
   box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
 }
 
@@ -43,18 +43,17 @@
 }
 
 .collapsible--menu li {
-  color: #4381C1
-
+  color: var(--primary-white);
 }
 
 .collapsible--menu label {
   font-size: 45px;
   display: block;
   cursor: pointer;
-  background: url(/static/media/menu-open.34401404.svg) no-repeat left center;
+  background: url(../../resources/menu-open.svg) no-repeat left center;
   padding: 9px 0 10px 50px;
-  color: #4381C1;
-  background-size: 40px;
+  color: var(--primary-white);
+  background-size: 26px;
 }
 
 input#menu {
@@ -62,7 +61,7 @@ input#menu {
 }
 
 input:checked +label {
-  background-image: url(../../resources/menu-close.svg);
+  background-image: url(../../resources/delete-button.svg);
 }
 
 .menu-content {
@@ -73,8 +72,9 @@ input:checked +label {
 }
 
 input:checked ~ label {
-  background-image: url(../../resources/menu-close.svg);
+  background-image: url(../../resources/delete-button.svg);
 }
+
 input:checked ~ .menu-content {
   max-height: 100%;
 }
