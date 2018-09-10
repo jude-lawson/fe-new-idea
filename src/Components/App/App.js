@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { firebaseLogin } from '../../thunks/auth';
+
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <div className="App">
@@ -16,4 +20,12 @@ class App extends Component {
   }
 }
 
-export default App;
+App.propTypes = {
+  firebaseLogin: PropTypes.func
+};
+
+export const mapDispatchToProps = dispatch => ({
+  firebaseLogin: () => dispatch(firebaseLogin())
+});
+
+export default connect(null, mapDispatchToProps)(App);

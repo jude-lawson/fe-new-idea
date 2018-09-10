@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "4.2.0",
+    "history": "4.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "5.0.7",
@@ -20,6 +22,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "dotenv": "6.0.0",
     "enzyme": "3.6.0",
     "enzyme-adapter-react-16": "1.5.0",
     "eslint-plugin-react": "7.11.1"
