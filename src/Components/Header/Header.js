@@ -1,5 +1,8 @@
-import React from '../../../../../../../Library/Caches/typescript/2.9/node_modules/@types/react';
+import React from 'react';
 import './Header.css';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { firebaseLogin } from '../../thunks/Auth';
 
 export const Header = (props) => {
   return (
@@ -21,3 +24,13 @@ export const Header = (props) => {
     </header>
   );
 };
+
+Header.propTypes = {
+  firebaseLogin: PropTypes.func
+};
+
+export const mapDispatchToProps = dispatch => ({
+  firebaseLogin: () => dispatch(firebaseLogin())
+});
+
+export default connect(null, mapDispatchToProps)(Header);
