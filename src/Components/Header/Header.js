@@ -8,6 +8,10 @@ export const Header = (props) => {
   return (
     <header className="header--container">
       <h1 className="app--title">New Idea</h1>
+      <div className="sign--up-container">
+        <h3>Sign Up</h3>
+        <h3>Sign In</h3>
+      </div>
       <div className="collapsible--menu">
         <input type="checkbox" id="menu" />
         <label htmlFor="menu">Menu</label>
