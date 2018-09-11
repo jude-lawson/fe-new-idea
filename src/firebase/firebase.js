@@ -1,5 +1,5 @@
 import * as firebase from 'firebase';
-import { FIREBASE_API_KEY, FIREBASE_AUTH_DOMAIN } from '../env.js';
+import { FIREBASE_API_KEY, FIREBASE_AUTH_DOMAIN } from './env.js';
 
 const config = {
   apiKey: FIREBASE_API_KEY,
