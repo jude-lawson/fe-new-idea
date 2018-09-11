@@ -2,7 +2,10 @@ import { addIdea } from '../../actions/article';
 
 describe('addIdea', () => {
   it('should have a type of ADD_IDEA', () => {
-    const idea = 'I am a new tech idea. Tech this. Tech that.';
+    const idea = {
+      title: 'New Tech Idea, YAY',
+      body: 'Lots of information about said idea. YAY!'
+    };
     const expectedAction = {
       type: 'ADD_IDEA',
       idea
