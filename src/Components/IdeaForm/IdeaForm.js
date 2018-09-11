@@ -1,4 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import  {connect } from 'react-redux';
+import { addIdea } from '../../actions/idea';
+import PropTypes from 'prop-types';
+
+
 
 export class IdeaForm extends Component {
   constructor(props) {
@@ -7,6 +12,7 @@ export class IdeaForm extends Component {
       title: '',
       body: ''
     };
+    console.log(props)
   }
 
   handleChange = (event) => {
@@ -18,11 +24,12 @@ export class IdeaForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    this.props.addIdea(this.state);
   }
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input 
           type="text"
           className="article--title-input"
@@ -41,3 +48,17 @@ export class IdeaForm extends Component {
     );
   }
 }
+
+IdeaForm.propTypes = {
+  addIdea: PropTypes.func
+};
+
+export const mapStateToProps = (state) => ({
+  ideas: state.ideas.ideas
+});
+
+export const mapDispatchToProps = (dispatch) => ({
+  addIdea: (idea) => dispatch(addIdea(idea))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(IdeaForm);

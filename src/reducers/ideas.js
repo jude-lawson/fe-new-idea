@@ -1,12 +1,14 @@
-export const ideaReducer = (state = {}, action) => {
+export const ideaReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_IDEA':
-      return {
+      return [
         ...state,
-        id: action.idea.id,
-        title: action.idea.title,
-        body: action.idea.body
-      };
+        {
+          id: action.idea.id,
+          title: action.idea.title,
+          body: action.idea.body
+        }
+      ];
     default:
       return state;
   }
