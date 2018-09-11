@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Header} from '../Header/Header';
+import Header from '../Header/Header';
 import { ArticleForm } from '../ArticleForm/ArticleForm';
 
 export class App extends Component {
