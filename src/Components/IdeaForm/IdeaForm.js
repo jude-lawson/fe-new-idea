@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export class ArticleForm extends Component {
+export class IdeaForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,8 +30,7 @@ export class ArticleForm extends Component {
           onChange={this.handleChange}
           name="title"
         />
-        <input 
-          type="area"
+        <textarea
           className="article--body-input"
           placeholder="Description"
           name="body"
