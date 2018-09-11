@@ -3,11 +3,8 @@ export const ideaReducer = (state = [], action) => {
     case 'ADD_IDEA':
       return [
         ...state,
-        {
-          id: action.idea.id,
-          title: action.idea.title,
-          body: action.idea.body
-        }
+        action.idea
+        
       ];
     default:
       return state;

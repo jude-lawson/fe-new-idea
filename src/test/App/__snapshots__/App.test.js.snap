@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Connect(Component) />,
-        <IdeaForm />,
+        <Connect(IdeaForm) />,
       ],
       "className": "App",
     },
@@ -54,7 +54,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Connect(Component) />,
-          <IdeaForm />,
+          <Connect(IdeaForm) />,
         ],
         "className": "App",
       },

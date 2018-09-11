@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { firebaseLogin } from '../../thunks/Auth';
 
 export const Header = (props) => {
-  console.log(props)
   return (
     <header className="header--container">
       <h1 className="app--title">New Idea</h1>

@@ -12,19 +12,18 @@ export class IdeaForm extends Component {
       title: '',
       body: ''
     };
-    console.log(props)
   }
-
+  
   handleChange = (event) => {
     const {name, value} = event.target;
     this.setState({
       [name]: value
     });
   }
-
+  
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.addIdea(this.state);
+    this.props.addIdea({...this.state, id: Date.now()});
   }
 
   render() {
@@ -54,7 +53,7 @@ IdeaForm.propTypes = {
 };
 
 export const mapStateToProps = (state) => ({
-  ideas: state.ideas.ideas
+  ideas: state.ideas
 });
 
 export const mapDispatchToProps = (dispatch) => ({
