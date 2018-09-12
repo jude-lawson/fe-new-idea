@@ -1,4 +1,4 @@
-import { addIdea } from '../../actions/article';
+import { addIdea } from '../../actions/idea';
 
 describe('addIdea', () => {
   it('should have a type of ADD_IDEA', () => {

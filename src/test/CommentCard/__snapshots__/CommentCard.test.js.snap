@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IdeaCard should match snapshot 1`] = `
+exports[`CommentCard should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown />,
@@ -21,7 +21,6 @@ ShallowWrapper {
         <button>
           REMOVE
 </button>,
-        <h1 />,
         <p />,
         <button>
           COMMENT
@@ -40,17 +39,6 @@ ShallowWrapper {
         "ref": null,
         "rendered": "REMOVE",
         "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "h1",
       },
       Object {
         "instance": null,
@@ -87,7 +75,6 @@ ShallowWrapper {
           <button>
             REMOVE
 </button>,
-          <h1 />,
           <p />,
           <button>
             COMMENT
@@ -106,17 +93,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": "REMOVE",
           "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "h1",
         },
         Object {
           "instance": null,

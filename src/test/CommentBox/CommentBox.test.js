@@ -1,11 +1,11 @@
-import { IdeaBox } from '../../Containers/IdeaBox/IdeaBox';
+import { CommentBox } from '../../Containers/CommentBox/CommentBox';
 import { shallow } from 'enzyme';
 import React from 'react';
-import { mapStateToProps } from '../../Containers/IdeaBox/IdeaBox';
+import { mapStateToProps } from '../../Containers/CommentBox/CommentBox';
 
-describe('IdeaBox', () => {
+describe('CommentBox', () => {
   it('should match snapshot', () => {
-    let wrapper = shallow(<IdeaBox />);
+    let wrapper = shallow(<CommentBox />);
 
     expect(wrapper).toMatchSnapshot();
   })
@@ -14,13 +14,13 @@ describe('IdeaBox', () => {
 describe('mapStateToProps', () => {
   it('should return a props object with the correct keys', () => {
     const mockState = {
-      ideas: [
-        {title: 'Whatever', body: 'Big Body Whatever', id: 11}
+      comments: [
+        {body: 'I do or do not think that is a great idea', id: 11}
       ]
     }
     const expected = {
-      ideas: [
-        {title: 'Whatever', body: 'Big Body Whatever', id: 11}
+      comments: [
+        {body: 'I do or do not think that is a great idea', id: 11}
       ]
     }
     const mappedProps = mapStateToProps(mockState);

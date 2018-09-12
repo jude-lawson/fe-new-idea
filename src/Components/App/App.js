@@ -3,6 +3,8 @@ import './App.css';
 import Header from '../Header/Header';
 import IdeaForm from '../IdeaForm/IdeaForm';
 import IdeaBox from '../../Containers/IdeaBox/IdeaBox';
+import CommentForm from '../../Containers/CommentForm/CommentForm';
+import CommentBox from '../../Containers/CommentBox/CommentBox';
 
 export class App extends Component {
   render() {
@@ -11,6 +13,8 @@ export class App extends Component {
         <Header />
         <IdeaForm />
         <IdeaBox />
+        <CommentForm />
+        <CommentBox />
       </div>
     );
   }
