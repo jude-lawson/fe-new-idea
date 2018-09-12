@@ -1,7 +1,7 @@
 import { IdeaBox } from '../../Containers/IdeaBox/IdeaBox';
 import { shallow } from 'enzyme';
 import React from 'react';
-import { mapStateToProps } from '../../Containers/IdeaCard/IdeaCard';
+import { mapStateToProps } from '../../Containers/IdeaBox/IdeaBox';
 
 describe('IdeaBox', () => {
   it('should match snapshot', () => {

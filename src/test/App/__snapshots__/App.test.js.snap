@@ -20,11 +20,31 @@ ShallowWrapper {
       "children": Array [
         <Connect(Component) />,
         <Connect(IdeaForm) />,
+        <Connect(IdeaBox) />,
+        <Connect(CommentForm) />,
       ],
       "className": "App",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -55,11 +75,31 @@ ShallowWrapper {
         "children": Array [
           <Connect(Component) />,
           <Connect(IdeaForm) />,
+          <Connect(IdeaBox) />,
+          <Connect(CommentForm) />,
         ],
         "className": "App",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
