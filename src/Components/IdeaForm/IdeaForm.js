@@ -3,8 +3,6 @@ import  {connect } from 'react-redux';
 import { addIdea } from '../../actions/idea';
 import PropTypes from 'prop-types';
 
-
-
 export class IdeaForm extends Component {
   constructor(props) {
     super(props);
