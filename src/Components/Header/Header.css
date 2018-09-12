@@ -1,0 +1,90 @@
+.thing {
+  --primary-dark-grey: #424B54;
+  --primary-blue: #4381C1;
+  --primary-green: #B8D8BA;
+  --primary-red: #FE938C;
+  --primary-white: #E8EBE4;
+}
+
+.header--container {
+  position: relative;
+  background-color: #B8D8BA
+}
+
+.app--title {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--primary-white);
+  font-size: 4.5rem;
+}
+
+.sign--up-container {
+  display: flex;
+  width: 150px;
+  justify-content: space-around;
+  position: absolute;
+  color: var(--primary-white);
+  top: 4.5rem;
+  right: 23rem;
+}
+
+.menu-content {
+  font-family: 'Oswald', sans-serif; 
+  padding: 0 0 0 5rem;
+}
+
+.collapsible--menu {
+  background-color: var(--primary-blue);
+  padding: 0px 3rem;
+  border-bottom: 3px solid var(--primary-white);
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+
+.collapsible--menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.collapsible--menu a {
+  display:block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.collapsible--menu li {
+  color: var(--primary-white);
+}
+
+.collapsible--menu label {
+  font-size: 45px;
+  display: block;
+  cursor: pointer;
+  background: url(../../resources/menu-open.svg) no-repeat left center;
+  padding: 9px 0 10px 50px;
+  color: var(--primary-white);
+  background-size: 26px;
+}
+
+input#menu {
+  display: none;
+}
+
+input:checked +label {
+  background-image: url(../../resources/delete-button.svg);
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif; 
+  padding: 0 0 0 50px;
+}
+
+input:checked ~ label {
+  background-image: url(../../resources/delete-button.svg);
+}
+
+input:checked ~ .menu-content {
+  max-height: 100%;
+}

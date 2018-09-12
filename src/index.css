@@ -1,4 +1,9 @@
 :root {
+  --primary-dark-grey: #424B54;
+  --primary-blue: #4381C1;
+  --primary-green: #B8D8BA;
+  --primary-red: #FE938C;
+  --primary-white: #E8EBE4;
 }
 
 * {
