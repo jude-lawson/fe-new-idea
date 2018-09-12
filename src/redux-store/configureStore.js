@@ -4,12 +4,14 @@ import thunk from 'redux-thunk';
 
 import { userReducer } from '../reducers/auth';
 import { ideaReducer } from '../reducers/ideas';
+import { commentReducer } from '../reducers/comments';
 
 export default () => {
   const store = createStore(
     combineReducers({
       user: userReducer,
-      ideas: ideaReducer
+      ideas: ideaReducer,
+      comments: commentReducer
     }),
     composeWithDevTools(applyMiddleware(thunk))
   );

@@ -11,7 +11,6 @@ export const IdeaCard = (props) => {
       <h1>{title}</h1>
       <p>{body}</p>
       <button>COMMENT</button>
-
     </article>
   );
 };
