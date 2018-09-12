@@ -22,9 +22,11 @@ export class IdeaForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.addIdea({...this.state, id: Date.now()});
+    this.setState({title: '', body: ''});
   }
 
   render() {
+    const { title, body } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <input 
@@ -33,12 +35,14 @@ export class IdeaForm extends Component {
           placeholder="title"
           onChange={this.handleChange}
           name="title"
+          value={title}
         />
         <textarea
           className="article--body-input"
           placeholder="Description"
           name="body"
           onChange={this.handleChange}
+          value={body}
         />
         <button>SUBMIT</button>
       </form>
