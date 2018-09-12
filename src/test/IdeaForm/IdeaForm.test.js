@@ -73,32 +73,14 @@ describe('IdeaForm', () => {
     });
   }); 
 
-  // describe('mapDispatchToProps', () => {
-  //   it('should call dispatch when using toggleUserLogin from MDTP', () => {
-  //     const mockDispatch = jest.fn();
-  //     const actionToDispatch = toggleUserLogin({id: 3, loginStatus: true});
-  //     const mappedToProps = mapDispatchToProps(mockDispatch);
-  //     mappedToProps.toggleUserLogin({id: 3, loginStatus: true});
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch when using addIdea from MDTP', () => {
+      const mockDispatch = jest.fn();
+      const actionToDispatch = addIdea({title: 'Tech', body: 'Tech body', id: 100});
+      const mappedToProps = mapDispatchToProps(mockDispatch);
+      mappedToProps.addIdea({title: 'Tech', body: 'Tech body', id: 100});
       
-  //     expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
-  //   });
-
-  //   it('should call dispatch when using userIsFalse from MDTP', () => {
-  //     const mockDispatch = jest.fn();
-  //     const actionToDispatch = userIsFalse({id: 3, loginStatus: true});
-  //     const mappedToProps = mapDispatchToProps(mockDispatch);
-  //     mappedToProps.userIsFalse({id: 3, loginStatus: true});
-      
-  //     expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
-  //   });
-
-  //   it('should call dispatch when using addAllFavs from MDTP', () => {
-  //     const mockDispatch = jest.fn();
-  //     const actionToDispatch = addAllFavs([{id: 3, name: 'jaws'}]);
-  //     const mappedToProps = mapDispatchToProps(mockDispatch);
-  //     mappedToProps.addAllFavs([{id: 3, name: 'jaws'}]);
-      
-  //     expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
-  //   });
-  // });
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    });
+  });
 });
