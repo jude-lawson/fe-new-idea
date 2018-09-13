@@ -1,14 +1,14 @@
 .thing {
-  --primary-dark-grey: #424B54;
-  --primary-blue: #4381C1;
-  --primary-green: #B8D8BA;
-  --primary-red: #FE938C;
-  --primary-white: #E8EBE4;
+  --primary-dark-grey: #424b54;
+  --primary-blue: #4381c1;
+  --primary-green: #b8d8ba;
+  --primary-red: #fe938c;
+  --primary-white: #e8ebe4;
 }
 
 .header--container {
   position: relative;
-  background-color: #B8D8BA
+  background-color: #b8d8ba;
 }
 
 .app--title {
@@ -30,15 +30,14 @@
 }
 
 .menu-content {
-  font-family: 'Oswald', sans-serif; 
+  font-family: "Oswald", sans-serif;
   padding: 0 0 0 5rem;
 }
 
 .collapsible--menu {
   background-color: var(--primary-blue);
-  padding: 0px 3rem;
-  border-bottom: 3px solid var(--primary-white);
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+  padding: 0 3rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .collapsible--menu ul {
@@ -47,7 +46,7 @@
 }
 
 .collapsible--menu a {
-  display:block;
+  display: block;
   padding: 1rem;
   text-decoration: none;
 }
@@ -70,14 +69,14 @@ input#menu {
   display: none;
 }
 
-input:checked +label {
+input:checked + label {
   background-image: url(../../resources/delete-button.svg);
 }
 
 .menu-content {
   max-height: 0;
   overflow: hidden;
-  font-family: 'Oswald', sans-serif; 
+  font-family: "Oswald", sans-serif;
   padding: 0 0 0 50px;
 }
 
