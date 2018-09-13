@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import IdeaForm from '../IdeaForm/IdeaForm';
 
 import './App.css';
 
@@ -8,7 +9,10 @@ export class App extends Component {
     return (
       <div >
         <Header />
-        <main className="app-container"></main>
+        <main className="app-container">
+          <IdeaForm />
+        </main>
+        
       </div>
     );
   }
