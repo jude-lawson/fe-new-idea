@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  {connect } from 'react-redux';
 import { addComment } from '../../actions/comment';
 import PropTypes from 'prop-types';
+import './CommentForm.css';
 
 export class CommentForm extends Component {
   constructor(props) {
@@ -25,14 +26,18 @@ export class CommentForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form 
+        onSubmit={this.handleSubmit}
+        className="comment-form"
+      >
+        <h1 className="comment--form-header">Comment on the Idea</h1>
         <textarea
           className="comment--body-input"
           placeholder="Description"
           name="body"
           onChange={this.handleChange}
         />
-        <button>SUBMIT</button>
+        <button className="comment--form-btn">SUBMIT</button>
       </form>
     );
   }
