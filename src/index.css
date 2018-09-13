@@ -1,9 +1,9 @@
 :root {
-  --primary-dark-grey: #424B54;
-  --primary-blue: #4381C1;
-  --primary-green: #B8D8BA;
-  --primary-red: #FE938C;
-  --primary-white: #E8EBE4;
+  --primary-dark-grey: #424b54;
+  --primary-blue: #4381c1;
+  --primary-green: #b8d8ba;
+  --primary-red: #fe938c;
+  --primary-white: #e8ebe4;
 }
 
 * {
@@ -28,12 +28,11 @@ body {
 }
 
 button {
-  cursor: pointer;
   background: none;
-  color: inherit;
   border: none;
-  padding: 0;
-  font: inherit;
+  color: inherit;
   cursor: pointer;
+  font: inherit;
   outline: inherit;
+  padding: 0;
 }
