@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  {connect } from 'react-redux';
 import { addIdea } from '../../actions/idea';
 import PropTypes from 'prop-types';
+import './IdeaForm.css';
 
 export class IdeaForm extends Component {
   constructor(props) {
@@ -26,21 +27,24 @@ export class IdeaForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form 
+        onSubmit={this.handleSubmit}
+        className="idea-form">
+        <h1 className="idea--form-title">Create A New Idea</h1>
         <input 
           type="text"
-          className="article--title-input"
+          className="idea--title-input"
           placeholder="title"
           onChange={this.handleChange}
           name="title"
         />
         <textarea
-          className="article--body-input"
+          className="idea--body-input"
           placeholder="Description"
           name="body"
           onChange={this.handleChange}
         />
-        <button>SUBMIT</button>
+        <button className="idea--form-btn">SUBMIT</button>
       </form>
     );
   }

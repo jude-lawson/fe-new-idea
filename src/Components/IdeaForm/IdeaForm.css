@@ -1,0 +1,46 @@
+.app-container {
+  padding-top: 5rem;
+}
+
+.idea-form {
+  background: var(--primary-red);
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  height: 69rem;
+  padding: 2rem 4rem;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.idea--form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-blue);
+}
+
+.idea--title-input {
+  margin-bottom: 2rem;
+  height: 3rem;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.idea--body-input {
+  height: 49rem;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 3px 5px;
+}
+
+.idea--form-btn {
+  margin-top: 4rem;
+  color: var(--primary-blue);
+  background: var(--primary-white);
+  width: 12rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  font-weight: 700;
+  border-radius: 23px;
+}
