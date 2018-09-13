@@ -7,7 +7,8 @@ export const firebase = {
 }
 // export const firebase = {
 //   auth: () => ({
-//     signInWithPopup: () => new Promise(resolve => resolve()),
+//     GithubAuthProvider: new Promise(resolve => resolve()),
+//     signInWithPopup: () => new Promise(resolve => resolve(mockUser)),
 //     signOut: () => new Promise(resolve => resolve())
 //   })
 // };
