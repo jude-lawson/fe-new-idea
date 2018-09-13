@@ -19,12 +19,10 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Connect(Component) />,
-        <Connect(IdeaForm) />,
-        <Connect(IdeaBox) />,
-        <Connect(CommentForm) />,
-        <Connect(CommentBox) />,
+        <main
+          className="app-container"
+/>,
       ],
-      "className": "App",
     },
     "ref": null,
     "rendered": Array [
@@ -40,38 +38,13 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "className": "app-container",
+        },
         "ref": null,
         "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "type": "main",
       },
     ],
     "type": "div",
@@ -84,12 +57,10 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Connect(Component) />,
-          <Connect(IdeaForm) />,
-          <Connect(IdeaBox) />,
-          <Connect(CommentForm) />,
-          <Connect(CommentBox) />,
+          <main
+            className="app-container"
+/>,
         ],
-        "className": "App",
       },
       "ref": null,
       "rendered": Array [
@@ -105,38 +76,13 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "className": "app-container",
+          },
           "ref": null,
           "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "type": "main",
         },
       ],
       "type": "div",
