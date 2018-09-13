@@ -7,26 +7,26 @@
 }
 
 .header--container {
-  position: relative;
   background-color: #b8d8ba;
+  position: relative;
 }
 
 .app--title {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   color: var(--primary-white);
   font-size: 4.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 
 .sign--up-container {
+  color: var(--primary-white);
   display: flex;
-  width: 150px;
   justify-content: space-around;
   position: absolute;
-  color: var(--primary-white);
-  top: 4.5rem;
   right: 23rem;
+  top: 4.5rem;
+  width: 150px;
 }
 
 .menu-content {
@@ -36,8 +36,8 @@
 
 .collapsible--menu {
   background-color: var(--primary-blue);
-  padding: 0 3rem;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 0 3rem;
 }
 
 .collapsible--menu ul {
@@ -56,13 +56,13 @@
 }
 
 .collapsible--menu label {
-  font-size: 45px;
-  display: block;
-  cursor: pointer;
   background: url(../../resources/menu-open.svg) no-repeat left center;
-  padding: 9px 0 10px 50px;
-  color: var(--primary-white);
   background-size: 26px;
+  color: var(--primary-white);
+  cursor: pointer;
+  display: block;
+  font-size: 45px;
+  padding: 9px 0 10px 50px;
 }
 
 input#menu {
@@ -74,9 +74,9 @@ input:checked + label {
 }
 
 .menu-content {
+  font-family: "Oswald", sans-serif;
   max-height: 0;
   overflow: hidden;
-  font-family: "Oswald", sans-serif;
   padding: 0 0 0 50px;
 }
 
