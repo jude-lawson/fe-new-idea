@@ -1,3 +1,15 @@
 body {
-  background: #E8EBE4;
+  background: #e8ebe4;
+}
+
+.app-container {
+  background-image: linear-gradient(
+    to bottom,
+    #4381c1,
+    #289dc5,
+    #50b4be,
+    #85c7b7,
+    #b8d8ba
+  );
+  height: 100vh;
 }
