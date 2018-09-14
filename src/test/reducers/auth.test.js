@@ -21,4 +21,9 @@ describe('user Reducer', () => {
     const result = userReducer({}, userLoginAction(mockUser));
     expect(result).toEqual(expected);
   });
+
+  test('should return default state', () => {
+    const result = userReducer({}, {});
+    expect(result).toEqual({})
+  });
 });
