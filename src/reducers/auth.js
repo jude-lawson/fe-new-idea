@@ -1,12 +1,14 @@
-export const userReducer = (state = {}, action) => {
+export const userReducer = (state = {}, action) =>  {
   switch (action.type) {
     case 'LOGIN':
       return {
         ...state,
-        id: action.user.uid,
-        image: action.user.photoURL,
-        name: action.user.displayName
+        id: action.newUser.user.uid,
+        image: action.newUser.user.photoURL,
+        name: action.newUser.user.displayName
       };
+    case 'LOGOUT':
+      return {};
     default:
       return state;
   }

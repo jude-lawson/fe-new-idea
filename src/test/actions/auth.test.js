@@ -5,15 +5,15 @@ describe('userLoginAction', () => {
   const name = 'Steve';
   const image = 'some-url';
   const mockFirebaseResponse = {
-    uid: id,
-    displayName: name,
-    photoURL: image
+      uid: id,
+      displayName: name,
+      photoURL: image
   };
 
  test('should have a type of LOGIN', () => {
   const expected = {
     type: 'LOGIN',
-    user: {
+    newUser: {
       ...mockFirebaseResponse
     }
   };
