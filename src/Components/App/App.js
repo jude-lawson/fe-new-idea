@@ -12,7 +12,6 @@ export class App extends Component {
         <main className="app-container">
           <CommentForm />
         </main>
-        
       </div>
     );
   }

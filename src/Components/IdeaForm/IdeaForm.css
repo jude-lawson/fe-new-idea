@@ -1,3 +1,7 @@
+.app-container {
+  padding-top: 5rem;
+}
+
 .idea-form {
   background: var(--primary-red);
   width: 80%;
