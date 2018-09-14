@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { firebaseLogin, firebaseLogout } from '../../thunks/auth';
+
+import './Header.css';
 
 import './Header.css';
 
@@ -19,7 +22,7 @@ export const Header = (props) => {
         <div className="menu-content">
           <ul>
             <li><a href="#"></a>Notifications</li>
-            <li><a href="#"></a>Profile</li>
+            <Link to="profile">Profile</Link>
             <li><a href="#"></a>Top Tech Talks</li>
             <li><a href="#"></a>New Article</li>
             {!props.authenticated ? 
