@@ -1,8 +1,10 @@
 import React from 'react';
-import './Header.css';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { firebaseLogin } from '../../thunks/Auth';
+
+import './Header.css';
 
 export const Header = (props) => {
   return (
@@ -18,7 +20,7 @@ export const Header = (props) => {
         <div className="menu-content">
           <ul>
             <li><a href="#"></a>Notifications</li>
-            <li><a href="#"></a>Profile</li>
+            <Link to="profile">Profile</Link>
             <li><a href="#"></a>Top Tech Talks</li>
             <li><a href="#"></a>New Article</li>
             <li><a href="#"></a>My Articles</li>

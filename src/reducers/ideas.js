@@ -4,7 +4,6 @@ export const ideaReducer = (state = [], action) => {
       return [
         ...state,
         action.idea
-        
       ];
     default:
       return state;
