@@ -34,7 +34,8 @@
       "!src/index.js",
       "!src/setupTests.js",
       "!src/registerServiceWorker.js",
-      "!src/redux-store/*.js"
+      "!src/redux-store/*.js",
+      "!src/env.js"
     ]
   }
 }
