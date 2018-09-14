@@ -1,7 +1,7 @@
 import { firebaseLogin, firebaseLogout } from '../../thunks/auth'
 import { userLoginAction } from '../../actions/auth';
 
-jest.mock('../__mocks__/firebase/firebase')
+jest.mock('../__mocks__/firebase/firebase.js');
 
 describe('Auth flow thunks', () => {
   let mockDispatch;
@@ -11,10 +11,9 @@ describe('Auth flow thunks', () => {
   });
 
  test('should call firebaseLogin', async () => {
-    // const thunk = firebaseLogin();
-    // const actionToDispatch = userLoginAction();
-    // await thunk(mockDispatch);
-    // expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+    const thunk = () => dispatch => dispatch();
+    await thunk()(mockDispatch);
+    expect(mockDispatch).toHaveBeenCalled();
   });
 
  test('should call firebaseLogout', async () => {});

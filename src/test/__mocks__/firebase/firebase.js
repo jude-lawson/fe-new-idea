@@ -2,7 +2,8 @@ export const initializeApp = jest.fn().mockImplementation(() => {});
 
 export const firebase = {
   auth: {
-    GithubAuthProvider: jest.fn().mockImplementation(() => {})
+    GithubAuthProvider: new Promise(resolve => resolve()),
+    signOut: () => new Promise(resolve => resolve())
   }
 }
 // export const firebase = {
