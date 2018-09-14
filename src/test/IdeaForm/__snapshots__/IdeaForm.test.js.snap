@@ -18,23 +18,33 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h1
+          className="idea--form-title"
+>
+          Create A New Idea
+</h1>,
         <input
-          className="article--title-input"
+          className="idea--title-input"
           name="title"
           onChange={[Function]}
           placeholder="title"
           type="text"
+          value=""
 />,
         <textarea
-          className="article--body-input"
+          className="idea--body-input"
           name="body"
           onChange={[Function]}
           placeholder="Description"
+          value=""
 />,
-        <button>
+        <button
+          className="idea--form-btn"
+>
           SUBMIT
 </button>,
       ],
+      "className": "idea-form",
       "onSubmit": [Function],
     },
     "ref": null,
@@ -44,11 +54,24 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "article--title-input",
+          "children": "Create A New Idea",
+          "className": "idea--form-title",
+        },
+        "ref": null,
+        "rendered": "Create A New Idea",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "idea--title-input",
           "name": "title",
           "onChange": [Function],
           "placeholder": "title",
           "type": "text",
+          "value": "",
         },
         "ref": null,
         "rendered": null,
@@ -59,10 +82,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "article--body-input",
+          "className": "idea--body-input",
           "name": "body",
           "onChange": [Function],
           "placeholder": "Description",
+          "value": "",
         },
         "ref": null,
         "rendered": null,
@@ -74,6 +98,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "SUBMIT",
+          "className": "idea--form-btn",
         },
         "ref": null,
         "rendered": "SUBMIT",
@@ -89,23 +114,33 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <h1
+            className="idea--form-title"
+>
+            Create A New Idea
+</h1>,
           <input
-            className="article--title-input"
+            className="idea--title-input"
             name="title"
             onChange={[Function]}
             placeholder="title"
             type="text"
+            value=""
 />,
           <textarea
-            className="article--body-input"
+            className="idea--body-input"
             name="body"
             onChange={[Function]}
             placeholder="Description"
+            value=""
 />,
-          <button>
+          <button
+            className="idea--form-btn"
+>
             SUBMIT
 </button>,
         ],
+        "className": "idea-form",
         "onSubmit": [Function],
       },
       "ref": null,
@@ -115,11 +150,24 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "article--title-input",
+            "children": "Create A New Idea",
+            "className": "idea--form-title",
+          },
+          "ref": null,
+          "rendered": "Create A New Idea",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "idea--title-input",
             "name": "title",
             "onChange": [Function],
             "placeholder": "title",
             "type": "text",
+            "value": "",
           },
           "ref": null,
           "rendered": null,
@@ -130,10 +178,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "article--body-input",
+            "className": "idea--body-input",
             "name": "body",
             "onChange": [Function],
             "placeholder": "Description",
+            "value": "",
           },
           "ref": null,
           "rendered": null,
@@ -145,6 +194,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "SUBMIT",
+            "className": "idea--form-btn",
           },
           "ref": null,
           "rendered": "SUBMIT",
