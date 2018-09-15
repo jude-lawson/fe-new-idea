@@ -24,7 +24,7 @@ AppRouter.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  authenticated: state.user.id || true
+  authenticated: state.user.id
 });
 
 export default connect(mapStateToProps)(AppRouter);
