@@ -1,0 +1,23 @@
+.profile-card {
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 35rem;
+  position: relative;
+}
+
+.profile-card__user {
+  background: var(--primary-white);
+  color: var(--primary-dark-grey);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  bottom: -15rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 15rem;
+  padding: 2rem;
+}
