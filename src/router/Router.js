@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import createHistory from 'history/createBrowserHistory';
 
 import App from '../Components/App/App';
-import { Profile } from '../Components/Profile/Profile';
+import Profile from '../Containers/Profile/Profile';
 import { PrivateRoute } from './PrivateRoute';
 
 export const history = createHistory();
@@ -24,7 +24,7 @@ AppRouter.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  authenticated: state.user.id
+  authenticated: state.user.id || true
 });
 
 export default connect(mapStateToProps)(AppRouter);
