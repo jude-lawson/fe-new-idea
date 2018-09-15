@@ -8,11 +8,9 @@ import './Profile.css';
 export class Profile extends Component {
 
   render() {
-    let { user } = this.props;
-    user.name = 'Andrew James';
+    const { user } = this.props;
     const userCardStyles = {
-      background: `no-repeat url('https://avatars3.githubusercontent.com/u/13269277?v=4') `,
-      backgroundPosition: 'center center',
+      background: `no-repeat url(${user.image}) center center`,
       height: '50vh'
     };
 
@@ -20,7 +18,7 @@ export class Profile extends Component {
       <div>
         <Header />
         <section className="app-container">
-          {user &&
+          {user.id &&
             <div className="profile-card" style={userCardStyles}>
               <div className="profile-card__user">
                 <h2>{user.name}</h2>

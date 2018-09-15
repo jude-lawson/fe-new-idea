@@ -4,12 +4,33 @@ import { Profile, mapStateToProps, mapDispatchToProps } from '../../Containers/P
 
 describe('<Profile />', () => {
   let wrapper;
+  const mockUser = {
+    name: 'Joben',
+    id: '3214adf',
+    image: 'some-url-here'
+  }
 
-  beforeEach(() => wrapper = shallow(<Profile />));
+  beforeEach(() => wrapper = shallow(<Profile user={mockUser}/>));
 
-  test('should user to state', () => {
-
+  describe('mapStateToProps', () => {
+    test('should map user to props', () => {
+      const mockState = {
+        user: mockUser
+      };
+      const expected = {
+        user: mockUser
+      };
+      const mappedProps = mapStateToProps(mockState);
+      expect(mappedProps).toEqual(expected);
+    });
   });
+
+
+  test('should not render a user when none present', () => {
+   wrapper = shallow(<Profile user={{}} />)
+   expect(wrapper).toMatchSnapshot();
+  })
+
 
   test('should render without crashing', () => {
     expect(wrapper).toMatchSnapshot()
