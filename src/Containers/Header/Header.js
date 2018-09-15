@@ -6,13 +6,24 @@ import { firebaseLogin, firebaseLogout } from '../../thunks/auth';
 
 import './Header.css';
 export class Header extends Component {
-  createUser = () => {
+  createUser = async () => {
     const { user } = this.props;
-    console.log('user', user);
+    const newUser = {
+      uid: user.id,
+      email: user.email,
+      username: user.name
+    };
+    const url = 'https://whispering-lowlands-31319.herokuapp.com/api/v1/users';
     const options = {
       method: 'POST',
-      body: {...user}
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newUser)
     };
+    await fetch(url, options)
+      .then(res => res.json())
+      .then(user => localStorage.setItem('user', JSON.stringify(user)));
   }
 
   render() {

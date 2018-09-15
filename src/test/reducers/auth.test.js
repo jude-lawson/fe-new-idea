@@ -5,17 +5,22 @@ describe('user Reducer', () => {
   const id = 3;
   const name = 'New User';
   const image = 'https://some-new-url-here';
+  const email = 'some@mail.com'
   const mockUser = {
-    uid: id,
-    displayName: name,
-    photoURL: image
+    user: {
+      uid: id,
+      displayName: name,
+      photoURL: image,
+      email: email
+    }
   };
 
   test('should return a new user', () => {
     const expected = {
       id,
       name,
-      image
+      image,
+      email
     };
 
     const result = userReducer({}, userLoginAction(mockUser));
