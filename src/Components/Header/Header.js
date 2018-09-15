@@ -1,27 +1,34 @@
 import React from 'react';
-import './Header.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { firebaseLogin } from '../../thunks/auth';
+import { withRouter } from 'react-router-dom';
+import { firebaseLogin, firebaseLogout } from '../../thunks/auth';
+
+import './Header.css';
 
 export const Header = (props) => {
+  console.log(props)
   return (
     <header className="header--container">
       <h1 className="app--title">New Idea</h1>
       <div className="sign--up-container">
-        <h3 onClick={() => props.firebaseLogin()}>Sign Up</h3>
-        <h3 onClick={() => props.firebaseLogin()}>Sign In</h3>
       </div>
       <div className="collapsible--menu">
         <input type="checkbox" id="menu" />
-        <label htmlFor="menu">Menu</label>
+        <label htmlFor="menu"></label>
         <div className="menu-content">
           <ul>
             <li><a href="#"></a>Notifications</li>
             <li><a href="#"></a>Profile</li>
             <li><a href="#"></a>Top Tech Talks</li>
             <li><a href="#"></a>New Article</li>
-            <li><a href="#"></a>My Articles</li>
+            {!props.authenticated ? 
+              <li onClick={() => props.firebaseLogin()}><a href="#"></a>Sign Up / Sign In</li> :
+              <li onClick={() => props.firebaseLogout()}><a href="#"></a>Sign Out</li> 
+            }
+            
+            
+
           </ul>
         </div>
       </div>
@@ -30,11 +37,18 @@ export const Header = (props) => {
 };
 
 Header.propTypes = {
-  firebaseLogin: PropTypes.func
+  firebaseLogin: PropTypes.func,
+  firebaseLogout: PropTypes.func,
+  authenticated: PropTypes.string
 };
 
-export const mapDispatchToProps = dispatch => ({
-  firebaseLogin: () => dispatch(firebaseLogin())
+export const mapStateToProps = state => ({
+  authenticated: state.user.id
 });
 
-export default connect(null, mapDispatchToProps)(Header);
+export const mapDispatchToProps = dispatch => ({
+  firebaseLogin: () => dispatch(firebaseLogin()),
+  firebaseLogout: () => dispatch(firebaseLogout())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
