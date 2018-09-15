@@ -1,5 +1,5 @@
 export const storageMock = () => {
-  var storage = {};
+  const storage = {};
 
   return {
     setItem: function(key, value) {
