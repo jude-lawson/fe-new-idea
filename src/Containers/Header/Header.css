@@ -37,8 +37,9 @@
 
 .collapsible--menu a {
   display: block;
-  padding: 1rem;
-  pointer-events: none;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  margin-right: 2rem;
   text-decoration: none;
 }
 
@@ -110,6 +111,11 @@ input:checked + label {
   padding: 0 0 0 50px;
   padding: 60px 16px 12px 50px;
   text-align: left;
+}
+
+.menu-link a {
+  text-decoration: none;
+  color: var(--primary-white);
 }
 
 input:checked ~ label {
