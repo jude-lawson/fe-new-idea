@@ -4,6 +4,7 @@ import { githubOAuthLogin, logout } from '../firebase/firebase';
 export const firebaseLogin = () => {
   return async dispatch => {
     const newUser = await githubOAuthLogin();
+    console.log(newUser);
     dispatch(userLoginAction(newUser));
   };
 };
