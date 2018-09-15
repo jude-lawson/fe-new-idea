@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import createHistory from 'history/createBrowserHistory';
 
 import App from '../Components/App/App';
+import Profile from '../Containers/Profile/Profile';
 import { PrivateRoute } from './PrivateRoute';
 
 export const history = createHistory();
@@ -13,7 +14,7 @@ export const AppRouter = ({ authenticated }) => (
   <Router history={history}>
     <Switch>
       <Route path="/" exact component={App}/>
-      <PrivateRoute authenticated={authenticated} path="/profile" exact  component={App} />
+      <PrivateRoute authenticated={authenticated} path="/profile" exact  component={Profile} />
     </Switch>
   </Router>
 );
@@ -23,7 +24,7 @@ AppRouter.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  authenticated: state.user.id
+  authenticated: state.user.id || true
 });
 
 export default connect(mapStateToProps)(AppRouter);
