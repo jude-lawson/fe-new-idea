@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import  {connect } from 'react-redux';
 import { addIdea } from '../../actions/idea';
 import PropTypes from 'prop-types';
+import { postIdea } from '../../api-calls/api-calls';
+
 import './IdeaForm.css';
 
 export class IdeaForm extends Component {
@@ -20,9 +22,11 @@ export class IdeaForm extends Component {
     });
   }
   
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
     this.props.addIdea({...this.state, id: Date.now()});
+    const id = JSON.parse(window.localStorage.getItem('user.id'));
+    await postIdea(id, this.state.title, this.state.body);
     this.setState({title: '', body: ''});
   }
 
