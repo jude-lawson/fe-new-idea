@@ -1,5 +1,8 @@
-export const userLoginAction = user => ({
+export const userLoginAction = newUser => ({
   type: 'LOGIN',
-  user
+  newUser
 });
 
+export const userLogOutAction = () => ({
+  type: 'LOGOUT'
+});
