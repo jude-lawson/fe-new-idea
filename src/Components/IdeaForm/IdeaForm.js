@@ -25,8 +25,8 @@ export class IdeaForm extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     this.props.addIdea({...this.state, id: Date.now()});
-    const id = JSON.parse(window.localStorage.getItem('user.id'));
-    await postIdea(id, this.state.title, this.state.body);
+    const user = JSON.parse(window.localStorage.getItem('user'));
+    await postIdea(user.id, this.state.title, this.state.body);
     this.setState({title: '', body: ''});
   }
 
