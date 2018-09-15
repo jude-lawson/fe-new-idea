@@ -7,7 +7,6 @@ import { firebaseLogin, firebaseLogout } from '../../thunks/auth';
 import './Header.css';
 
 export const Header = (props) => {
-  console.log(props)
   return (
     <header className="header--container">
       <h1 className="app--title">New Idea</h1>
@@ -26,9 +25,6 @@ export const Header = (props) => {
               <li onClick={() => props.firebaseLogin()}><a href="#"></a>Sign Up / Sign In</li> :
               <li onClick={() => props.firebaseLogout()}><a href="#"></a>Sign Out</li> 
             }
-            
-            
-
           </ul>
         </div>
       </div>

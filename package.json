@@ -15,7 +15,7 @@
     "redux-thunk": "2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
@@ -35,7 +35,8 @@
       "!src/setupTests.js",
       "!src/registerServiceWorker.js",
       "!src/redux-store/*.js",
-      "!src/env.js"
+      "!src/env.js",
+      "!src/test/test-helpers/*.js"
     ]
   }
 }

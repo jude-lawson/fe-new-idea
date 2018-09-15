@@ -18,20 +18,40 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h1
+          className="comment--form-header"
+>
+          Comment on the Idea
+</h1>,
         <textarea
           className="comment--body-input"
           name="body"
           onChange={[Function]}
           placeholder="Description"
 />,
-        <button>
+        <button
+          className="comment--form-btn"
+>
           SUBMIT
 </button>,
       ],
+      "className": "comment-form",
       "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Comment on the Idea",
+          "className": "comment--form-header",
+        },
+        "ref": null,
+        "rendered": "Comment on the Idea",
+        "type": "h1",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -52,6 +72,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "SUBMIT",
+          "className": "comment--form-btn",
         },
         "ref": null,
         "rendered": "SUBMIT",
@@ -67,20 +88,40 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <h1
+            className="comment--form-header"
+>
+            Comment on the Idea
+</h1>,
           <textarea
             className="comment--body-input"
             name="body"
             onChange={[Function]}
             placeholder="Description"
 />,
-          <button>
+          <button
+            className="comment--form-btn"
+>
             SUBMIT
 </button>,
         ],
+        "className": "comment-form",
         "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Comment on the Idea",
+            "className": "comment--form-header",
+          },
+          "ref": null,
+          "rendered": "Comment on the Idea",
+          "type": "h1",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -101,6 +142,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "SUBMIT",
+            "className": "comment--form-btn",
           },
           "ref": null,
           "rendered": "SUBMIT",

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from '../Header/Header';
+import Header from '../../Containers/Header/Header';
 import CommentForm from '../../Containers/CommentForm/CommentForm';
+import IdeaForm from '../IdeaForm/IdeaForm';
 
 import './App.css';
 

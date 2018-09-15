@@ -5,6 +5,7 @@ const mockUser = {
     photoURL: 'https://some-new-url-here'
   }
 };
+
 export const initializeApp = jest.fn().mockImplementation(() => {});
 export const githubOAuthLogin = () => new Promise(resolve => resolve(mockUser));
 export const logout = jest.fn();

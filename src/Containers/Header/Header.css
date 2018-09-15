@@ -28,7 +28,6 @@
 
 .collapsible--menu {
   background-color: var(--primary-blue);
-  padding: 0 3rem;
 }
 
 .collapsible--menu ul {
@@ -40,11 +39,41 @@
   display: block;
   padding: 1rem;
   text-decoration: none;
+  pointer-events: none;
 }
 
 .collapsible--menu li {
   color: var(--primary-white);
+  cursor: pointer;
+  animation: fadein 2s;
+    -webkit-animation: fadein 2s;
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
 
 .collapsible--menu label {
   font-size: 45px;
@@ -57,6 +86,7 @@
   position: absolute;
   top: 3rem;
   right: 1rem;
+  transition: .2s ease-in-out;
 }
 
 input#menu {
@@ -72,12 +102,15 @@ input:checked + label {
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   padding: 0 0 0 50px;
-  padding: 58px 6px 12px 50px;
-  text-align: right;
+  padding: 60px 16px 12px 50px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-end;
 }
 
 input:checked ~ label {
   background-image: url(../../resources/delete-button.svg);
+  transition: .2s ease-in-out;
 }
 
 input:checked ~ .menu-content {
