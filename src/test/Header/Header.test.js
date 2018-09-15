@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Header } from '../../Containers/Header/Header';
+import { Header, mapStateToProps, mapDispatchToProps } from '../../Containers/Header/Header';
 import { storageMock } from '../test-helpers/localstroage'
 
 describe('<Header />', () => {
@@ -59,6 +59,43 @@ describe('<Header />', () => {
     }));
     wrapper = shallow(<Header authenticated={mockUser.id} user={mockUser} />);
     expect(wrapper).toMatchSnapshot()
+  });
+
+  describe('mapStateToProps', () => {
+    test('should map user to props', () => {
+      const expected = {
+        user: mockUser,
+        authenticated: mockUser.id
+      };
+      const mockState = {
+        user: mockUser,
+        authenticated: mockUser.id
+      };
+      const result = mapStateToProps(mockState);
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe('mapDispatchToProps', () => {
+    test('should call dispatch with firebaseLogin', () => {
+      const mockDispatch = jest.fn();
+      const firebaseLogin = jest.fn();
+      const actionToDispatch = firebaseLogin(mockUser);
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.firebaseLogin();
+
+      expect(mockDispatch).toHaveBeenCalled();
+    });
+
+    test('should call dispatch with firebaseLogin', () => {
+      const mockDispatch = jest.fn();
+      const firebaseLogout = jest.fn();
+      const actionToDispatch = firebaseLogout(mockUser);
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.firebaseLogout();
+
+      expect(mockDispatch).toHaveBeenCalled();
+    });
   });
 
   test('should render without crashing', () => {
