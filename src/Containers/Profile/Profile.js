@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Header from '../../Components/Header/Header';
 
 export class Profile extends Component {
 
   render() {
     const { user } = this.props;
     return (
-      <section>
-        {console.log(user)}
-      </section>
+      <div>
+        <Header />
+        <section className="app-container">
+          {console.log(user)}
+        </section>
+      </div>
     );
   }
 }
@@ -18,11 +22,11 @@ Profile.propTypes = {
   user: PropTypes.object
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   user: state.user
 });
 
-const mapDispatchToProps = () => ({
+export const mapDispatchToProps = () => ({
 
 });
 
