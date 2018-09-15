@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { firebaseLogin } from '../../thunks/Auth';
+import { firebaseLogin } from '../../thunks/auth';
 
 export const Header = (props) => {
   return (

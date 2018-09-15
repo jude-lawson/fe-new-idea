@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { App } from '../../Components/App/App'
 
-jest.mock('../__mocks__/firebase/firebase.js');
+jest.mock('../../firebase/firebase');
 
 describe('<App />', () => {
   let wrapper;
