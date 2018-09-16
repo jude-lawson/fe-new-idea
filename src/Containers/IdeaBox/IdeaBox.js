@@ -30,13 +30,11 @@ export class IdeaBox extends Component {
 
   render() {
     return (
-      <div>
-        <section className="app-container">
-          <main>
-            {this.displayIdeas(this.state.allIdeas)}
-          </main>
-        </section>
-      </div>
+      <section className="app-container">
+        <main>
+          {this.displayIdeas(this.state.allIdeas)}
+        </main>
+      </section>
     );
   }
 }
