@@ -22,7 +22,7 @@ ShallowWrapper {
         <main
           className="app-container"
 >
-          <Connect(CommentForm) />
+          <Connect(IdeaForm) />
 </main>,
       ],
     },
@@ -42,7 +42,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Connect(CommentForm) />,
+          "children": <Connect(IdeaForm) />,
           "className": "app-container",
         },
         "ref": null,
@@ -71,7 +71,7 @@ ShallowWrapper {
           <main
             className="app-container"
 >
-            <Connect(CommentForm) />
+            <Connect(IdeaForm) />
 </main>,
         ],
       },
@@ -91,7 +91,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Connect(CommentForm) />,
+            "children": <Connect(IdeaForm) />,
             "className": "app-container",
           },
           "ref": null,

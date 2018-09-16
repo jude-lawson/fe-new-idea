@@ -25,7 +25,7 @@ export class Header extends Component {
       .then(res => res.json())
       .then(user => localStorage.setItem('user', JSON.stringify(user)));
   }
-
+  
   render() {
     const { authenticated, firebaseLogin, firebaseLogout } = this.props;
     if (authenticated) {
@@ -44,7 +44,7 @@ export class Header extends Component {
               <li><a href="#"></a>Notifications</li>
               <Link to="profile">Profile</Link>
               <li><a href="#"></a>Top Tech Talks</li>
-              <li><a href="#"></a>New Article</li>
+              <Link to="ideaform">New Article</Link>
               {!authenticated ?
                 <li onClick={() => firebaseLogin()}><a href="#"></a>Sign Up / Sign In</li> :
                 <li onClick={() => firebaseLogout()}><a href="#"></a>Sign Out</li>

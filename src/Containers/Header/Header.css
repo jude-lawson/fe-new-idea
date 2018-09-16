@@ -39,7 +39,6 @@
   display: block;
   padding: 1rem;
   text-decoration: none;
-  pointer-events: none;
 }
 
 .collapsible--menu li {

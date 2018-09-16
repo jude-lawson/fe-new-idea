@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Header from '../Header/Header';
+import { Main } from '../Main/Main';
 
 import './Profile.css';
 
@@ -26,6 +27,7 @@ export class Profile extends Component {
             </div>
           }
         </section>
+        <Main />
       </div>
     );
   }

@@ -23,4 +23,12 @@ const postIdea = async (id, title, body) => {
   }
 };
 
-export {postIdea};
+const getIdeas = async () => {
+  const url = 'https://whispering-lowlands-31319.herokuapp.com/api/v1/ideas';
+  const response = await fetch(url);
+  const ideas = await response.json();
+  return ideas;
+};
+
+
+export { postIdea, getIdeas };

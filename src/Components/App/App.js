@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../Containers/Header/Header';
-import CommentForm from '../../Containers/CommentForm/CommentForm';
-import IdeaForm from '../IdeaForm/IdeaForm';
+import { Main } from '../../Containers/Main/Main';
 
 import './App.css';
 
@@ -12,6 +11,7 @@ export class App extends Component {
         <Header />
         <main className="app-container">
         </main>
+        <Main />
       </div>
     );
   }
