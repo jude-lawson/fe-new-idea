@@ -36,7 +36,8 @@
       "!src/registerServiceWorker.js",
       "!src/redux-store/*.js",
       "!src/env.js",
-      "!src/test/test-helpers/*.js"
+      "!src/test/test-helpers/*.js",
+      "!src/firebase/firebase.js"
     ]
   }
 }
