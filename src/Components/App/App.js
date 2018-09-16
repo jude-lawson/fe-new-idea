@@ -9,8 +9,6 @@ export class App extends Component {
     return (
       <div >
         <Header />
-        <main className="app-container">
-        </main>
         <Main />
       </div>
     );

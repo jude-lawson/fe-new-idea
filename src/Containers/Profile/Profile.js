@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Header from '../Header/Header';
-import { Main } from '../Main/Main';
 
 import './Profile.css';
 
@@ -17,17 +15,13 @@ export class Profile extends Component {
 
     return (
       <div>
-        <Header />
-        <section className="app-container">
-          {user.id &&
+        {user.id &&
             <div className="profile-card" style={userCardStyles}>
               <div className="profile-card__user">
                 <h2>{user.name}</h2>
               </div>
             </div>
-          }
-        </section>
-        <Main />
+        }
       </div>
     );
   }
