@@ -49,36 +49,30 @@ ShallowWrapper {
                     className="menu-content"
           >
                     <ul>
-                              <li>
-                                        <a
-                                                  href="#"
-                                        />
-                                        Notifications
-                              </li>
-                              <Link
-                                        replace={false}
-                                        to="profile"
+                              <li
+                                        className="menu-link"
                               >
-                                        Profile
-                              </Link>
-                              <li>
-                                        <a
-                                                  href="#"
-                                        />
-                                        Top Tech Talks
-                              </li>
-                              <li>
-                                        <a
-                                                  href="#"
-                                        />
-                                        New Article
+                                        <Link
+                                                  replace={false}
+                                                  to="/"
+                                        >
+                                                  Home
+                                        </Link>
                               </li>
                               <li
+                                        className="menu-link"
+                              >
+                                        <Link
+                                                  replace={false}
+                                                  to="profile"
+                                        >
+                                                  Profile
+                                        </Link>
+                              </li>
+                              <li
+                                        className="menu-link"
                                         onClick={[Function]}
                               >
-                                        <a
-                                                  href="#"
-                                        />
                                         Sign Out
                               </li>
                     </ul>
@@ -129,36 +123,30 @@ ShallowWrapper {
               className="menu-content"
 >
               <ul>
-                            <li>
-                                          <a
-                                                        href="#"
-                                          />
-                                          Notifications
-                            </li>
-                            <Link
-                                          replace={false}
-                                          to="profile"
+                            <li
+                                          className="menu-link"
                             >
-                                          Profile
-                            </Link>
-                            <li>
-                                          <a
-                                                        href="#"
-                                          />
-                                          Top Tech Talks
-                            </li>
-                            <li>
-                                          <a
-                                                        href="#"
-                                          />
-                                          New Article
+                                          <Link
+                                                        replace={false}
+                                                        to="/"
+                                          >
+                                                        Home
+                                          </Link>
                             </li>
                             <li
+                                          className="menu-link"
+                            >
+                                          <Link
+                                                        replace={false}
+                                                        to="profile"
+                                          >
+                                                        Profile
+                                          </Link>
+                            </li>
+                            <li
+                                          className="menu-link"
                                           onClick={[Function]}
                             >
-                                          <a
-                                                        href="#"
-                                          />
                                           Sign Out
                             </li>
               </ul>
@@ -197,36 +185,30 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <ul>
-                <li>
-                                <a
-                                                href="#"
-                                />
-                                Notifications
-                </li>
-                <Link
-                                replace={false}
-                                to="profile"
+                <li
+                                className="menu-link"
                 >
-                                Profile
-                </Link>
-                <li>
-                                <a
-                                                href="#"
-                                />
-                                Top Tech Talks
-                </li>
-                <li>
-                                <a
-                                                href="#"
-                                />
-                                New Article
+                                <Link
+                                                replace={false}
+                                                to="/"
+                                >
+                                                Home
+                                </Link>
                 </li>
                 <li
+                                className="menu-link"
+                >
+                                <Link
+                                                replace={false}
+                                                to="profile"
+                                >
+                                                Profile
+                                </Link>
+                </li>
+                <li
+                                className="menu-link"
                                 onClick={[Function]}
                 >
-                                <a
-                                                href="#"
-                                />
                                 Sign Out
                 </li>
 </ul>,
@@ -239,36 +221,30 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li>
-                    <a
-                                        href="#"
-                    />
-                    Notifications
-</li>,
-                  <Link
-                    replace={false}
-                    to="profile"
+                  <li
+                    className="menu-link"
 >
-                    Profile
-</Link>,
-                  <li>
-                    <a
-                                        href="#"
-                    />
-                    Top Tech Talks
-</li>,
-                  <li>
-                    <a
-                                        href="#"
-                    />
-                    New Article
+                    <Link
+                                        replace={false}
+                                        to="/"
+                    >
+                                        Home
+                    </Link>
 </li>,
                   <li
+                    className="menu-link"
+>
+                    <Link
+                                        replace={false}
+                                        to="profile"
+                    >
+                                        Profile
+                    </Link>
+</li>,
+                  <li
+                    className="menu-link"
                     onClick={[Function]}
 >
-                    <a
-                                        href="#"
-                    />
                     Sign Out
 </li>,
                 ],
@@ -280,70 +256,28 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "Notifications",
-                    ],
+                    "children": <Link
+                      replace={false}
+                      to="/"
+>
+                      Home
+</Link>,
+                    "className": "menu-link",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Home",
+                      "replace": false,
+                      "to": "/",
                     },
-                    "Notifications",
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Profile",
-                    "replace": false,
-                    "to": "profile",
+                    "ref": null,
+                    "rendered": "Home",
+                    "type": [Function],
                   },
-                  "ref": null,
-                  "rendered": "Profile",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "Top Tech Talks",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
-                    },
-                    "Top Tech Talks",
-                  ],
                   "type": "li",
                 },
                 Object {
@@ -351,28 +285,28 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "New Article",
-                    ],
+                    "children": <Link
+                      replace={false}
+                      to="profile"
+>
+                      Profile
+</Link>,
+                    "className": "menu-link",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Profile",
+                      "replace": false,
+                      "to": "profile",
                     },
-                    "New Article",
-                  ],
+                    "ref": null,
+                    "rendered": "Profile",
+                    "type": [Function],
+                  },
                   "type": "li",
                 },
                 Object {
@@ -380,29 +314,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "Sign Out",
-                    ],
+                    "children": "Sign Out",
+                    "className": "menu-link",
                     "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
-                    },
-                    "Sign Out",
-                  ],
+                  "rendered": "Sign Out",
                   "type": "li",
                 },
               ],
@@ -445,36 +362,30 @@ ShallowWrapper {
                         className="menu-content"
             >
                         <ul>
-                                    <li>
-                                                <a
-                                                            href="#"
-                                                />
-                                                Notifications
-                                    </li>
-                                    <Link
-                                                replace={false}
-                                                to="profile"
+                                    <li
+                                                className="menu-link"
                                     >
-                                                Profile
-                                    </Link>
-                                    <li>
-                                                <a
-                                                            href="#"
-                                                />
-                                                Top Tech Talks
-                                    </li>
-                                    <li>
-                                                <a
-                                                            href="#"
-                                                />
-                                                New Article
+                                                <Link
+                                                            replace={false}
+                                                            to="/"
+                                                >
+                                                            Home
+                                                </Link>
                                     </li>
                                     <li
+                                                className="menu-link"
+                                    >
+                                                <Link
+                                                            replace={false}
+                                                            to="profile"
+                                                >
+                                                            Profile
+                                                </Link>
+                                    </li>
+                                    <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                     >
-                                                <a
-                                                            href="#"
-                                                />
                                                 Sign Out
                                     </li>
                         </ul>
@@ -525,36 +436,30 @@ ShallowWrapper {
                 className="menu-content"
 >
                 <ul>
-                                <li>
-                                                <a
-                                                                href="#"
-                                                />
-                                                Notifications
-                                </li>
-                                <Link
-                                                replace={false}
-                                                to="profile"
+                                <li
+                                                className="menu-link"
                                 >
-                                                Profile
-                                </Link>
-                                <li>
-                                                <a
-                                                                href="#"
-                                                />
-                                                Top Tech Talks
-                                </li>
-                                <li>
-                                                <a
-                                                                href="#"
-                                                />
-                                                New Article
+                                                <Link
+                                                                replace={false}
+                                                                to="/"
+                                                >
+                                                                Home
+                                                </Link>
                                 </li>
                                 <li
+                                                className="menu-link"
+                                >
+                                                <Link
+                                                                replace={false}
+                                                                to="profile"
+                                                >
+                                                                Profile
+                                                </Link>
+                                </li>
+                                <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                 >
-                                                <a
-                                                                href="#"
-                                                />
                                                 Sign Out
                                 </li>
                 </ul>
@@ -593,36 +498,30 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <ul>
-                  <li>
-                                    <a
-                                                      href="#"
-                                    />
-                                    Notifications
-                  </li>
-                  <Link
-                                    replace={false}
-                                    to="profile"
+                  <li
+                                    className="menu-link"
                   >
-                                    Profile
-                  </Link>
-                  <li>
-                                    <a
-                                                      href="#"
-                                    />
-                                    Top Tech Talks
-                  </li>
-                  <li>
-                                    <a
-                                                      href="#"
-                                    />
-                                    New Article
+                                    <Link
+                                                      replace={false}
+                                                      to="/"
+                                    >
+                                                      Home
+                                    </Link>
                   </li>
                   <li
+                                    className="menu-link"
+                  >
+                                    <Link
+                                                      replace={false}
+                                                      to="profile"
+                                    >
+                                                      Profile
+                                    </Link>
+                  </li>
+                  <li
+                                    className="menu-link"
                                     onClick={[Function]}
                   >
-                                    <a
-                                                      href="#"
-                                    />
                                     Sign Out
                   </li>
 </ul>,
@@ -635,36 +534,30 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <li>
-                      <a
-                                            href="#"
-                      />
-                      Notifications
-</li>,
-                    <Link
-                      replace={false}
-                      to="profile"
+                    <li
+                      className="menu-link"
 >
-                      Profile
-</Link>,
-                    <li>
-                      <a
-                                            href="#"
-                      />
-                      Top Tech Talks
-</li>,
-                    <li>
-                      <a
-                                            href="#"
-                      />
-                      New Article
+                      <Link
+                                            replace={false}
+                                            to="/"
+                      >
+                                            Home
+                      </Link>
 </li>,
                     <li
+                      className="menu-link"
+>
+                      <Link
+                                            replace={false}
+                                            to="profile"
+                      >
+                                            Profile
+                      </Link>
+</li>,
+                    <li
+                      className="menu-link"
                       onClick={[Function]}
 >
-                      <a
-                                            href="#"
-                      />
                       Sign Out
 </li>,
                   ],
@@ -676,70 +569,28 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "Notifications",
-                      ],
+                      "children": <Link
+                        replace={false}
+                        to="/"
+>
+                        Home
+</Link>,
+                      "className": "menu-link",
                     },
                     "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Home",
+                        "replace": false,
+                        "to": "/",
                       },
-                      "Notifications",
-                    ],
-                    "type": "li",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Profile",
-                      "replace": false,
-                      "to": "profile",
+                      "ref": null,
+                      "rendered": "Home",
+                      "type": [Function],
                     },
-                    "ref": null,
-                    "rendered": "Profile",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "Top Tech Talks",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
-                      },
-                      "Top Tech Talks",
-                    ],
                     "type": "li",
                   },
                   Object {
@@ -747,28 +598,28 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "New Article",
-                      ],
+                      "children": <Link
+                        replace={false}
+                        to="profile"
+>
+                        Profile
+</Link>,
+                      "className": "menu-link",
                     },
                     "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Profile",
+                        "replace": false,
+                        "to": "profile",
                       },
-                      "New Article",
-                    ],
+                      "ref": null,
+                      "rendered": "Profile",
+                      "type": [Function],
+                    },
                     "type": "li",
                   },
                   Object {
@@ -776,29 +627,12 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "Sign Out",
-                      ],
+                      "children": "Sign Out",
+                      "className": "menu-link",
                       "onClick": [Function],
                     },
                     "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
-                      },
-                      "Sign Out",
-                    ],
+                    "rendered": "Sign Out",
                     "type": "li",
                   },
                 ],
@@ -876,36 +710,30 @@ ShallowWrapper {
                     className="menu-content"
           >
                     <ul>
-                              <li>
-                                        <a
-                                                  href="#"
-                                        />
-                                        Notifications
-                              </li>
-                              <Link
-                                        replace={false}
-                                        to="profile"
+                              <li
+                                        className="menu-link"
                               >
-                                        Profile
-                              </Link>
-                              <li>
-                                        <a
-                                                  href="#"
-                                        />
-                                        Top Tech Talks
-                              </li>
-                              <li>
-                                        <a
-                                                  href="#"
-                                        />
-                                        New Article
+                                        <Link
+                                                  replace={false}
+                                                  to="/"
+                                        >
+                                                  Home
+                                        </Link>
                               </li>
                               <li
+                                        className="menu-link"
+                              >
+                                        <Link
+                                                  replace={false}
+                                                  to="profile"
+                                        >
+                                                  Profile
+                                        </Link>
+                              </li>
+                              <li
+                                        className="menu-link"
                                         onClick={[Function]}
                               >
-                                        <a
-                                                  href="#"
-                                        />
                                         Sign Up / Sign In
                               </li>
                     </ul>
@@ -956,36 +784,30 @@ ShallowWrapper {
               className="menu-content"
 >
               <ul>
-                            <li>
-                                          <a
-                                                        href="#"
-                                          />
-                                          Notifications
-                            </li>
-                            <Link
-                                          replace={false}
-                                          to="profile"
+                            <li
+                                          className="menu-link"
                             >
-                                          Profile
-                            </Link>
-                            <li>
-                                          <a
-                                                        href="#"
-                                          />
-                                          Top Tech Talks
-                            </li>
-                            <li>
-                                          <a
-                                                        href="#"
-                                          />
-                                          New Article
+                                          <Link
+                                                        replace={false}
+                                                        to="/"
+                                          >
+                                                        Home
+                                          </Link>
                             </li>
                             <li
+                                          className="menu-link"
+                            >
+                                          <Link
+                                                        replace={false}
+                                                        to="profile"
+                                          >
+                                                        Profile
+                                          </Link>
+                            </li>
+                            <li
+                                          className="menu-link"
                                           onClick={[Function]}
                             >
-                                          <a
-                                                        href="#"
-                                          />
                                           Sign Up / Sign In
                             </li>
               </ul>
@@ -1024,36 +846,30 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <ul>
-                <li>
-                                <a
-                                                href="#"
-                                />
-                                Notifications
-                </li>
-                <Link
-                                replace={false}
-                                to="profile"
+                <li
+                                className="menu-link"
                 >
-                                Profile
-                </Link>
-                <li>
-                                <a
-                                                href="#"
-                                />
-                                Top Tech Talks
-                </li>
-                <li>
-                                <a
-                                                href="#"
-                                />
-                                New Article
+                                <Link
+                                                replace={false}
+                                                to="/"
+                                >
+                                                Home
+                                </Link>
                 </li>
                 <li
+                                className="menu-link"
+                >
+                                <Link
+                                                replace={false}
+                                                to="profile"
+                                >
+                                                Profile
+                                </Link>
+                </li>
+                <li
+                                className="menu-link"
                                 onClick={[Function]}
                 >
-                                <a
-                                                href="#"
-                                />
                                 Sign Up / Sign In
                 </li>
 </ul>,
@@ -1066,36 +882,30 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <li>
-                    <a
-                                        href="#"
-                    />
-                    Notifications
-</li>,
-                  <Link
-                    replace={false}
-                    to="profile"
+                  <li
+                    className="menu-link"
 >
-                    Profile
-</Link>,
-                  <li>
-                    <a
-                                        href="#"
-                    />
-                    Top Tech Talks
-</li>,
-                  <li>
-                    <a
-                                        href="#"
-                    />
-                    New Article
+                    <Link
+                                        replace={false}
+                                        to="/"
+                    >
+                                        Home
+                    </Link>
 </li>,
                   <li
+                    className="menu-link"
+>
+                    <Link
+                                        replace={false}
+                                        to="profile"
+                    >
+                                        Profile
+                    </Link>
+</li>,
+                  <li
+                    className="menu-link"
                     onClick={[Function]}
 >
-                    <a
-                                        href="#"
-                    />
                     Sign Up / Sign In
 </li>,
                 ],
@@ -1107,70 +917,28 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "Notifications",
-                    ],
+                    "children": <Link
+                      replace={false}
+                      to="/"
+>
+                      Home
+</Link>,
+                    "className": "menu-link",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Home",
+                      "replace": false,
+                      "to": "/",
                     },
-                    "Notifications",
-                  ],
-                  "type": "li",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Profile",
-                    "replace": false,
-                    "to": "profile",
+                    "ref": null,
+                    "rendered": "Home",
+                    "type": [Function],
                   },
-                  "ref": null,
-                  "rendered": "Profile",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "Top Tech Talks",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
-                    },
-                    "Top Tech Talks",
-                  ],
                   "type": "li",
                 },
                 Object {
@@ -1178,28 +946,28 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "New Article",
-                    ],
+                    "children": <Link
+                      replace={false}
+                      to="profile"
+>
+                      Profile
+</Link>,
+                    "className": "menu-link",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Profile",
+                      "replace": false,
+                      "to": "profile",
                     },
-                    "New Article",
-                  ],
+                    "ref": null,
+                    "rendered": "Profile",
+                    "type": [Function],
+                  },
                   "type": "li",
                 },
                 Object {
@@ -1207,29 +975,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <a
-                        href="#"
-/>,
-                      "Sign Up / Sign In",
-                    ],
+                    "children": "Sign Up / Sign In",
+                    "className": "menu-link",
                     "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "href": "#",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "a",
-                    },
-                    "Sign Up / Sign In",
-                  ],
+                  "rendered": "Sign Up / Sign In",
                   "type": "li",
                 },
               ],
@@ -1272,36 +1023,30 @@ ShallowWrapper {
                         className="menu-content"
             >
                         <ul>
-                                    <li>
-                                                <a
-                                                            href="#"
-                                                />
-                                                Notifications
-                                    </li>
-                                    <Link
-                                                replace={false}
-                                                to="profile"
+                                    <li
+                                                className="menu-link"
                                     >
-                                                Profile
-                                    </Link>
-                                    <li>
-                                                <a
-                                                            href="#"
-                                                />
-                                                Top Tech Talks
-                                    </li>
-                                    <li>
-                                                <a
-                                                            href="#"
-                                                />
-                                                New Article
+                                                <Link
+                                                            replace={false}
+                                                            to="/"
+                                                >
+                                                            Home
+                                                </Link>
                                     </li>
                                     <li
+                                                className="menu-link"
+                                    >
+                                                <Link
+                                                            replace={false}
+                                                            to="profile"
+                                                >
+                                                            Profile
+                                                </Link>
+                                    </li>
+                                    <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                     >
-                                                <a
-                                                            href="#"
-                                                />
                                                 Sign Up / Sign In
                                     </li>
                         </ul>
@@ -1352,36 +1097,30 @@ ShallowWrapper {
                 className="menu-content"
 >
                 <ul>
-                                <li>
-                                                <a
-                                                                href="#"
-                                                />
-                                                Notifications
-                                </li>
-                                <Link
-                                                replace={false}
-                                                to="profile"
+                                <li
+                                                className="menu-link"
                                 >
-                                                Profile
-                                </Link>
-                                <li>
-                                                <a
-                                                                href="#"
-                                                />
-                                                Top Tech Talks
-                                </li>
-                                <li>
-                                                <a
-                                                                href="#"
-                                                />
-                                                New Article
+                                                <Link
+                                                                replace={false}
+                                                                to="/"
+                                                >
+                                                                Home
+                                                </Link>
                                 </li>
                                 <li
+                                                className="menu-link"
+                                >
+                                                <Link
+                                                                replace={false}
+                                                                to="profile"
+                                                >
+                                                                Profile
+                                                </Link>
+                                </li>
+                                <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                 >
-                                                <a
-                                                                href="#"
-                                                />
                                                 Sign Up / Sign In
                                 </li>
                 </ul>
@@ -1420,36 +1159,30 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <ul>
-                  <li>
-                                    <a
-                                                      href="#"
-                                    />
-                                    Notifications
-                  </li>
-                  <Link
-                                    replace={false}
-                                    to="profile"
+                  <li
+                                    className="menu-link"
                   >
-                                    Profile
-                  </Link>
-                  <li>
-                                    <a
-                                                      href="#"
-                                    />
-                                    Top Tech Talks
-                  </li>
-                  <li>
-                                    <a
-                                                      href="#"
-                                    />
-                                    New Article
+                                    <Link
+                                                      replace={false}
+                                                      to="/"
+                                    >
+                                                      Home
+                                    </Link>
                   </li>
                   <li
+                                    className="menu-link"
+                  >
+                                    <Link
+                                                      replace={false}
+                                                      to="profile"
+                                    >
+                                                      Profile
+                                    </Link>
+                  </li>
+                  <li
+                                    className="menu-link"
                                     onClick={[Function]}
                   >
-                                    <a
-                                                      href="#"
-                                    />
                                     Sign Up / Sign In
                   </li>
 </ul>,
@@ -1462,36 +1195,30 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <li>
-                      <a
-                                            href="#"
-                      />
-                      Notifications
-</li>,
-                    <Link
-                      replace={false}
-                      to="profile"
+                    <li
+                      className="menu-link"
 >
-                      Profile
-</Link>,
-                    <li>
-                      <a
-                                            href="#"
-                      />
-                      Top Tech Talks
-</li>,
-                    <li>
-                      <a
-                                            href="#"
-                      />
-                      New Article
+                      <Link
+                                            replace={false}
+                                            to="/"
+                      >
+                                            Home
+                      </Link>
 </li>,
                     <li
+                      className="menu-link"
+>
+                      <Link
+                                            replace={false}
+                                            to="profile"
+                      >
+                                            Profile
+                      </Link>
+</li>,
+                    <li
+                      className="menu-link"
                       onClick={[Function]}
 >
-                      <a
-                                            href="#"
-                      />
                       Sign Up / Sign In
 </li>,
                   ],
@@ -1503,70 +1230,28 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "Notifications",
-                      ],
+                      "children": <Link
+                        replace={false}
+                        to="/"
+>
+                        Home
+</Link>,
+                      "className": "menu-link",
                     },
                     "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Home",
+                        "replace": false,
+                        "to": "/",
                       },
-                      "Notifications",
-                    ],
-                    "type": "li",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Profile",
-                      "replace": false,
-                      "to": "profile",
+                      "ref": null,
+                      "rendered": "Home",
+                      "type": [Function],
                     },
-                    "ref": null,
-                    "rendered": "Profile",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "Top Tech Talks",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
-                      },
-                      "Top Tech Talks",
-                    ],
                     "type": "li",
                   },
                   Object {
@@ -1574,28 +1259,28 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "New Article",
-                      ],
+                      "children": <Link
+                        replace={false}
+                        to="profile"
+>
+                        Profile
+</Link>,
+                      "className": "menu-link",
                     },
                     "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Profile",
+                        "replace": false,
+                        "to": "profile",
                       },
-                      "New Article",
-                    ],
+                      "ref": null,
+                      "rendered": "Profile",
+                      "type": [Function],
+                    },
                     "type": "li",
                   },
                   Object {
@@ -1603,29 +1288,12 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": Array [
-                        <a
-                          href="#"
-/>,
-                        "Sign Up / Sign In",
-                      ],
+                      "children": "Sign Up / Sign In",
+                      "className": "menu-link",
                       "onClick": [Function],
                     },
                     "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "href": "#",
-                        },
-                        "ref": null,
-                        "rendered": null,
-                        "type": "a",
-                      },
-                      "Sign Up / Sign In",
-                    ],
+                    "rendered": "Sign Up / Sign In",
                     "type": "li",
                   },
                 ],
