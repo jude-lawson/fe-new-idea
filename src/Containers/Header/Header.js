@@ -48,8 +48,8 @@ export class Header extends Component {
                 <Link to="profile">Profile</Link>
               </li>
               {!authenticated ?
-                <li className="menu-link" onClick={() => firebaseLogin()}>Sign Up / Sign In</li> :
-                <li className="menu-link" onClick={() => firebaseLogout()}>Sign Out</li>
+                <li className="menu-link" onClick={() => firebaseLogin()}><a>Sign Up / Sign In</a></li> :
+                <li className="menu-link" onClick={() => firebaseLogout()}><a>Sign Out</a></li>
               }
             </ul>
           </div>

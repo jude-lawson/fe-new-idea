@@ -73,7 +73,9 @@ ShallowWrapper {
                                         className="menu-link"
                                         onClick={[Function]}
                               >
-                                        Sign Out
+                                        <a>
+                                                  Sign Out
+                                        </a>
                               </li>
                     </ul>
           </div>
@@ -147,7 +149,9 @@ ShallowWrapper {
                                           className="menu-link"
                                           onClick={[Function]}
                             >
-                                          Sign Out
+                                          <a>
+                                                        Sign Out
+                                          </a>
                             </li>
               </ul>
 </div>,
@@ -209,7 +213,9 @@ ShallowWrapper {
                                 className="menu-link"
                                 onClick={[Function]}
                 >
-                                Sign Out
+                                <a>
+                                                Sign Out
+                                </a>
                 </li>
 </ul>,
               "className": "menu-content",
@@ -245,7 +251,9 @@ ShallowWrapper {
                     className="menu-link"
                     onClick={[Function]}
 >
-                    Sign Out
+                    <a>
+                                        Sign Out
+                    </a>
 </li>,
                 ],
               },
@@ -314,12 +322,24 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Sign Out",
+                    "children": <a>
+                      Sign Out
+</a>,
                     "className": "menu-link",
                     "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": "Sign Out",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign Out",
+                    },
+                    "ref": null,
+                    "rendered": "Sign Out",
+                    "type": "a",
+                  },
                   "type": "li",
                 },
               ],
@@ -386,7 +406,9 @@ ShallowWrapper {
                                                 className="menu-link"
                                                 onClick={[Function]}
                                     >
-                                                Sign Out
+                                                <a>
+                                                            Sign Out
+                                                </a>
                                     </li>
                         </ul>
             </div>
@@ -460,7 +482,9 @@ ShallowWrapper {
                                                 className="menu-link"
                                                 onClick={[Function]}
                                 >
-                                                Sign Out
+                                                <a>
+                                                                Sign Out
+                                                </a>
                                 </li>
                 </ul>
 </div>,
@@ -522,7 +546,9 @@ ShallowWrapper {
                                     className="menu-link"
                                     onClick={[Function]}
                   >
-                                    Sign Out
+                                    <a>
+                                                      Sign Out
+                                    </a>
                   </li>
 </ul>,
                 "className": "menu-content",
@@ -558,7 +584,9 @@ ShallowWrapper {
                       className="menu-link"
                       onClick={[Function]}
 >
-                      Sign Out
+                      <a>
+                                            Sign Out
+                      </a>
 </li>,
                   ],
                 },
@@ -627,12 +655,24 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Sign Out",
+                      "children": <a>
+                        Sign Out
+</a>,
                       "className": "menu-link",
                       "onClick": [Function],
                     },
                     "ref": null,
-                    "rendered": "Sign Out",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sign Out",
+                      },
+                      "ref": null,
+                      "rendered": "Sign Out",
+                      "type": "a",
+                    },
                     "type": "li",
                   },
                 ],
@@ -734,7 +774,9 @@ ShallowWrapper {
                                         className="menu-link"
                                         onClick={[Function]}
                               >
-                                        Sign Up / Sign In
+                                        <a>
+                                                  Sign Up / Sign In
+                                        </a>
                               </li>
                     </ul>
           </div>
@@ -808,7 +850,9 @@ ShallowWrapper {
                                           className="menu-link"
                                           onClick={[Function]}
                             >
-                                          Sign Up / Sign In
+                                          <a>
+                                                        Sign Up / Sign In
+                                          </a>
                             </li>
               </ul>
 </div>,
@@ -870,7 +914,9 @@ ShallowWrapper {
                                 className="menu-link"
                                 onClick={[Function]}
                 >
-                                Sign Up / Sign In
+                                <a>
+                                                Sign Up / Sign In
+                                </a>
                 </li>
 </ul>,
               "className": "menu-content",
@@ -906,7 +952,9 @@ ShallowWrapper {
                     className="menu-link"
                     onClick={[Function]}
 >
-                    Sign Up / Sign In
+                    <a>
+                                        Sign Up / Sign In
+                    </a>
 </li>,
                 ],
               },
@@ -975,12 +1023,24 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Sign Up / Sign In",
+                    "children": <a>
+                      Sign Up / Sign In
+</a>,
                     "className": "menu-link",
                     "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": "Sign Up / Sign In",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign Up / Sign In",
+                    },
+                    "ref": null,
+                    "rendered": "Sign Up / Sign In",
+                    "type": "a",
+                  },
                   "type": "li",
                 },
               ],
@@ -1047,7 +1107,9 @@ ShallowWrapper {
                                                 className="menu-link"
                                                 onClick={[Function]}
                                     >
-                                                Sign Up / Sign In
+                                                <a>
+                                                            Sign Up / Sign In
+                                                </a>
                                     </li>
                         </ul>
             </div>
@@ -1121,7 +1183,9 @@ ShallowWrapper {
                                                 className="menu-link"
                                                 onClick={[Function]}
                                 >
-                                                Sign Up / Sign In
+                                                <a>
+                                                                Sign Up / Sign In
+                                                </a>
                                 </li>
                 </ul>
 </div>,
@@ -1183,7 +1247,9 @@ ShallowWrapper {
                                     className="menu-link"
                                     onClick={[Function]}
                   >
-                                    Sign Up / Sign In
+                                    <a>
+                                                      Sign Up / Sign In
+                                    </a>
                   </li>
 </ul>,
                 "className": "menu-content",
@@ -1219,7 +1285,9 @@ ShallowWrapper {
                       className="menu-link"
                       onClick={[Function]}
 >
-                      Sign Up / Sign In
+                      <a>
+                                            Sign Up / Sign In
+                      </a>
 </li>,
                   ],
                 },
@@ -1288,12 +1356,24 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Sign Up / Sign In",
+                      "children": <a>
+                        Sign Up / Sign In
+</a>,
                       "className": "menu-link",
                       "onClick": [Function],
                     },
                     "ref": null,
-                    "rendered": "Sign Up / Sign In",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sign Up / Sign In",
+                      },
+                      "ref": null,
+                      "rendered": "Sign Up / Sign In",
+                      "type": "a",
+                    },
                     "type": "li",
                   },
                 ],

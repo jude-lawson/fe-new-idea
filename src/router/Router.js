@@ -8,14 +8,19 @@ import App from '../Components/App/App';
 import Profile from '../Containers/Profile/Profile';
 import { PrivateRoute } from './PrivateRoute';
 
+import ChatWidget from '../Containers/ChatWidget/ChatWidget';
 export const history = createHistory();
+
 
 export const AppRouter = ({ authenticated }) => (
   <Router history={history}>
-    <Switch>
-      <Route path="/" exact component={App}/>
-      <PrivateRoute authenticated={authenticated} path="/profile" exact  component={Profile} />
-    </Switch>
+    <div>
+      <Switch>
+        <Route path="/" exact component={App}/>
+        <PrivateRoute authenticated={authenticated} path="/profile" exact  component={Profile} />
+      </Switch>
+      <ChatWidget />
+    </div>
   </Router>
 );
 
