@@ -3,6 +3,7 @@ import  {connect } from 'react-redux';
 import { addIdea } from '../../actions/idea';
 import PropTypes from 'prop-types';
 import { postIdea } from '../../api-calls/api-calls';
+import Header from '../../Containers/Header/Header';
 
 import './IdeaForm.css';
 
@@ -33,27 +34,30 @@ export class IdeaForm extends Component {
   render() {
     const { title, body } = this.state;
     return (
-      <form 
-        onSubmit={this.handleSubmit}
-        className="idea-form">
-        <h1 className="idea--form-title">Create A New Idea</h1>
-        <input 
-          type="text"
-          className="idea--title-input"
-          placeholder="title"
-          onChange={this.handleChange}
-          name="title"
-          value={title}
-        />
-        <textarea
-          className="idea--body-input"
-          placeholder="Description"
-          name="body"
-          onChange={this.handleChange}
-          value={body}
-        />
-        <button className="idea--form-btn">SUBMIT</button>
-      </form>
+      <div>
+        <Header />
+        <form 
+          onSubmit={this.handleSubmit}
+          className="idea-form">
+          <h1 className="idea--form-title">Create A New Idea</h1>
+          <input 
+            type="text"
+            className="idea--title-input"
+            placeholder="title"
+            onChange={this.handleChange}
+            name="title"
+            value={title}
+          />
+          <textarea
+            className="idea--body-input"
+            placeholder="Description"
+            name="body"
+            onChange={this.handleChange}
+            value={body}
+          />
+          <button className="idea--form-btn">SUBMIT</button>
+        </form>
+      </div>
     );
   }
 }

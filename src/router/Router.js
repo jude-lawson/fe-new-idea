@@ -7,6 +7,7 @@ import createHistory from 'history/createBrowserHistory';
 import App from '../Components/App/App';
 import Profile from '../Containers/Profile/Profile';
 import { PrivateRoute } from './PrivateRoute';
+import IdeaForm from '../Components/IdeaForm/IdeaForm';
 
 export const history = createHistory();
 
@@ -14,6 +15,7 @@ export const AppRouter = ({ authenticated }) => (
   <Router history={history}>
     <Switch>
       <Route path="/" exact component={App}/>
+      <PrivateRoute authenticated={authenticated} path="/ideaform" exact component={IdeaForm} />
       <PrivateRoute authenticated={authenticated} path="/profile" exact  component={Profile} />
     </Switch>
   </Router>

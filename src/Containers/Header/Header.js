@@ -25,7 +25,7 @@ export class Header extends Component {
       .then(res => res.json())
       .then(user => localStorage.setItem('user', JSON.stringify(user)));
   }
-
+  
   render() {
     const { authenticated, firebaseLogin, firebaseLogout } = this.props;
     if (authenticated) {
@@ -46,6 +46,9 @@ export class Header extends Component {
               </li>
               <li className="menu-link">
                 <Link to="profile">Profile</Link>
+              </li>
+              <li className="menu-link">           
+                <Link to="ideaform">New Article</Link>
               </li>
               {!authenticated ?
                 <li className="menu-link" onClick={() => firebaseLogin()}>Sign Up / Sign In</li> :
