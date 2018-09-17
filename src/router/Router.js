@@ -8,18 +8,18 @@ import App from '../Components/App/App';
 import Profile from '../Containers/Profile/Profile';
 import { PrivateRoute } from './PrivateRoute';
 import IdeaForm from '../Components/IdeaForm/IdeaForm';
-import { IdeaCard } from '../Containers/IdeaCard/IdeaCard';
+
 
 export const history = createHistory();
 
-export const AppRouter = ({ authenticated, props }) => (
+export const AppRouter = ({ authenticated, allIdeas }) => (
   <Router history={history}>
     <Switch>
       <Route path="/" exact component={App}/>
       <Route path="/idea/:id" exact render={({ match }) => {
-        const idea = props.ideas.find(idea => idea.id === match.params.id);
+        const idea = allIdeas.find(idea => idea.id === Number(match.params.id));
         return (
-          <IdeaCard {...idea}/>
+          'Render an Idea Here'
         );
       }} />
       <PrivateRoute authenticated={authenticated} path="/ideaform" exact component={IdeaForm} />
@@ -29,12 +29,13 @@ export const AppRouter = ({ authenticated, props }) => (
 );
 
 AppRouter.propTypes = {
-  authenticated: PropTypes.string
+  authenticated: PropTypes.string,
+  allIdeas: PropTypes.array
 };
 
-export const mapStateToProps = state => console.log(state) || ({
+export const mapStateToProps = state => ({
   authenticated: state.user.id || true,
-  ideas: state.ideas || []
+  allIdeas: state.allIdeas
 });
 
 export default connect(mapStateToProps)(AppRouter);

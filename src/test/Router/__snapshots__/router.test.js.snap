@@ -322,6 +322,20 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
     authenticated="1111"
+    ideas={
+        Array [
+            Object {
+              "body": "world",
+              "id": 1,
+              "title": "hello",
+            },
+            Object {
+              "body": "one",
+              "id": 2,
+              "title": "another",
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

@@ -4,6 +4,7 @@ import thunk from 'redux-thunk';
 
 import { userReducer } from '../reducers/auth';
 import { ideaReducer } from '../reducers/ideas';
+import { allIdeasReducer } from '../reducers/allIdeas';
 import { commentReducer } from '../reducers/comments';
 
 export default () => {
@@ -11,6 +12,7 @@ export default () => {
     combineReducers({
       user: userReducer,
       ideas: ideaReducer,
+      allIdeas: allIdeasReducer,
       comments: commentReducer
     }),
     composeWithDevTools(applyMiddleware(thunk))
