@@ -18,15 +18,24 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button>
+        <button
+          className="card--rmv-btn"
+>
           REMOVE
 </button>,
-        <h1 />,
-        <p />,
-        <button>
+        <h1
+          className="idea--card-title"
+/>,
+        <p
+          className="idea--card-body"
+/>,
+        <button
+          className="card--comment-btn"
+>
           COMMENT
 </button>,
       ],
+      "className": "idea--card-container",
     },
     "ref": null,
     "rendered": Array [
@@ -36,6 +45,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "REMOVE",
+          "className": "card--rmv-btn",
         },
         "ref": null,
         "rendered": "REMOVE",
@@ -47,6 +57,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
+          "className": "idea--card-title",
         },
         "ref": null,
         "rendered": null,
@@ -58,6 +69,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
+          "className": "idea--card-body",
         },
         "ref": null,
         "rendered": null,
@@ -69,6 +81,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "COMMENT",
+          "className": "card--comment-btn",
         },
         "ref": null,
         "rendered": "COMMENT",
@@ -84,15 +97,24 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button>
+          <button
+            className="card--rmv-btn"
+>
             REMOVE
 </button>,
-          <h1 />,
-          <p />,
-          <button>
+          <h1
+            className="idea--card-title"
+/>,
+          <p
+            className="idea--card-body"
+/>,
+          <button
+            className="card--comment-btn"
+>
             COMMENT
 </button>,
         ],
+        "className": "idea--card-container",
       },
       "ref": null,
       "rendered": Array [
@@ -102,6 +124,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "REMOVE",
+            "className": "card--rmv-btn",
           },
           "ref": null,
           "rendered": "REMOVE",
@@ -113,6 +136,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
+            "className": "idea--card-title",
           },
           "ref": null,
           "rendered": null,
@@ -124,6 +148,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
+            "className": "idea--card-body",
           },
           "ref": null,
           "rendered": null,
@@ -135,6 +160,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "COMMENT",
+            "className": "card--comment-btn",
           },
           "ref": null,
           "rendered": "COMMENT",
