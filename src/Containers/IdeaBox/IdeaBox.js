@@ -22,7 +22,7 @@ export class IdeaBox extends Component {
   render() {
     const { ideas } = this.state;
     return (
-      <section className="app-container">
+      <section className="ideabox-container">
         <IdeaCard ideas={ideas} />
       </section>
     );
