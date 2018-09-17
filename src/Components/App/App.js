@@ -7,10 +7,8 @@ import './App.css';
 export class App extends Component {
   render() {
     return (
-      <div >
+      <div>
         <Header />
-        <main className="app-container">
-        </main>
         <Main />
       </div>
     );

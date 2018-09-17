@@ -1,11 +1,20 @@
-.app-container {
-  padding-top: 5rem;
+.idea--form-container {
+  background-image: linear-gradient(
+    to bottom,
+    #4381c1,
+    #289dc5,
+    #50b4be,
+    #85c7b7,
+    #b8d8ba
+  );
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .idea-form {
   background: var(--primary-red);
   width: 80%;
-  margin: 2rem auto;
+  margin: 10rem auto 4rem;
   border-radius: 20px;
   height: 69rem;
   padding: 2rem 4rem;

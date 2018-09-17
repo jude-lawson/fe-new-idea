@@ -1,5 +1,10 @@
 .header--container {
-  position: relative;
+  position: fixed;
+    height: 8rem;
+    z-index: 2;
+    width: 100vw;
+    float: right;
+    background: var(--primary-blue);
 }
 
 .app--title {
@@ -28,19 +33,19 @@
 
 .collapsible--menu {
   background-color: var(--primary-blue);
+  width: 19vw;
+  float: right;
 }
 
 .collapsible--menu ul {
   list-style-type: none;
-  padding: 0;
+  padding-top: 2rem;
 }
 
 .collapsible--menu a {
   display: block;
   margin-bottom: 1rem;
   padding-top: 1rem;
-  margin-right: 2rem;
-  padding: 1rem;
   text-decoration: none;
 }
 
@@ -104,10 +109,8 @@ input:checked + label {
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   padding: 0 0 0 50px;
-  padding: 60px 16px 12px 50px;
+  padding: 6rem 2rem 2rem;
   text-align: left;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .menu-link a {

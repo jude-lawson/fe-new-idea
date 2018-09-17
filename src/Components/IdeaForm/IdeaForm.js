@@ -34,7 +34,7 @@ export class IdeaForm extends Component {
   render() {
     const { title, body } = this.state;
     return (
-      <div>
+      <div className="idea--form-container">
         <Header />
         <form 
           onSubmit={this.handleSubmit}

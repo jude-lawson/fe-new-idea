@@ -3,18 +3,25 @@ import { IdeaCard } from '../IdeaCard/IdeaCard';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getIdeas } from '../../api-calls/api-calls';
+import Header from '../Header/Header';
 
 export class IdeaBox extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      allIdeas: []
+    };
+  }
 
   async componentDidMount() {
     const allIdeas = await getIdeas();
-    console.log(allIdeas)
+    this.displayIdeas(allIdeas);
+    this.setState({allIdeas});
   }
 
   displayIdeas = () => {
-    if (this.props.ideas) {
-      const displayedIdeas = this.props.ideas.map((idea, index) => {
+    if (this.state.allIdeas) {
+      const displayedIdeas = this.state.allIdeas.map((idea, index) => {
         return <IdeaCard {...idea} key={index} />;
       });
       return displayedIdeas;
@@ -23,9 +30,11 @@ export class IdeaBox extends Component {
 
   render() {
     return (
-      <main>
-        {this.displayIdeas()}
-      </main>
+      <section className="app-container">
+        <main>
+          {this.displayIdeas(this.state.allIdeas)}
+        </main>
+      </section>
     );
   }
 }
