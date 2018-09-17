@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Header from '../../Containers/Header/Header';
-import { Main } from '../../Containers/Main/Main';
+import { IdeaBox } from '../../Containers/IdeaBox/IdeaBox';
 
 import './App.css';
 
 export class App extends Component {
   render() {
     return (
-      <div>
+      <main>
         <Header />
-        <Main />
-      </div>
+        <IdeaBox />
+      </main>
     );
   }
 }

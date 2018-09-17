@@ -27,6 +27,12 @@ ShallowWrapper {
                 authenticated={undefined}
                 component={[Function]}
                 exact={true}
+                path="/ideaform"
+        />
+        <PrivateRoute
+                authenticated={undefined}
+                component={[Function]}
+                exact={true}
                 path="/profile"
         />
 </Switch>,
@@ -65,6 +71,12 @@ ShallowWrapper {
             authenticated={undefined}
             component={[Function]}
             exact={true}
+            path="/ideaform"
+/>,
+          <PrivateRoute
+            authenticated={undefined}
+            component={[Function]}
+            exact={true}
             path="/profile"
 />,
         ],
@@ -79,6 +91,20 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "authenticated": undefined,
+            "component": [Function],
+            "exact": true,
+            "path": "/ideaform",
           },
           "ref": null,
           "rendered": null,
@@ -114,6 +140,12 @@ ShallowWrapper {
                     component={[Function]}
                     exact={true}
                     path="/"
+          />
+          <PrivateRoute
+                    authenticated={undefined}
+                    component={[Function]}
+                    exact={true}
+                    path="/ideaform"
           />
           <PrivateRoute
                     authenticated={undefined}
@@ -157,6 +189,12 @@ ShallowWrapper {
               authenticated={undefined}
               component={[Function]}
               exact={true}
+              path="/ideaform"
+/>,
+            <PrivateRoute
+              authenticated={undefined}
+              component={[Function]}
+              exact={true}
               path="/profile"
 />,
           ],
@@ -171,6 +209,20 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "authenticated": undefined,
+              "component": [Function],
+              "exact": true,
+              "path": "/ideaform",
             },
             "ref": null,
             "rendered": null,
@@ -248,6 +300,12 @@ ShallowWrapper {
                 authenticated="1111"
                 component={[Function]}
                 exact={true}
+                path="/ideaform"
+        />
+        <PrivateRoute
+                authenticated="1111"
+                component={[Function]}
+                exact={true}
                 path="/profile"
         />
 </Switch>,
@@ -286,6 +344,12 @@ ShallowWrapper {
             authenticated="1111"
             component={[Function]}
             exact={true}
+            path="/ideaform"
+/>,
+          <PrivateRoute
+            authenticated="1111"
+            component={[Function]}
+            exact={true}
             path="/profile"
 />,
         ],
@@ -300,6 +364,20 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "authenticated": "1111",
+            "component": [Function],
+            "exact": true,
+            "path": "/ideaform",
           },
           "ref": null,
           "rendered": null,
@@ -335,6 +413,12 @@ ShallowWrapper {
                     component={[Function]}
                     exact={true}
                     path="/"
+          />
+          <PrivateRoute
+                    authenticated="1111"
+                    component={[Function]}
+                    exact={true}
+                    path="/ideaform"
           />
           <PrivateRoute
                     authenticated="1111"
@@ -378,6 +462,12 @@ ShallowWrapper {
               authenticated="1111"
               component={[Function]}
               exact={true}
+              path="/ideaform"
+/>,
+            <PrivateRoute
+              authenticated="1111"
+              component={[Function]}
+              exact={true}
               path="/profile"
 />,
           ],
@@ -392,6 +482,20 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "authenticated": "1111",
+              "component": [Function],
+              "exact": true,
+              "path": "/ideaform",
             },
             "ref": null,
             "rendered": null,

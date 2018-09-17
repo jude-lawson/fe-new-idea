@@ -18,94 +18,148 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1
-          className="idea--form-title"
+        <Connect(Header) />,
+        <form
+          className="idea-form"
+          onSubmit={[Function]}
 >
-          Create A New Idea
-</h1>,
-        <input
-          className="idea--title-input"
-          name="title"
-          onChange={[Function]}
-          placeholder="title"
-          type="text"
-          value=""
-/>,
-        <textarea
-          className="idea--body-input"
-          name="body"
-          onChange={[Function]}
-          placeholder="Description"
-          value=""
-/>,
-        <button
-          className="idea--form-btn"
->
-          SUBMIT
-</button>,
+          <h1
+                    className="idea--form-title"
+          >
+                    Create A New Idea
+          </h1>
+          <input
+                    className="idea--title-input"
+                    name="title"
+                    onChange={[Function]}
+                    placeholder="title"
+                    type="text"
+                    value=""
+          />
+          <textarea
+                    className="idea--body-input"
+                    name="body"
+                    onChange={[Function]}
+                    placeholder="Description"
+                    value=""
+          />
+          <button
+                    className="idea--form-btn"
+          >
+                    SUBMIT
+          </button>
+</form>,
       ],
-      "className": "idea-form",
-      "onSubmit": [Function],
+      "className": "idea--form-container",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Create A New Idea",
-          "className": "idea--form-title",
-        },
-        "ref": null,
-        "rendered": "Create A New Idea",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "idea--title-input",
-          "name": "title",
-          "onChange": [Function],
-          "placeholder": "title",
-          "type": "text",
-          "value": "",
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
-        "type": "input",
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "idea--body-input",
-          "name": "body",
-          "onChange": [Function],
-          "placeholder": "Description",
-          "value": "",
+          "children": Array [
+            <h1
+              className="idea--form-title"
+>
+              Create A New Idea
+</h1>,
+            <input
+              className="idea--title-input"
+              name="title"
+              onChange={[Function]}
+              placeholder="title"
+              type="text"
+              value=""
+/>,
+            <textarea
+              className="idea--body-input"
+              name="body"
+              onChange={[Function]}
+              placeholder="Description"
+              value=""
+/>,
+            <button
+              className="idea--form-btn"
+>
+              SUBMIT
+</button>,
+          ],
+          "className": "idea-form",
+          "onSubmit": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": "textarea",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "SUBMIT",
-          "className": "idea--form-btn",
-        },
-        "ref": null,
-        "rendered": "SUBMIT",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Create A New Idea",
+              "className": "idea--form-title",
+            },
+            "ref": null,
+            "rendered": "Create A New Idea",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "idea--title-input",
+              "name": "title",
+              "onChange": [Function],
+              "placeholder": "title",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "idea--body-input",
+              "name": "body",
+              "onChange": [Function],
+              "placeholder": "Description",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "textarea",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SUBMIT",
+              "className": "idea--form-btn",
+            },
+            "ref": null,
+            "rendered": "SUBMIT",
+            "type": "button",
+          },
+        ],
+        "type": "form",
       },
     ],
-    "type": "form",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -114,94 +168,148 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1
-            className="idea--form-title"
+          <Connect(Header) />,
+          <form
+            className="idea-form"
+            onSubmit={[Function]}
 >
-            Create A New Idea
-</h1>,
-          <input
-            className="idea--title-input"
-            name="title"
-            onChange={[Function]}
-            placeholder="title"
-            type="text"
-            value=""
-/>,
-          <textarea
-            className="idea--body-input"
-            name="body"
-            onChange={[Function]}
-            placeholder="Description"
-            value=""
-/>,
-          <button
-            className="idea--form-btn"
->
-            SUBMIT
-</button>,
+            <h1
+                        className="idea--form-title"
+            >
+                        Create A New Idea
+            </h1>
+            <input
+                        className="idea--title-input"
+                        name="title"
+                        onChange={[Function]}
+                        placeholder="title"
+                        type="text"
+                        value=""
+            />
+            <textarea
+                        className="idea--body-input"
+                        name="body"
+                        onChange={[Function]}
+                        placeholder="Description"
+                        value=""
+            />
+            <button
+                        className="idea--form-btn"
+            >
+                        SUBMIT
+            </button>
+</form>,
         ],
-        "className": "idea-form",
-        "onSubmit": [Function],
+        "className": "idea--form-container",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Create A New Idea",
-            "className": "idea--form-title",
-          },
-          "ref": null,
-          "rendered": "Create A New Idea",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "idea--title-input",
-            "name": "title",
-            "onChange": [Function],
-            "placeholder": "title",
-            "type": "text",
-            "value": "",
-          },
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": "input",
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "idea--body-input",
-            "name": "body",
-            "onChange": [Function],
-            "placeholder": "Description",
-            "value": "",
+            "children": Array [
+              <h1
+                className="idea--form-title"
+>
+                Create A New Idea
+</h1>,
+              <input
+                className="idea--title-input"
+                name="title"
+                onChange={[Function]}
+                placeholder="title"
+                type="text"
+                value=""
+/>,
+              <textarea
+                className="idea--body-input"
+                name="body"
+                onChange={[Function]}
+                placeholder="Description"
+                value=""
+/>,
+              <button
+                className="idea--form-btn"
+>
+                SUBMIT
+</button>,
+            ],
+            "className": "idea-form",
+            "onSubmit": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": "textarea",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "SUBMIT",
-            "className": "idea--form-btn",
-          },
-          "ref": null,
-          "rendered": "SUBMIT",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Create A New Idea",
+                "className": "idea--form-title",
+              },
+              "ref": null,
+              "rendered": "Create A New Idea",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "idea--title-input",
+                "name": "title",
+                "onChange": [Function],
+                "placeholder": "title",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "idea--body-input",
+                "name": "body",
+                "onChange": [Function],
+                "placeholder": "Description",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "textarea",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SUBMIT",
+                "className": "idea--form-btn",
+              },
+              "ref": null,
+              "rendered": "SUBMIT",
+              "type": "button",
+            },
+          ],
+          "type": "form",
         },
       ],
-      "type": "form",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -71,9 +71,21 @@ ShallowWrapper {
                               </li>
                               <li
                                         className="menu-link"
+                              >
+                                        <Link
+                                                  replace={false}
+                                                  to="ideaform"
+                                        >
+                                                  New Article
+                                        </Link>
+                              </li>
+                              <li
+                                        className="menu-link"
                                         onClick={[Function]}
                               >
-                                        Sign Out
+                                        <a>
+                                                  Sign Out
+                                        </a>
                               </li>
                     </ul>
           </div>
@@ -145,9 +157,21 @@ ShallowWrapper {
                             </li>
                             <li
                                           className="menu-link"
+                            >
+                                          <Link
+                                                        replace={false}
+                                                        to="ideaform"
+                                          >
+                                                        New Article
+                                          </Link>
+                            </li>
+                            <li
+                                          className="menu-link"
                                           onClick={[Function]}
                             >
-                                          Sign Out
+                                          <a>
+                                                        Sign Out
+                                          </a>
                             </li>
               </ul>
 </div>,
@@ -207,9 +231,21 @@ ShallowWrapper {
                 </li>
                 <li
                                 className="menu-link"
+                >
+                                <Link
+                                                replace={false}
+                                                to="ideaform"
+                                >
+                                                New Article
+                                </Link>
+                </li>
+                <li
+                                className="menu-link"
                                 onClick={[Function]}
                 >
-                                Sign Out
+                                <a>
+                                                Sign Out
+                                </a>
                 </li>
 </ul>,
               "className": "menu-content",
@@ -243,9 +279,21 @@ ShallowWrapper {
 </li>,
                   <li
                     className="menu-link"
+>
+                    <Link
+                                        replace={false}
+                                        to="ideaform"
+                    >
+                                        New Article
+                    </Link>
+</li>,
+                  <li
+                    className="menu-link"
                     onClick={[Function]}
 >
-                    Sign Out
+                    <a>
+                                        Sign Out
+                    </a>
 </li>,
                 ],
               },
@@ -314,12 +362,53 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Sign Out",
+                    "children": <Link
+                      replace={false}
+                      to="ideaform"
+>
+                      New Article
+</Link>,
+                    "className": "menu-link",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "New Article",
+                      "replace": false,
+                      "to": "ideaform",
+                    },
+                    "ref": null,
+                    "rendered": "New Article",
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a>
+                      Sign Out
+</a>,
                     "className": "menu-link",
                     "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": "Sign Out",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign Out",
+                    },
+                    "ref": null,
+                    "rendered": "Sign Out",
+                    "type": "a",
+                  },
                   "type": "li",
                 },
               ],
@@ -384,9 +473,21 @@ ShallowWrapper {
                                     </li>
                                     <li
                                                 className="menu-link"
+                                    >
+                                                <Link
+                                                            replace={false}
+                                                            to="ideaform"
+                                                >
+                                                            New Article
+                                                </Link>
+                                    </li>
+                                    <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                     >
-                                                Sign Out
+                                                <a>
+                                                            Sign Out
+                                                </a>
                                     </li>
                         </ul>
             </div>
@@ -458,9 +559,21 @@ ShallowWrapper {
                                 </li>
                                 <li
                                                 className="menu-link"
+                                >
+                                                <Link
+                                                                replace={false}
+                                                                to="ideaform"
+                                                >
+                                                                New Article
+                                                </Link>
+                                </li>
+                                <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                 >
-                                                Sign Out
+                                                <a>
+                                                                Sign Out
+                                                </a>
                                 </li>
                 </ul>
 </div>,
@@ -520,9 +633,21 @@ ShallowWrapper {
                   </li>
                   <li
                                     className="menu-link"
+                  >
+                                    <Link
+                                                      replace={false}
+                                                      to="ideaform"
+                                    >
+                                                      New Article
+                                    </Link>
+                  </li>
+                  <li
+                                    className="menu-link"
                                     onClick={[Function]}
                   >
-                                    Sign Out
+                                    <a>
+                                                      Sign Out
+                                    </a>
                   </li>
 </ul>,
                 "className": "menu-content",
@@ -556,9 +681,21 @@ ShallowWrapper {
 </li>,
                     <li
                       className="menu-link"
+>
+                      <Link
+                                            replace={false}
+                                            to="ideaform"
+                      >
+                                            New Article
+                      </Link>
+</li>,
+                    <li
+                      className="menu-link"
                       onClick={[Function]}
 >
-                      Sign Out
+                      <a>
+                                            Sign Out
+                      </a>
 </li>,
                   ],
                 },
@@ -627,12 +764,53 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Sign Out",
+                      "children": <Link
+                        replace={false}
+                        to="ideaform"
+>
+                        New Article
+</Link>,
+                      "className": "menu-link",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "New Article",
+                        "replace": false,
+                        "to": "ideaform",
+                      },
+                      "ref": null,
+                      "rendered": "New Article",
+                      "type": [Function],
+                    },
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <a>
+                        Sign Out
+</a>,
                       "className": "menu-link",
                       "onClick": [Function],
                     },
                     "ref": null,
-                    "rendered": "Sign Out",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sign Out",
+                      },
+                      "ref": null,
+                      "rendered": "Sign Out",
+                      "type": "a",
+                    },
                     "type": "li",
                   },
                 ],
@@ -732,9 +910,21 @@ ShallowWrapper {
                               </li>
                               <li
                                         className="menu-link"
+                              >
+                                        <Link
+                                                  replace={false}
+                                                  to="ideaform"
+                                        >
+                                                  New Article
+                                        </Link>
+                              </li>
+                              <li
+                                        className="menu-link"
                                         onClick={[Function]}
                               >
-                                        Sign Up / Sign In
+                                        <a>
+                                                  Sign Up / Sign In
+                                        </a>
                               </li>
                     </ul>
           </div>
@@ -806,9 +996,21 @@ ShallowWrapper {
                             </li>
                             <li
                                           className="menu-link"
+                            >
+                                          <Link
+                                                        replace={false}
+                                                        to="ideaform"
+                                          >
+                                                        New Article
+                                          </Link>
+                            </li>
+                            <li
+                                          className="menu-link"
                                           onClick={[Function]}
                             >
-                                          Sign Up / Sign In
+                                          <a>
+                                                        Sign Up / Sign In
+                                          </a>
                             </li>
               </ul>
 </div>,
@@ -868,9 +1070,21 @@ ShallowWrapper {
                 </li>
                 <li
                                 className="menu-link"
+                >
+                                <Link
+                                                replace={false}
+                                                to="ideaform"
+                                >
+                                                New Article
+                                </Link>
+                </li>
+                <li
+                                className="menu-link"
                                 onClick={[Function]}
                 >
-                                Sign Up / Sign In
+                                <a>
+                                                Sign Up / Sign In
+                                </a>
                 </li>
 </ul>,
               "className": "menu-content",
@@ -904,9 +1118,21 @@ ShallowWrapper {
 </li>,
                   <li
                     className="menu-link"
+>
+                    <Link
+                                        replace={false}
+                                        to="ideaform"
+                    >
+                                        New Article
+                    </Link>
+</li>,
+                  <li
+                    className="menu-link"
                     onClick={[Function]}
 >
-                    Sign Up / Sign In
+                    <a>
+                                        Sign Up / Sign In
+                    </a>
 </li>,
                 ],
               },
@@ -975,12 +1201,53 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Sign Up / Sign In",
+                    "children": <Link
+                      replace={false}
+                      to="ideaform"
+>
+                      New Article
+</Link>,
+                    "className": "menu-link",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "New Article",
+                      "replace": false,
+                      "to": "ideaform",
+                    },
+                    "ref": null,
+                    "rendered": "New Article",
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <a>
+                      Sign Up / Sign In
+</a>,
                     "className": "menu-link",
                     "onClick": [Function],
                   },
                   "ref": null,
-                  "rendered": "Sign Up / Sign In",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Sign Up / Sign In",
+                    },
+                    "ref": null,
+                    "rendered": "Sign Up / Sign In",
+                    "type": "a",
+                  },
                   "type": "li",
                 },
               ],
@@ -1045,9 +1312,21 @@ ShallowWrapper {
                                     </li>
                                     <li
                                                 className="menu-link"
+                                    >
+                                                <Link
+                                                            replace={false}
+                                                            to="ideaform"
+                                                >
+                                                            New Article
+                                                </Link>
+                                    </li>
+                                    <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                     >
-                                                Sign Up / Sign In
+                                                <a>
+                                                            Sign Up / Sign In
+                                                </a>
                                     </li>
                         </ul>
             </div>
@@ -1119,9 +1398,21 @@ ShallowWrapper {
                                 </li>
                                 <li
                                                 className="menu-link"
+                                >
+                                                <Link
+                                                                replace={false}
+                                                                to="ideaform"
+                                                >
+                                                                New Article
+                                                </Link>
+                                </li>
+                                <li
+                                                className="menu-link"
                                                 onClick={[Function]}
                                 >
-                                                Sign Up / Sign In
+                                                <a>
+                                                                Sign Up / Sign In
+                                                </a>
                                 </li>
                 </ul>
 </div>,
@@ -1181,9 +1472,21 @@ ShallowWrapper {
                   </li>
                   <li
                                     className="menu-link"
+                  >
+                                    <Link
+                                                      replace={false}
+                                                      to="ideaform"
+                                    >
+                                                      New Article
+                                    </Link>
+                  </li>
+                  <li
+                                    className="menu-link"
                                     onClick={[Function]}
                   >
-                                    Sign Up / Sign In
+                                    <a>
+                                                      Sign Up / Sign In
+                                    </a>
                   </li>
 </ul>,
                 "className": "menu-content",
@@ -1217,9 +1520,21 @@ ShallowWrapper {
 </li>,
                     <li
                       className="menu-link"
+>
+                      <Link
+                                            replace={false}
+                                            to="ideaform"
+                      >
+                                            New Article
+                      </Link>
+</li>,
+                    <li
+                      className="menu-link"
                       onClick={[Function]}
 >
-                      Sign Up / Sign In
+                      <a>
+                                            Sign Up / Sign In
+                      </a>
 </li>,
                   ],
                 },
@@ -1288,12 +1603,53 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Sign Up / Sign In",
+                      "children": <Link
+                        replace={false}
+                        to="ideaform"
+>
+                        New Article
+</Link>,
+                      "className": "menu-link",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "New Article",
+                        "replace": false,
+                        "to": "ideaform",
+                      },
+                      "ref": null,
+                      "rendered": "New Article",
+                      "type": [Function],
+                    },
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <a>
+                        Sign Up / Sign In
+</a>,
                       "className": "menu-link",
                       "onClick": [Function],
                     },
                     "ref": null,
-                    "rendered": "Sign Up / Sign In",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Sign Up / Sign In",
+                      },
+                      "ref": null,
+                      "rendered": "Sign Up / Sign In",
+                      "type": "a",
+                    },
                     "type": "li",
                   },
                 ],
