@@ -27,7 +27,7 @@ describe('CommentForm', () => {
         }
       };
       wrapper.instance().handleChange(mockEvent);
-      wrapper.find('textarea').first().simulate('change'); 
+      wrapper.find('textarea').first().simulate('change');
 
       expect(spy).toHaveBeenCalled();
     });
@@ -56,7 +56,22 @@ describe('CommentForm', () => {
       expect(mappedProps).toEqual(expected);
 
     });
-  }); 
+  });
+
+
+  test('should call addComment on Submit', () => {
+    const mockFunc = jest.fn();
+    const wrapper = mount(<CommentForm addComment={mockFunc} />);
+    const mockEvent = {
+      preventDefault: jest.fn()
+    };
+    wrapper.setState({
+     body: 'I heart your tech idea'
+    })
+    wrapper.instance().handleSubmit(mockEvent);
+    expect(mockFunc).toHaveBeenCalled();
+  })
+
 
   describe('mapDispatchToProps', () => {
     it('should call dispatch when using addComent from MDTP', () => {
@@ -64,7 +79,7 @@ describe('CommentForm', () => {
       const actionToDispatch = addComment({body: 'I heart your tech idea', id: 100});
       const mappedToProps = mapDispatchToProps(mockDispatch);
       mappedToProps.addComment({body: 'I heart your tech idea', id: 100});
-      
+
       expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
     });
   });

@@ -5,28 +5,28 @@ import PropTypes from 'prop-types';
 import './CommentForm.css';
 
 export class CommentForm extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       body: ''
     };
   }
-  
-  handleChange = (event) => {
-    const {name, value} = event.target;
+
+  handleChange = event => {
+    const { name, value } = event.target;
     this.setState({
       [name]: value
     });
   }
-  
-  handleSubmit = (event) => {
+
+  handleSubmit = event => {
     event.preventDefault();
     this.props.addComment({...this.state, id: Date.now()});
   }
 
   render() {
     return (
-      <form 
+      <form
         onSubmit={this.handleSubmit}
         className="comment-form"
       >
@@ -47,12 +47,12 @@ CommentForm.propTypes = {
   addComment: PropTypes.func
 };
 
-export const mapStateToProps = (state) => ({
+export const mapStateToProps = state => ({
   comments: state.comments
 });
 
-export const mapDispatchToProps = (dispatch) => ({
-  addComment: (comment) => dispatch(addComment(comment))
+export const mapDispatchToProps = dispatch => ({
+  addComment: comment => dispatch(addComment(comment))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CommentForm);
