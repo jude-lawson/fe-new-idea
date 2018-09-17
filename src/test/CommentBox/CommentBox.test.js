@@ -1,23 +1,27 @@
-import { CommentBox } from '../../Containers/CommentBox/CommentBox';
+import { CommentBox, mapStateToProps } from '../../Containers/CommentBox/CommentBox';
 import { shallow } from 'enzyme';
 import React from 'react';
-import { mapStateToProps } from '../../Containers/CommentBox/CommentBox';
 
 describe('CommentBox', () => {
+  const mockState = [
+    {body: 'I do or do not think that is a great idea', id: 11}
+  ]
+
   it('should match snapshot', () => {
-    let wrapper = shallow(<CommentBox />);
+    let wrapper = shallow(<CommentBox comments={mockState} />);
 
     expect(wrapper).toMatchSnapshot();
   })
 });
 
 describe('mapStateToProps', () => {
+  const mockState = {
+    comments: [
+      {body: 'I do or do not think that is a great idea', id: 11}
+    ]
+  };
+
   it('should return a props object with the correct keys', () => {
-    const mockState = {
-      comments: [
-        {body: 'I do or do not think that is a great idea', id: 11}
-      ]
-    }
     const expected = {
       comments: [
         {body: 'I do or do not think that is a great idea', id: 11}
