@@ -8,8 +8,8 @@ import Header from '../../Containers/Header/Header';
 import './IdeaForm.css';
 
 export class IdeaForm extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       title: '',
       body: ''

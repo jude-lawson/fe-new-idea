@@ -1,5 +1,7 @@
 export const storageMock = () => {
-  const storage = {};
+  const storage = {
+    user: 1
+  };
 
   return {
     setItem: function(key, value) {

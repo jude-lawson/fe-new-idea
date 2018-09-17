@@ -2,8 +2,20 @@ import { IdeaForm, mapStateToProps, mapDispatchToProps } from '../../Components/
 import { shallow, mount } from 'enzyme';
 import React from 'react';
 import { addIdea } from '../../actions/idea';
+import { storageMock } from '../test-helpers/localstroage';
 
-describe.skip('IdeaForm', () => {
+describe('IdeaForm', () => {
+  let spy;
+  let wrapper;
+  const mockFunc = jest.fn();
+
+  beforeEach(() => {
+    wrapper = shallow(<IdeaForm addIdea={mockFunc}/>);
+    spy = jest.spyOn(wrapper.instance(), 'handleChange');
+    window.localStorage = storageMock()
+
+  });
+
   it('should match the snapshot', () => {
     let wrapper = shallow(<IdeaForm />);
 
@@ -11,28 +23,22 @@ describe.skip('IdeaForm', () => {
   });
 
   describe('handleChange', () => {
-    let spy;
-    let wrapper;
-
-    beforeEach(() => {
-      wrapper = mount(<IdeaForm />);
-      spy = jest.spyOn(wrapper.instance(), 'handleChange');
-    });
-
-    it('should update state of email', () => {
+    it('should update state of title', () => {
       const mockEvent = {
         target: {
           value: 'h',
           name: 'title'
         }
       };
+
+      wrapper.find('.idea--title-input').simulate('change', {target: {value: 'h', name: 'title'}});
       wrapper.instance().handleChange(mockEvent);
-      wrapper.find('input').first().simulate('change');
 
       expect(spy).toHaveBeenCalled();
+      expect(wrapper.state('title')).toEqual('h');
     });
 
-    it('should update state of password', () => {
+    it('should update state of body', () => {
       const mockEvent = {
         target: {
           value: 'tech things',
@@ -40,11 +46,34 @@ describe.skip('IdeaForm', () => {
         }
       };
       wrapper.instance().handleChange(mockEvent);
-      wrapper.find('textarea').last().simulate('change');
+      wrapper.find('input').last().simulate('change', {target: {value: 'tech things', name: 'body'}});
 
       expect(spy).toHaveBeenCalled();
+      expect(wrapper.state('body')).toEqual('tech things');
     });
   });
+
+  describe('handleSubmit', () => {
+    it('should call handleSubmit on click', () => {
+    const spy = jest.spyOn(wrapper.instance(), 'handleSubmit');
+
+      const mockEvent = {
+        preventDefault: jest.fn()
+      }
+      wrapper.setState({
+        title: 'hey',
+        body: 'you'
+      });
+      window.fetch = jest.fn().mockImplementation(() => 
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve('Idea created successfully')
+      }))
+
+      wrapper.find('form').simulate('submit', mockEvent)
+      expect(spy).toHaveBeenCalled();
+    });
+  })
 
   describe('mapStateToProps', () => {
     it('should create a props object with the correct keys', () => {
