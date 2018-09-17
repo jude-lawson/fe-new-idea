@@ -12,8 +12,8 @@ const postIdea = async (id, title, body) => {
     }
   };
   const response = await fetch(url, options);
-  if (response.status !== 201) {
-    throw Error(response.status);
+  if (!response.ok) {
+    throw Error('Something went wrong');
   }
   const idea = await response.json();
   return idea.message;
