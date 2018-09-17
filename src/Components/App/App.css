@@ -15,3 +15,10 @@ body {
   padding-top: 7rem;
   overflow-y: auto;
 }
+
+
+@media screen and (max-width: 500px) {
+  .app-container {
+    padding-top: 0rem;
+  }
+}

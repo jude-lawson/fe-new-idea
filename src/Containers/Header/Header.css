@@ -33,8 +33,10 @@
 
 .collapsible--menu {
   background-color: var(--primary-blue);
-  width: 19vw;
+  width: 250px;
   float: right;
+  border-bottom-left-radius: 15px;
+  padding-top: 3rem;
 }
 
 .collapsible--menu ul {
@@ -109,7 +111,6 @@ input:checked + label {
   overflow: hidden;
   font-family: "Oswald", sans-serif;
   padding: 0 0 0 50px;
-  padding: 6rem 2rem 2rem;
   text-align: left;
 }
 
@@ -125,4 +126,17 @@ input:checked ~ label {
 
 input:checked ~ .menu-content {
   max-height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .header--container {
+    float: none;
+    position: relative;
+  }
+
+  .collapsible--menu {
+    background-color: var(--primary-blue);
+    width: 100vw;
+    border-radius: 0px;
+  }
 }
