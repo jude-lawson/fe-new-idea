@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import './IdeaCard.css';
 
-export const IdeaCard = (props) => {
-  const {title, body} = props;
+export const IdeaCard = props => {
+  const { title, body } = props;
   return (
     <article className="idea--card-container">
       <button className="card--rmv-btn">REMOVE</button>
