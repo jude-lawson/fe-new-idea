@@ -21,6 +21,7 @@ ShallowWrapper {
         <Connect(Header) />,
         <Connect(IdeaBox) />,
       ],
+      "className": "app-container",
     },
     "ref": null,
     "rendered": Array [
@@ -55,6 +56,7 @@ ShallowWrapper {
           <Connect(Header) />,
           <Connect(IdeaBox) />,
         ],
+        "className": "app-container",
       },
       "ref": null,
       "rendered": Array [
