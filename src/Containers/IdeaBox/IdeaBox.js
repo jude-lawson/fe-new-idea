@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { IdeaCard } from '../IdeaCard/IdeaCard';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { IdeaCard } from '../IdeaCard/IdeaCard';
+
 import { getIdeas } from '../../api-calls/api-calls';
 
 export class IdeaBox extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       allIdeas: []
     };
@@ -14,25 +16,21 @@ export class IdeaBox extends Component {
 
   async componentDidMount() {
     const allIdeas = await getIdeas();
-    this.displayIdeas(allIdeas);
-    this.setState({allIdeas});
+    this.setState({ allIdeas });
   }
 
   displayIdeas = () => {
-    if (this.state.allIdeas) {
-      const displayedIdeas = this.state.allIdeas.map((idea, index) => {
-        return <IdeaCard {...idea} key={index} />;
-      });
-      return displayedIdeas;
-    }
+    return this.state.allIdeas.map(idea =>
+      <Link to={`/ideas/${idea.id}`} key={idea.id} >
+        <IdeaCard {...idea} key={idea.id}/>
+      </Link>
+    );
   }
 
   render() {
     return (
       <section className="app-container">
-        <main>
-          {this.displayIdeas(this.state.allIdeas)}
-        </main>
+        {this.displayIdeas()}
       </section>
     );
   }
