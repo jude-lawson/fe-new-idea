@@ -3,7 +3,6 @@ import { IdeaCard } from '../IdeaCard/IdeaCard';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getIdeas } from '../../api-calls/api-calls';
-import Header from '../Header/Header';
 
 export class IdeaBox extends Component {
   constructor(props) {
