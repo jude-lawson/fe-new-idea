@@ -40,8 +40,12 @@ IdeaBox.propTypes = {
   ideas: PropTypes.array
 };
 
-export const mapStateToProps = (state) => ({
+export const mapStateToProps = state => ({
   ideas: state.ideas
+});
+
+export const mapDispatchToProps = dispatch => ({
+  getIdeas: () => dispatch(getIdeasAction())
 });
 
 export default connect(mapStateToProps)(IdeaBox);
