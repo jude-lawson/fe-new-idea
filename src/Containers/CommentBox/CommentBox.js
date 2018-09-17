@@ -27,7 +27,7 @@ CommentBox.propTypes = {
   comments: PropTypes.array
 };
 
-export const mapStateToProps = (state) => ({
+export const mapStateToProps = state => ({
   comments: state.comments
 });
 
