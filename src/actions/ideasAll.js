@@ -1,4 +1,4 @@
-export const getIdeas = (ideas) => ({
+export const getAllIdeasAction = ideas => ({
   type: 'GET_IDEAS',
   ideas
 });

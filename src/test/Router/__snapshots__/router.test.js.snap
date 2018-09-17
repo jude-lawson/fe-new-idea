@@ -23,6 +23,11 @@ ShallowWrapper {
                 exact={true}
                 path="/"
         />
+        <Route
+                exact={true}
+                path="/idea/:id"
+                render={[Function]}
+        />
         <PrivateRoute
                 authenticated={undefined}
                 component={[Function]}
@@ -67,6 +72,11 @@ ShallowWrapper {
             exact={true}
             path="/"
 />,
+          <Route
+            exact={true}
+            path="/idea/:id"
+            render={[Function]}
+/>,
           <PrivateRoute
             authenticated={undefined}
             component={[Function]}
@@ -91,6 +101,19 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/idea/:id",
+            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -141,6 +164,11 @@ ShallowWrapper {
                     exact={true}
                     path="/"
           />
+          <Route
+                    exact={true}
+                    path="/idea/:id"
+                    render={[Function]}
+          />
           <PrivateRoute
                     authenticated={undefined}
                     component={[Function]}
@@ -185,6 +213,11 @@ ShallowWrapper {
               exact={true}
               path="/"
 />,
+            <Route
+              exact={true}
+              path="/idea/:id"
+              render={[Function]}
+/>,
             <PrivateRoute
               authenticated={undefined}
               component={[Function]}
@@ -209,6 +242,19 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/idea/:id",
+              "render": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -276,6 +322,20 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Unknown
     authenticated="1111"
+    ideas={
+        Array [
+            Object {
+              "body": "world",
+              "id": 1,
+              "title": "hello",
+            },
+            Object {
+              "body": "one",
+              "id": 2,
+              "title": "another",
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -295,6 +355,11 @@ ShallowWrapper {
                 component={[Function]}
                 exact={true}
                 path="/"
+        />
+        <Route
+                exact={true}
+                path="/idea/:id"
+                render={[Function]}
         />
         <PrivateRoute
                 authenticated="1111"
@@ -340,6 +405,11 @@ ShallowWrapper {
             exact={true}
             path="/"
 />,
+          <Route
+            exact={true}
+            path="/idea/:id"
+            render={[Function]}
+/>,
           <PrivateRoute
             authenticated="1111"
             component={[Function]}
@@ -364,6 +434,19 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/idea/:id",
+            "render": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -414,6 +497,11 @@ ShallowWrapper {
                     exact={true}
                     path="/"
           />
+          <Route
+                    exact={true}
+                    path="/idea/:id"
+                    render={[Function]}
+          />
           <PrivateRoute
                     authenticated="1111"
                     component={[Function]}
@@ -458,6 +546,11 @@ ShallowWrapper {
               exact={true}
               path="/"
 />,
+            <Route
+              exact={true}
+              path="/idea/:id"
+              render={[Function]}
+/>,
             <PrivateRoute
               authenticated="1111"
               component={[Function]}
@@ -482,6 +575,19 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/idea/:id",
+              "render": [Function],
             },
             "ref": null,
             "rendered": null,

@@ -1,21 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import './IdeaCard.css';
 
-export const IdeaCard = (props) => {
-  const {title, body} = props;
+export const IdeaCard = ({ ideas }) => {
+  const renderIdeaCard = ideas.map(idea =>
+    <Link to={`/idea/${idea.id}`} key={idea.id} >
+      <article className="idea--card-container">
+        <h1 className="idea--card-title">{idea.title}</h1>
+        <p className="idea--card-body">{idea.body}</p>
+      </article>
+    </Link>
+  );
+
   return (
-    <article className="idea--card-container">
-      <button className="card--rmv-btn">REMOVE</button>
-      <h1 className="idea--card-title">{title}</h1>
-      <p className="idea--card-body">{body}</p>
-      <button className="card--comment-btn">COMMENT</button>
-    </article>
+    <React.Fragment>
+      {ideas.length ? renderIdeaCard : null}
+    </React.Fragment>
   );
 };
 
 IdeaCard.propTypes = {
-  title: PropTypes.string,
-  body: PropTypes.string
+  ideas: PropTypes.arrayOf(PropTypes.object)
 };

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../Containers/Header/Header';
-import { IdeaBox } from '../../Containers/IdeaBox/IdeaBox';
+import IdeaBox from '../../Containers/IdeaBox/IdeaBox';
 
 import './App.css';
 

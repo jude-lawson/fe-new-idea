@@ -4,7 +4,6 @@ export const commentReducer = (state = [], action) => {
       return [
         ...state,
         action.comment
-
       ];
     default:
       return state;

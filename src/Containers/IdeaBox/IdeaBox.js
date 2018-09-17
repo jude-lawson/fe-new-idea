@@ -1,49 +1,43 @@
 import React, { Component } from 'react';
-import { IdeaCard } from '../IdeaCard/IdeaCard';
-import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getIdeas } from '../../api-calls/api-calls';
+import { connect } from 'react-redux';
+import { IdeaCard } from '../IdeaCard/IdeaCard';
+import { getAllIdeas } from '../../thunks/getAllIdeas';
 
 export class IdeaBox extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      allIdeas: []
+      ideas: []
     };
   }
 
-  async componentDidMount() {
-    const allIdeas = await getIdeas();
-    this.displayIdeas(allIdeas);
-    this.setState({allIdeas});
-  }
-
-  displayIdeas = () => {
-    if (this.state.allIdeas) {
-      const displayedIdeas = this.state.allIdeas.map((idea, index) => {
-        return <IdeaCard {...idea} key={index} />;
-      });
-      return displayedIdeas;
-    }
+  componentDidMount = async () => {
+    await this.props.getAllIdeas();
+    this.setState({ ideas: this.props.ideas });
   }
 
   render() {
+    const { ideas } = this.state;
     return (
       <section className="app-container">
-        <main>
-          {this.displayIdeas(this.state.allIdeas)}
-        </main>
+        <IdeaCard ideas={ideas} />
       </section>
     );
   }
 }
 
 IdeaBox.propTypes = {
-  ideas: PropTypes.array
+  ideas: PropTypes.array,
+  getAllIdeas: PropTypes.func
 };
 
-export const mapStateToProps = (state) => ({
-  ideas: state.ideas
+export const mapStateToProps = state => ({
+  ideas: state.allIdeas
 });
 
-export default connect(mapStateToProps)(IdeaBox);
+export const mapDispatchToProps = dispatch => ({
+  getAllIdeas: () => dispatch(getAllIdeas())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(IdeaBox);

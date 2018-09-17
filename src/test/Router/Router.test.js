@@ -9,7 +9,12 @@ describe('<AppRouter/>', () => {
     userName: 'Joben'
   }
 
-  beforeEach(() => wrapper = shallow(<AppRouter authenticated={mockAuth.id}/>))
+  const mockIdeas = [
+    {id: 1, title: 'hello', body: 'world'},
+    {id: 2, title: 'another', body: 'one'}
+  ];
+
+  beforeEach(() => wrapper = shallow(<AppRouter authenticated={mockAuth.id} ideas={mockIdeas} />));
 
   test('should render when no user authenticated', () => {
     wrapper = shallow(<AppRouter />);
