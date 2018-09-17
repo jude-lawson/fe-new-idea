@@ -1,0 +1,9 @@
+.ideabox-container {
+  padding-top: 8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .ideabox-container {
+    padding-top: 0rem;
+  }
+}

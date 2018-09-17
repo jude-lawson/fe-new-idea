@@ -7,7 +7,7 @@ import './App.css';
 export class App extends Component {
   render() {
     return (
-      <main>
+      <main className="app-container">
         <Header />
         <IdeaBox />
       </main>

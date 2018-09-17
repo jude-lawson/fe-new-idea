@@ -53,3 +53,25 @@
   font-weight: 700;
   border-radius: 23px;
 }
+
+@media screen and (max-width: 500px) {
+  .idea-form {
+    background: var(--primary-red);
+    width: 95%;
+    margin: 0rem auto;
+    border-radius: 0px;
+    height: calc(100vh - 4rem);
+    padding: 2.5%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .idea--body-input {
+    height: calc(66vh - 4rem);
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 3px 5px;
+  }
+}

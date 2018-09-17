@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { IdeaCard } from '../IdeaCard/IdeaCard';
 import { getAllIdeas } from '../../thunks/getAllIdeas';
 
+import './IdeaBox.css'
+
 export class IdeaBox extends Component {
   constructor() {
     super();
@@ -20,7 +22,7 @@ export class IdeaBox extends Component {
   render() {
     const { ideas } = this.state;
     return (
-      <section className="app-container">
+      <section className="ideabox-container">
         <IdeaCard ideas={ideas} />
       </section>
     );
