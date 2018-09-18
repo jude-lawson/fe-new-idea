@@ -8,7 +8,7 @@ import App from '../Components/App/App';
 import Profile from '../Containers/Profile/Profile';
 import { PrivateRoute } from './PrivateRoute';
 import IdeaForm from '../Components/IdeaForm/IdeaForm';
-
+import Idea from '../Containers/Idea/Idea';
 
 export const history = createHistory();
 
@@ -19,7 +19,7 @@ export const AppRouter = ({ authenticated, allIdeas }) => (
       <Route path="/idea/:id" exact render={({ match }) => {
         const idea = allIdeas.find(idea => idea.id === Number(match.params.id));
         return (
-          'Render an Idea Here'
+          <Idea idea={idea} />
         );
       }} />
       <PrivateRoute authenticated={authenticated} path="/ideaform" exact component={IdeaForm} />
