@@ -12,14 +12,13 @@ import Idea from '../Containers/Idea/Idea';
 
 export const history = createHistory();
 
-export const AppRouter = ({ authenticated, allIdeas }) => (
+export const AppRouter = ({ authenticated }) => (
   <Router history={history}>
     <Switch>
-      <Route path="/" exact component={App}/>
-      <Route path="/idea/:id" exact render={({ match }) => {
-        const idea = allIdeas.find(idea => idea.id === Number(match.params.id));
+      <Route path="/" exact component={App} />
+      <Route path="/idea/:id" exact render={() => {
         return (
-          <Idea idea={idea} />
+          <Idea />
         );
       }} />
       <PrivateRoute authenticated={authenticated} path="/ideaform" exact component={IdeaForm} />
@@ -34,8 +33,7 @@ AppRouter.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  authenticated: state.user.id || true,
-  allIdeas: state.allIdeas
+  authenticated: state.user.id || true
 });
 
 export default connect(mapStateToProps)(AppRouter);
