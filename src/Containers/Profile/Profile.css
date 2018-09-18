@@ -17,7 +17,7 @@
   border-top-right-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 4rem;
   max-width: 35rem;
   position: relative;
 }
@@ -26,12 +26,29 @@
   background: var(--primary-white);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  bottom: -15rem;
+  bottom: 1rem;
   color: var(--primary-dark-grey);
-  height: 15rem;
+  height: 4rem;
   padding: 2rem;
   position: absolute;
   text-align: center;
   width: 100%;
   max-width: 31rem;
 }
+
+@media screen and (max-width: 500px) {
+  .profile-card {
+    height: 60vh;
+    width: 25rem;
+    margin: auto;
+  }
+
+  .profile-container {
+    padding-top: 0;
+  }
+
+  .profile-card__user {
+    bottom: -5rem;
+    width: 21rem;
+  }
+};

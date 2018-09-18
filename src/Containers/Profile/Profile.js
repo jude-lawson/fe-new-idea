@@ -7,11 +7,15 @@ import './Profile.css';
 
 export class Profile extends Component {
 
+  componentDidMount() {
+    
+  }
+
   render() {
     const { user } = this.props;
     const userCardStyles = {
       background: `no-repeat url(${user.image}) center center`,
-      height: '50vh'
+      height: '60vh'
     };
 
     return (
@@ -36,7 +40,8 @@ Profile.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  user: state.user
+  user: state.user,
+  ideas: state.ideas
 });
 
 export default connect(mapStateToProps)(Profile);
