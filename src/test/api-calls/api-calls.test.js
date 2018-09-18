@@ -1,4 +1,4 @@
-import { postIdea, getIdeas } from '../../api-calls/api-calls';
+import { postIdea, getIdea } from '../../api-calls/api-calls';
 
 describe('postIdea', () => {
   test('should post a new idea', async () => {
@@ -32,5 +32,38 @@ describe('postIdea', () => {
       }));
 
       await expect(postIdea(id, title, body)).rejects.toEqual(Error('Something went wrong'));
+    });
+});
+
+describe('getidea', () => {
+    const mockIdea = {
+      title: "Cool Idea",
+      body: "This is the content of the cool idea.",
+      author: {
+        username: "coolauthor",
+        email: "coolemail@na.moc",
+        uid: "abc123"
+      },
+      contributions:[
+        {
+          body: "This is the body of the first contribution",
+          author: {
+            username: "anotheruser",
+            email: "anotheruser@na.moc",
+            uid: "def234"
+          },
+        }
+      ]
+    };
+
+    test('should return an idea', async () => {
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve(mockIdea)
+      }));
+
+      const result = await getIdea(3);
+
+      expect(result).toEqual(mockIdea);
     });
 });
