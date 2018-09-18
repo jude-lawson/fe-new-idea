@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Header } from '../Header/Header';
+import Header from '../Header/Header';
 import { getIdeaById } from '../../thunks/getIdea';
 
 import './Idea.css';

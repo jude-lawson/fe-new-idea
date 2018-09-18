@@ -5,13 +5,21 @@ describe('user Reducer', () => {
   const id = 3;
   const name = 'New User';
   const image = 'https://some-new-url-here';
-  const email = 'some@mail.com'
+  const email = 'some@mail.com';
+  const github = 'github.com';
+  const githubHandle = 'some-handle';
   const mockUser = {
     user: {
       uid: id,
       displayName: name,
       photoURL: image,
-      email: email
+      email: email,
+    },
+    additionalUserInfo: {
+      profile: {
+        html_url: github
+      },
+      username: githubHandle
     }
   };
 
@@ -20,7 +28,9 @@ describe('user Reducer', () => {
       id,
       name,
       image,
-      email
+      email,
+      github,
+      githubHandle
     };
 
     const result = userReducer({}, userLoginAction(mockUser));

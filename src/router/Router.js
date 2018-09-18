@@ -24,7 +24,7 @@ export const AppRouter = ({ authenticated }) => (
         );
       }} />
       <PrivateRoute authenticated={authenticated} path="/ideaform" exact component={IdeaForm} />
-      <PrivateRoute authenticated={authenticated} path="/profile" exact  component={Profile} />
+      <PrivateRoute authenticated={authenticated} path="/profile"   component={Profile} />
     </Switch>
   </Router>
 );
