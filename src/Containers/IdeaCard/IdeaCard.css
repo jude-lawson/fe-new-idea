@@ -1,41 +1,11 @@
 .idea--card-container {
-  margin: 3rem 6rem;
-  border: 3px solid var(--primary-red);
-  padding: 2rem;
   background: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
   position: relative;
-  border-radius: 1rem;
-  min-height: 12rem;
+  text-align: center;
 }
 
-.card--rmv-btn {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  border: 2px solid var(--primary-red);
-  padding: 4px 8px;
-  border-radius: 10px;
-  color: var(--primary-blue);
-}
-
-.card--rmv-btn:hover {
-  background: var(--primary-red);
-  color: var(--primary-white);
-  border: 2px solid var(--primary-blue);
-}
-
-.card--comment-btn {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  border: 2px solid var(--primary-red);
-  padding: 4px 8px;
-  border-radius: 10px;
-  color: var(--primary-blue);
-}
-
-.card--comment-btn:hover {
-  background: var(--primary-blue);
-  color: var(--primary-white);
-  border: 2px solid var(--primary-red);
+.idea--card-link {
+  text-decoration: none;
 }
