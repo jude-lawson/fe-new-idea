@@ -6,6 +6,7 @@ import { userReducer } from '../reducers/auth';
 import { ideaReducer } from '../reducers/ideas';
 import { allIdeasReducer } from '../reducers/allIdeas';
 import { commentReducer } from '../reducers/comments';
+import { getIdeaReducer } from '../reducers/getIdea';
 
 export default () => {
   const store = createStore(
@@ -13,7 +14,8 @@ export default () => {
       user: userReducer,
       ideas: ideaReducer,
       allIdeas: allIdeasReducer,
-      comments: commentReducer
+      comments: commentReducer,
+      idea: getIdeaReducer
     }),
     composeWithDevTools(applyMiddleware(thunk))
   );

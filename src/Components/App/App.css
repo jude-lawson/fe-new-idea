@@ -15,9 +15,8 @@ body {
   overflow-y: auto;
 }
 
-
 @media screen and (max-width: 500px) {
   .app-container {
-    padding-top: 0rem;
+    padding-top: 0;
   }
 }

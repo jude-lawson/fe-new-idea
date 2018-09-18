@@ -6,7 +6,7 @@ import './IdeaCard.css';
 
 export const IdeaCard = ({ ideas }) => {
   const renderIdeaCard = ideas.map(idea =>
-    <Link to={`/idea/${idea.id}`} key={idea.id} >
+    <Link className="idea--card-link" to={`/idea/${idea.id}`} key={idea.id} >
       <article className="idea--card-container">
         <h1 className="idea--card-title">{idea.title}</h1>
         <p className="idea--card-body">{idea.body}</p>
