@@ -14,8 +14,6 @@ export class Profile extends Component {
   }
 
   async componentDidMount() {
-    // const user = JSON.parse(localStorage.getItem('user'))
-    // const ideas = user.ideas;
     const ideas = this.props.ideas.concat(this.props.myIdeas.reverse());
     this.setState({ideas});
   }
