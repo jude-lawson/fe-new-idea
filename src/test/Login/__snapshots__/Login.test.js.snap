@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> should render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Connect(Header) />,
+        <section
+          className="login-container"
+>
+          <h2
+                    className="login-container--title"
+          >
+                    Oops Looks Like you need to Login
+          </h2>
+          <button
+                    className="btn-grad"
+          >
+                    Login
+          </button>
+</section>,
+      ],
+      "className": "app-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="login-container--title"
+>
+              Oops Looks Like you need to Login
+</h2>,
+            <button
+              className="btn-grad"
+>
+              Login
+</button>,
+          ],
+          "className": "login-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Oops Looks Like you need to Login",
+              "className": "login-container--title",
+            },
+            "ref": null,
+            "rendered": "Oops Looks Like you need to Login",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login",
+              "className": "btn-grad",
+            },
+            "ref": null,
+            "rendered": "Login",
+            "type": "button",
+          },
+        ],
+        "type": "section",
+      },
+    ],
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(Header) />,
+          <section
+            className="login-container"
+>
+            <h2
+                        className="login-container--title"
+            >
+                        Oops Looks Like you need to Login
+            </h2>
+            <button
+                        className="btn-grad"
+            >
+                        Login
+            </button>
+</section>,
+        ],
+        "className": "app-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="login-container--title"
+>
+                Oops Looks Like you need to Login
+</h2>,
+              <button
+                className="btn-grad"
+>
+                Login
+</button>,
+            ],
+            "className": "login-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Oops Looks Like you need to Login",
+                "className": "login-container--title",
+              },
+              "ref": null,
+              "rendered": "Oops Looks Like you need to Login",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login",
+                "className": "btn-grad",
+              },
+              "ref": null,
+              "rendered": "Login",
+              "type": "button",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "disableLifecycleMethods": true,
+    "hydrateIn": undefined,
+  },
+}
+`;

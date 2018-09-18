@@ -34,7 +34,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Link
-          className="idea--card-link"
+          className="idea--card-link scale-up-hor-left"
           replace={false}
           to="/idea/1"
 >
@@ -54,7 +54,7 @@ ShallowWrapper {
           </article>
 </Link>,
         <Link
-          className="idea--card-link"
+          className="idea--card-link scale-up-hor-left"
           replace={false}
           to="/idea/2"
 >
@@ -96,7 +96,7 @@ ShallowWrapper {
                         world
             </p>
 </article>,
-          "className": "idea--card-link",
+          "className": "idea--card-link scale-up-hor-left",
           "replace": false,
           "to": "/idea/1",
         },
@@ -170,7 +170,7 @@ ShallowWrapper {
                         one
             </p>
 </article>,
-          "className": "idea--card-link",
+          "className": "idea--card-link scale-up-hor-left",
           "replace": false,
           "to": "/idea/2",
         },
@@ -236,7 +236,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Link
-            className="idea--card-link"
+            className="idea--card-link scale-up-hor-left"
             replace={false}
             to="/idea/1"
 >
@@ -256,7 +256,7 @@ ShallowWrapper {
             </article>
 </Link>,
           <Link
-            className="idea--card-link"
+            className="idea--card-link scale-up-hor-left"
             replace={false}
             to="/idea/2"
 >
@@ -298,7 +298,7 @@ ShallowWrapper {
                             world
               </p>
 </article>,
-            "className": "idea--card-link",
+            "className": "idea--card-link scale-up-hor-left",
             "replace": false,
             "to": "/idea/1",
           },
@@ -372,7 +372,7 @@ ShallowWrapper {
                             one
               </p>
 </article>,
-            "className": "idea--card-link",
+            "className": "idea--card-link scale-up-hor-left",
             "replace": false,
             "to": "/idea/2",
           },
