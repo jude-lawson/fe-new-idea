@@ -14,8 +14,9 @@ export class Profile extends Component {
   }
 
   async componentDidMount() {
-    const user = JSON.parse(localStorage.getItem('user'))
-    const ideas = user.ideas;
+    // const user = JSON.parse(localStorage.getItem('user'))
+    // const ideas = user.ideas;
+    const ideas = this.props.ideas;
     this.setState({ideas});
   }
 
@@ -34,7 +35,7 @@ export class Profile extends Component {
           <div className="profile-card" style={userCardStyles}>
             <div className="profile-card__user">
               <h2>{user.name}</h2>
-              <a href={user.github} target="_blank" className="github-link">GitHub</a>
+              <a href={user.github} target="_blank" rel="noopener noreferrer" className="github-link">GitHub</a>
             </div>
             <div className="ideas-container">
               <h1 className="profile--ideas-header">{user.githubHandle} Ideas</h1>
@@ -49,7 +50,8 @@ export class Profile extends Component {
 }
 
 Profile.propTypes = {
-  user: PropTypes.object
+  user: PropTypes.object,
+  ideas: PropTypes.array
 };
 
 export const mapStateToProps = state => ({
