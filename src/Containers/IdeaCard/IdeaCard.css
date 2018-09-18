@@ -3,7 +3,13 @@
   border-radius: 0.5rem;
   padding: 2rem;
   position: relative;
+  overflow-y: scroll;
+  height: 14rem;
   text-align: center;
+}
+
+.idea--card-title {
+  margin-bottom: 10px;
 }
 
 .idea--card-link {

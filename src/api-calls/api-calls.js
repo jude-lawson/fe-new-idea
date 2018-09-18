@@ -26,7 +26,6 @@ const getIdeas = async () => {
   return ideas;
 };
 
-<<<<<<< HEAD
 const getIdea = async id => {
   const url = `https://whispering-lowlands-31319.herokuapp.com/api/v1/ideas/${id}`;
   const response = await fetch(url);
@@ -35,6 +34,3 @@ const getIdea = async id => {
 };
 
 export { postIdea, getIdeas, getIdea };
-=======
-export { postIdea, getIdeas };
->>>>>>> Premerge styles

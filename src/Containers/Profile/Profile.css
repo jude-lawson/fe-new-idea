@@ -77,10 +77,6 @@
     margin: 0px auto;
     padding-top: 47rem;
   }
-
-  .idea--card-container {
-    margin: 3rem 15rem 0rem 0rem;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -97,9 +93,5 @@
   .profile-card__user {
     bottom: -5rem;
     width: 21rem;
-  }
-
-  .idea--card-container {
-    margin: 3rem 25rem 0rem 0rem;
   }
 };
