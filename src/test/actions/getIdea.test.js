@@ -20,12 +20,12 @@ describe('getIdeaAction', () => {
           },
         }
       ]
-    }
+    };
     const result = getIdeaAction(mockIdea);
     const expected ={
       type: 'GET_IDEA',
       idea: {...mockIdea}
-    }
+    };
     expect(result).toEqual(expected);
   });
 });
