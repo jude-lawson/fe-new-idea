@@ -34,7 +34,7 @@ export class IdeaForm extends Component {
   render() {
     const { title, body } = this.state;
     return (
-      <div className="idea--form-container">
+      <div className="app-container">
         <Header />
         <form 
           onSubmit={this.handleSubmit}
@@ -43,7 +43,7 @@ export class IdeaForm extends Component {
           <input 
             type="text"
             className="idea--title-input"
-            placeholder="title"
+            placeholder="Title"
             onChange={this.handleChange}
             name="title"
             value={title}

@@ -6,6 +6,18 @@
   text-align: center;
 }
 
+.idea--card-title {
+  margin-bottom: 10px;
+}
+
 .idea--card-link {
   text-decoration: none;
+}
+
+.idea--card-body,
+.idea--card-title {
+  width: 15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -1,12 +1,4 @@
 .profile-container {
-  background-image: linear-gradient(
-    to bottom,
-    #4381c1,
-    #289dc5,
-    #50b4be,
-    #85c7b7,
-    #b8d8ba
-  );
   height: 100vh;
   padding-top: 10rem;
 }
@@ -17,7 +9,7 @@
   border-top-right-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 4rem;
   max-width: 35rem;
   position: relative;
 }
@@ -26,12 +18,94 @@
   background: var(--primary-white);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  bottom: -15rem;
+  bottom: 1rem;
   color: var(--primary-dark-grey);
-  height: 15rem;
+  height: 4rem;
   padding: 2rem;
   position: absolute;
   text-align: center;
   width: 100%;
   max-width: 31rem;
 }
+
+.ideas-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 2rem;
+  margin-left: 94rem;
+  padding-bottom: 2rem;
+}
+
+.profile--ideas-header {
+  color: var(--primary-white);
+  font-weight: 400;
+}
+
+.profile-ideas {
+  width: 20rem;
+}
+
+.github-link {
+  color: blue;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .ideas-container {
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    margin-left: 83rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .profile-container {
+    height: 95vh;
+    padding-top: 10rem;
+  }
+
+  .profile-card {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ideas-container {
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 2rem;
+    padding-top: 49rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .profile-container {
+    padding-top: 0;
+  }
+  .profile-card {
+    height: 60vh;
+    width: 25rem;
+    margin: auto;
+  }
+  
+  
+  .profile-card__user {
+    bottom: -5rem;
+    width: 21rem;
+  }
+  
+  .ideas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    margin: 3rem auto 0;
+    padding: 0;
+    padding-top: 51.5rem;
+    padding-bottom: 2rem;
+  }
+};
