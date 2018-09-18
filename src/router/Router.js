@@ -33,8 +33,7 @@ AppRouter.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  authenticated: state.user.id || true,
-  allIdeas: state.allIdeas
+  authenticated: state.user.id || true
 });
 
 export default connect(mapStateToProps)(AppRouter);
