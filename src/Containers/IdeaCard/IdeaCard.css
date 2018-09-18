@@ -3,8 +3,6 @@
   border-radius: 0.5rem;
   padding: 2rem;
   position: relative;
-  overflow-y: scroll;
-  height: 14rem;
   text-align: center;
 }
 
@@ -14,4 +12,12 @@
 
 .idea--card-link {
   text-decoration: none;
+}
+
+.idea--card-body,
+.idea--card-title {
+  width: 15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

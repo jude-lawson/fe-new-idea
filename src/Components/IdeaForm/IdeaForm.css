@@ -1,26 +1,20 @@
-.idea--form-container {
+.idea-form {
   background-image: linear-gradient(
-    to bottom,
+    to top,
     #4381c1,
     #289dc5,
     #50b4be,
     #85c7b7,
     #b8d8ba
   );
-  height: 100vh;
-  overflow-y: auto;
-}
-
-.idea-form {
-  background: var(--primary-red);
-  width: 80%;
   margin: 10rem auto 4rem;
   border-radius: 20px;
-  height: 69rem;
   padding: 2rem 4rem;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
+  width: 65rem;
+  height: 61rem;
 }
 
 .idea--form-title {
@@ -54,13 +48,22 @@
   border-radius: 23px;
 }
 
+.idea--form-btn:hover {
+  background: #a7d3b9;
+}
+
+@media screen and (max-width: 825px) {
+  .idea-form {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .idea-form {
-    background: var(--primary-red);
     width: 95%;
     margin: 0rem auto;
     border-radius: 0px;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 8rem);
     padding: 2.5%;
     display: -ms-flexbox;
     display: flex;
