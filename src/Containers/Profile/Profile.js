@@ -16,7 +16,7 @@ export class Profile extends Component {
   async componentDidMount() {
     // const user = JSON.parse(localStorage.getItem('user'))
     // const ideas = user.ideas;
-    const ideas = this.props.ideas;
+    const ideas = this.props.ideas.concat(this.props.myIdeas.reverse());
     this.setState({ideas});
   }
 
@@ -51,12 +51,14 @@ export class Profile extends Component {
 
 Profile.propTypes = {
   user: PropTypes.object,
-  ideas: PropTypes.array
+  ideas: PropTypes.array,
+  myIdeas: PropTypes.array
 };
 
 export const mapStateToProps = state => ({
   user: state.user,
-  ideas: state.ideas
+  ideas: state.ideas,
+  myIdeas: state.myIdeas
 });
 
 export default connect(mapStateToProps)(Profile);

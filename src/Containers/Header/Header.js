@@ -27,13 +27,15 @@ export class Header extends Component {
     await fetch(url, options)
       .then(res => res.json())
       .then(user => {
+        localStorage.setItem('user', JSON.stringify(user))
+        return user;
+      })
+      .then(user => {
         const localUser = JSON.parse(localStorage.getItem('user'));
         if (localUser.ideas.length !== this.props.myIdeas.length) {
           this.props.retrieveMyIdeas(user.ideas);
         }
-        return user;
-      })
-      .then(user => localStorage.setItem('user', JSON.stringify(user)));
+      });
   }
 
   logOut = () => {

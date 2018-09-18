@@ -3,7 +3,7 @@ export const myIdeasReducer = (state = [], action) => {
     case 'RETRIEVE_MY_IDEAS':
       return [
         ...state,
-        action.ideas
+        ...action.ideas
       ];
     default:
       return state;
