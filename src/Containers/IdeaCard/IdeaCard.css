@@ -3,7 +3,21 @@
   border-radius: 0.5rem;
   padding: 2rem;
   position: relative;
+  background-image: linear-gradient(
+    to right,
+    #ece9e6 0%,
+    #fff 51%,
+    #ece9e6 100%
+  );
+  border-radius: 2px;
+  box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
+  transition: all 0.3s ease;
   text-align: center;
+}
+
+.idea--card-container:hover {
+  background-position: right center;
+  box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
 }
 
 .idea--card-title {
@@ -11,7 +25,17 @@
 }
 
 .idea--card-link {
+  color: var(--primary-grey);
   text-decoration: none;
+}
+
+.idea {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.idea-user--image {
+  border: 1px;
 }
 
 .idea--card-body,

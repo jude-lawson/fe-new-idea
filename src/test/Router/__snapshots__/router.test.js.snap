@@ -17,34 +17,37 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Switch>
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/"
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/login"
-        />
-        <Route
-                exact={true}
-                path="/idea/:id"
-                render={[Function]}
-        />
-        <PrivateRoute
-                authenticated={undefined}
-                component={[Function]}
-                exact={true}
-                path="/ideaform"
-        />
-        <PrivateRoute
-                authenticated={undefined}
-                component={[Function]}
-                path="/profile"
-        />
-</Switch>,
+      "children": <div>
+        <Connect(Header) />
+        <Switch>
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/login"
+                />
+                <Route
+                        exact={true}
+                        path="/idea/:id"
+                        render={[Function]}
+                />
+                <PrivateRoute
+                        authenticated={undefined}
+                        component={[Function]}
+                        exact={true}
+                        path="/ideaform"
+                />
+                <PrivateRoute
+                        authenticated={undefined}
+                        component={[Function]}
+                        path="/profile"
+                />
+        </Switch>
+</div>,
       "history": Object {
         "action": "POP",
         "block": [Function],
@@ -68,35 +71,38 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/login"
-/>,
-          <Route
-            exact={true}
-            path="/idea/:id"
-            render={[Function]}
-/>,
-          <PrivateRoute
-            authenticated={undefined}
-            component={[Function]}
-            exact={true}
-            path="/ideaform"
-/>,
-          <PrivateRoute
-            authenticated={undefined}
-            component={[Function]}
-            path="/profile"
-/>,
+          <Connect(Header) />,
+          <Switch>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/login"
+            />
+            <Route
+                        exact={true}
+                        path="/idea/:id"
+                        render={[Function]}
+            />
+            <PrivateRoute
+                        authenticated={undefined}
+                        component={[Function]}
+                        exact={true}
+                        path="/ideaform"
+            />
+            <PrivateRoute
+                        authenticated={undefined}
+                        component={[Function]}
+                        path="/profile"
+            />
+</Switch>,
         ],
       },
       "ref": null,
@@ -105,11 +111,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/",
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -119,56 +121,108 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/login",
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+/>,
+              <Route
+                exact={true}
+                path="/idea/:id"
+                render={[Function]}
+/>,
+              <PrivateRoute
+                authenticated={undefined}
+                component={[Function]}
+                exact={true}
+                path="/ideaform"
+/>,
+              <PrivateRoute
+                authenticated={undefined}
+                component={[Function]}
+                path="/profile"
+/>,
+            ],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "exact": true,
-            "path": "/idea/:id",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "authenticated": undefined,
-            "component": [Function],
-            "exact": true,
-            "path": "/ideaform",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "authenticated": undefined,
-            "component": [Function],
-            "path": "/profile",
-          },
-          "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/login",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/idea/:id",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "authenticated": undefined,
+                "component": [Function],
+                "exact": true,
+                "path": "/ideaform",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "authenticated": undefined,
+                "component": [Function],
+                "path": "/profile",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": "div",
     },
     "type": [Function],
   },
@@ -178,34 +232,37 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Switch>
-          <Route
-                    component={[Function]}
-                    exact={true}
-                    path="/"
-          />
-          <Route
-                    component={[Function]}
-                    exact={true}
-                    path="/login"
-          />
-          <Route
-                    exact={true}
-                    path="/idea/:id"
-                    render={[Function]}
-          />
-          <PrivateRoute
-                    authenticated={undefined}
-                    component={[Function]}
-                    exact={true}
-                    path="/ideaform"
-          />
-          <PrivateRoute
-                    authenticated={undefined}
-                    component={[Function]}
-                    path="/profile"
-          />
-</Switch>,
+        "children": <div>
+          <Connect(Header) />
+          <Switch>
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/"
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/login"
+                    />
+                    <Route
+                              exact={true}
+                              path="/idea/:id"
+                              render={[Function]}
+                    />
+                    <PrivateRoute
+                              authenticated={undefined}
+                              component={[Function]}
+                              exact={true}
+                              path="/ideaform"
+                    />
+                    <PrivateRoute
+                              authenticated={undefined}
+                              component={[Function]}
+                              path="/profile"
+                    />
+          </Switch>
+</div>,
         "history": Object {
           "action": "POP",
           "block": [Function],
@@ -229,35 +286,38 @@ ShallowWrapper {
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/"
-/>,
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/login"
-/>,
-            <Route
-              exact={true}
-              path="/idea/:id"
-              render={[Function]}
-/>,
-            <PrivateRoute
-              authenticated={undefined}
-              component={[Function]}
-              exact={true}
-              path="/ideaform"
-/>,
-            <PrivateRoute
-              authenticated={undefined}
-              component={[Function]}
-              path="/profile"
-/>,
+            <Connect(Header) />,
+            <Switch>
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/"
+              />
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/login"
+              />
+              <Route
+                            exact={true}
+                            path="/idea/:id"
+                            render={[Function]}
+              />
+              <PrivateRoute
+                            authenticated={undefined}
+                            component={[Function]}
+                            exact={true}
+                            path="/ideaform"
+              />
+              <PrivateRoute
+                            authenticated={undefined}
+                            component={[Function]}
+                            path="/profile"
+              />
+</Switch>,
           ],
         },
         "ref": null,
@@ -266,11 +326,7 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "exact": true,
-              "path": "/",
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -280,56 +336,108 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "component": [Function],
-              "exact": true,
-              "path": "/login",
+              "children": Array [
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/"
+/>,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/login"
+/>,
+                <Route
+                  exact={true}
+                  path="/idea/:id"
+                  render={[Function]}
+/>,
+                <PrivateRoute
+                  authenticated={undefined}
+                  component={[Function]}
+                  exact={true}
+                  path="/ideaform"
+/>,
+                <PrivateRoute
+                  authenticated={undefined}
+                  component={[Function]}
+                  path="/profile"
+/>,
+              ],
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/idea/:id",
-              "render": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "authenticated": undefined,
-              "component": [Function],
-              "exact": true,
-              "path": "/ideaform",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "authenticated": undefined,
-              "component": [Function],
-              "path": "/profile",
-            },
-            "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/login",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "exact": true,
+                  "path": "/idea/:id",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "authenticated": undefined,
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/ideaform",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "authenticated": undefined,
+                  "component": [Function],
+                  "path": "/profile",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
         ],
-        "type": [Function],
+        "type": "div",
       },
       "type": [Function],
     },
@@ -390,34 +498,37 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Switch>
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/"
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/login"
-        />
-        <Route
-                exact={true}
-                path="/idea/:id"
-                render={[Function]}
-        />
-        <PrivateRoute
-                authenticated="1111"
-                component={[Function]}
-                exact={true}
-                path="/ideaform"
-        />
-        <PrivateRoute
-                authenticated="1111"
-                component={[Function]}
-                path="/profile"
-        />
-</Switch>,
+      "children": <div>
+        <Connect(Header) />
+        <Switch>
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/login"
+                />
+                <Route
+                        exact={true}
+                        path="/idea/:id"
+                        render={[Function]}
+                />
+                <PrivateRoute
+                        authenticated="1111"
+                        component={[Function]}
+                        exact={true}
+                        path="/ideaform"
+                />
+                <PrivateRoute
+                        authenticated="1111"
+                        component={[Function]}
+                        path="/profile"
+                />
+        </Switch>
+</div>,
       "history": Object {
         "action": "POP",
         "block": [Function],
@@ -441,35 +552,38 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/login"
-/>,
-          <Route
-            exact={true}
-            path="/idea/:id"
-            render={[Function]}
-/>,
-          <PrivateRoute
-            authenticated="1111"
-            component={[Function]}
-            exact={true}
-            path="/ideaform"
-/>,
-          <PrivateRoute
-            authenticated="1111"
-            component={[Function]}
-            path="/profile"
-/>,
+          <Connect(Header) />,
+          <Switch>
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/"
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/login"
+            />
+            <Route
+                        exact={true}
+                        path="/idea/:id"
+                        render={[Function]}
+            />
+            <PrivateRoute
+                        authenticated="1111"
+                        component={[Function]}
+                        exact={true}
+                        path="/ideaform"
+            />
+            <PrivateRoute
+                        authenticated="1111"
+                        component={[Function]}
+                        path="/profile"
+            />
+</Switch>,
         ],
       },
       "ref": null,
@@ -478,11 +592,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/",
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -492,56 +602,108 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/login",
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+/>,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+/>,
+              <Route
+                exact={true}
+                path="/idea/:id"
+                render={[Function]}
+/>,
+              <PrivateRoute
+                authenticated="1111"
+                component={[Function]}
+                exact={true}
+                path="/ideaform"
+/>,
+              <PrivateRoute
+                authenticated="1111"
+                component={[Function]}
+                path="/profile"
+/>,
+            ],
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "exact": true,
-            "path": "/idea/:id",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "authenticated": "1111",
-            "component": [Function],
-            "exact": true,
-            "path": "/ideaform",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "authenticated": "1111",
-            "component": [Function],
-            "path": "/profile",
-          },
-          "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/login",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/idea/:id",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "authenticated": "1111",
+                "component": [Function],
+                "exact": true,
+                "path": "/ideaform",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "authenticated": "1111",
+                "component": [Function],
+                "path": "/profile",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": "div",
     },
     "type": [Function],
   },
@@ -551,34 +713,37 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Switch>
-          <Route
-                    component={[Function]}
-                    exact={true}
-                    path="/"
-          />
-          <Route
-                    component={[Function]}
-                    exact={true}
-                    path="/login"
-          />
-          <Route
-                    exact={true}
-                    path="/idea/:id"
-                    render={[Function]}
-          />
-          <PrivateRoute
-                    authenticated="1111"
-                    component={[Function]}
-                    exact={true}
-                    path="/ideaform"
-          />
-          <PrivateRoute
-                    authenticated="1111"
-                    component={[Function]}
-                    path="/profile"
-          />
-</Switch>,
+        "children": <div>
+          <Connect(Header) />
+          <Switch>
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/"
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/login"
+                    />
+                    <Route
+                              exact={true}
+                              path="/idea/:id"
+                              render={[Function]}
+                    />
+                    <PrivateRoute
+                              authenticated="1111"
+                              component={[Function]}
+                              exact={true}
+                              path="/ideaform"
+                    />
+                    <PrivateRoute
+                              authenticated="1111"
+                              component={[Function]}
+                              path="/profile"
+                    />
+          </Switch>
+</div>,
         "history": Object {
           "action": "POP",
           "block": [Function],
@@ -602,35 +767,38 @@ ShallowWrapper {
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/"
-/>,
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/login"
-/>,
-            <Route
-              exact={true}
-              path="/idea/:id"
-              render={[Function]}
-/>,
-            <PrivateRoute
-              authenticated="1111"
-              component={[Function]}
-              exact={true}
-              path="/ideaform"
-/>,
-            <PrivateRoute
-              authenticated="1111"
-              component={[Function]}
-              path="/profile"
-/>,
+            <Connect(Header) />,
+            <Switch>
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/"
+              />
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/login"
+              />
+              <Route
+                            exact={true}
+                            path="/idea/:id"
+                            render={[Function]}
+              />
+              <PrivateRoute
+                            authenticated="1111"
+                            component={[Function]}
+                            exact={true}
+                            path="/ideaform"
+              />
+              <PrivateRoute
+                            authenticated="1111"
+                            component={[Function]}
+                            path="/profile"
+              />
+</Switch>,
           ],
         },
         "ref": null,
@@ -639,11 +807,7 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "exact": true,
-              "path": "/",
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
             "type": [Function],
@@ -653,56 +817,108 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "component": [Function],
-              "exact": true,
-              "path": "/login",
+              "children": Array [
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/"
+/>,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/login"
+/>,
+                <Route
+                  exact={true}
+                  path="/idea/:id"
+                  render={[Function]}
+/>,
+                <PrivateRoute
+                  authenticated="1111"
+                  component={[Function]}
+                  exact={true}
+                  path="/ideaform"
+/>,
+                <PrivateRoute
+                  authenticated="1111"
+                  component={[Function]}
+                  path="/profile"
+/>,
+              ],
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/idea/:id",
-              "render": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "authenticated": "1111",
-              "component": [Function],
-              "exact": true,
-              "path": "/ideaform",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "authenticated": "1111",
-              "component": [Function],
-              "path": "/profile",
-            },
-            "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/login",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "exact": true,
+                  "path": "/idea/:id",
+                  "render": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "authenticated": "1111",
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/ideaform",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "authenticated": "1111",
+                  "component": [Function],
+                  "path": "/profile",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
         ],
-        "type": [Function],
+        "type": "div",
       },
       "type": [Function],
     },

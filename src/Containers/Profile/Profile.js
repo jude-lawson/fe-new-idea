@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Header from '../Header/Header';
 import { IdeaCard } from '../IdeaCard/IdeaCard';
 import './Profile.css';
 
@@ -27,7 +26,6 @@ export class Profile extends Component {
 
     return (
       <div className="app-container">
-        <Header />
         <section className="profile-container">
           {user.id &&
           <div className="profile-card" style={userCardStyles}>
