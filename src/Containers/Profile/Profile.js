@@ -27,7 +27,7 @@ export class Profile extends Component {
     };
 
     return (
-      <div>
+      <div className="app-container">
         <Header />
         <section className="profile-container">
           {user.id &&
