@@ -36,19 +36,70 @@
   max-width: 31rem;
 }
 
+.ideas-container {
+  margin: 22rem 10rem 10rem 115rem;
+  width: 50rem;
+}
+
+.profile--ideas-header {
+  color: var(--primary-white);
+  font-weight: 400;
+}
+
+.profile-ideas {
+  width: 20rem;
+}
+
+.github-link {
+  color: blue;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .ideas-container {
+    margin: 22rem 10rem 10rem 102rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .profile-container {
+    height: 95vh;
+    padding-top: 10rem;
+    overflow-y: auto;
+  }
+
+  .profile-card {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ideas-container {
+    margin: 0px auto;
+    padding-top: 47rem;
+  }
+
+  .idea--card-container {
+    margin: 3rem 15rem 0rem 0rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
+  .profile-container {
+    padding-top: 0;
+  }
   .profile-card {
     height: 60vh;
     width: 25rem;
     margin: auto;
   }
 
-  .profile-container {
-    padding-top: 0;
-  }
 
   .profile-card__user {
     bottom: -5rem;
     width: 21rem;
+  }
+
+  .idea--card-container {
+    margin: 3rem 25rem 0rem 0rem;
   }
 };
