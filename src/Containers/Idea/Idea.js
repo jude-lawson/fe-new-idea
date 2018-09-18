@@ -23,16 +23,14 @@ export class Idea extends Component {
     const id = window.location.pathname.replace(/\D+/g, '');
     this.setState({ loading: true });
 
-    if (id) {
-      await this.props.getIdeaById(id);
-      this.setState({ loading: false });
-    }
+    await this.props.getIdeaById(id);
+    this.setState({ loading: false });
   }
 
   render() {
     const { loading } = this.state;
     const { idea } = this.props;
-    console.log(idea);
+    // console.log(idea);
     if (loading) {
       return (
         <div className="app-container">

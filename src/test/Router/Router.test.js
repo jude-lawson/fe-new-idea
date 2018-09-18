@@ -40,5 +40,5 @@ describe('<AppRouter/>', () => {
       const mappedProps = mapStateToProps(mockState);
 
       expect(mappedProps).toEqual(expectedState);
-    });;
+    });
 });

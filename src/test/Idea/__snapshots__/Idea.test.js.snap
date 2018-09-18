@@ -3,7 +3,9 @@
 exports[`<Idea /> should render loading when loading is true 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Idea />,
+  Symbol(enzyme.__unrendered__): <Idea
+    getIdeaById={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -150,7 +152,9 @@ ShallowWrapper {
 exports[`<Idea /> should render without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Idea />,
+  Symbol(enzyme.__unrendered__): <Idea
+    getIdeaById={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
