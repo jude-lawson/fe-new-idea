@@ -42,7 +42,6 @@ ShallowWrapper {
         <PrivateRoute
                 authenticated={undefined}
                 component={[Function]}
-                exact={true}
                 path="/profile"
         />
 </Switch>,
@@ -96,7 +95,6 @@ ShallowWrapper {
           <PrivateRoute
             authenticated={undefined}
             component={[Function]}
-            exact={true}
             path="/profile"
 />,
         ],
@@ -163,7 +161,6 @@ ShallowWrapper {
           "props": Object {
             "authenticated": undefined,
             "component": [Function],
-            "exact": true,
             "path": "/profile",
           },
           "ref": null,
@@ -206,7 +203,6 @@ ShallowWrapper {
           <PrivateRoute
                     authenticated={undefined}
                     component={[Function]}
-                    exact={true}
                     path="/profile"
           />
 </Switch>,
@@ -260,7 +256,6 @@ ShallowWrapper {
             <PrivateRoute
               authenticated={undefined}
               component={[Function]}
-              exact={true}
               path="/profile"
 />,
           ],
@@ -327,7 +322,6 @@ ShallowWrapper {
             "props": Object {
               "authenticated": undefined,
               "component": [Function],
-              "exact": true,
               "path": "/profile",
             },
             "ref": null,
@@ -421,7 +415,6 @@ ShallowWrapper {
         <PrivateRoute
                 authenticated="1111"
                 component={[Function]}
-                exact={true}
                 path="/profile"
         />
 </Switch>,
@@ -475,7 +468,6 @@ ShallowWrapper {
           <PrivateRoute
             authenticated="1111"
             component={[Function]}
-            exact={true}
             path="/profile"
 />,
         ],
@@ -542,7 +534,6 @@ ShallowWrapper {
           "props": Object {
             "authenticated": "1111",
             "component": [Function],
-            "exact": true,
             "path": "/profile",
           },
           "ref": null,
@@ -585,7 +576,6 @@ ShallowWrapper {
           <PrivateRoute
                     authenticated="1111"
                     component={[Function]}
-                    exact={true}
                     path="/profile"
           />
 </Switch>,
@@ -639,7 +629,6 @@ ShallowWrapper {
             <PrivateRoute
               authenticated="1111"
               component={[Function]}
-              exact={true}
               path="/profile"
 />,
           ],
@@ -706,7 +695,6 @@ ShallowWrapper {
             "props": Object {
               "authenticated": "1111",
               "component": [Function],
-              "exact": true,
               "path": "/profile",
             },
             "ref": null,

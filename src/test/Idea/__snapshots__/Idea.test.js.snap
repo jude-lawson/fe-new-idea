@@ -20,7 +20,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <Connect(Header) />,
         <div
           className="idea-container"
 >
@@ -76,7 +76,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <Connect(Header) />,
           <div
             className="idea-container"
 >
@@ -169,7 +169,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <Connect(Header) />,
         undefined,
       ],
     },
@@ -195,7 +195,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <Connect(Header) />,
           undefined,
         ],
       },
