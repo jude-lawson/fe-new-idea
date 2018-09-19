@@ -3,7 +3,9 @@
 exports[`CommentForm should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CommentForm />,
+  Symbol(enzyme.__unrendered__): <CommentForm
+    postContribution={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

@@ -1,12 +1,15 @@
 import { CommentForm, mapStateToProps, mapDispatchToProps } from '../../Containers/CommentForm/CommentForm';
+import { postContribution } from '../../thunks/post-contribution'
 import { shallow, mount } from 'enzyme';
 import React from 'react';
 import { addComment } from '../../actions/comment';
 
 describe('CommentForm', () => {
-  it('should match the snapshot', () => {
-    let wrapper = shallow(<CommentForm />);
+  let wrapper;
+  const mockFunc = jest.fn();
+  beforeEach(() => wrapper = shallow(<CommentForm postContribution={mockFunc} />))
 
+  it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -14,8 +17,10 @@ describe('CommentForm', () => {
     let spy;
     let wrapper;
 
+    const mockFunc = jest.fn();
+
     beforeEach(() => {
-      wrapper = mount(<CommentForm />);
+      wrapper = mount(<CommentForm postContribution={mockFunc}/>);
       spy = jest.spyOn(wrapper.instance(), 'handleChange');
     });
 
@@ -59,9 +64,7 @@ describe('CommentForm', () => {
   });
 
 
-  test('should call addComment on Submit', () => {
-    const mockFunc = jest.fn();
-    const wrapper = mount(<CommentForm addComment={mockFunc} />);
+  test('should call postContribution on Submit', () => {
     const mockEvent = {
       preventDefault: jest.fn()
     };
@@ -74,13 +77,15 @@ describe('CommentForm', () => {
 
 
   describe('mapDispatchToProps', () => {
-    it('should call dispatch when using addComent from MDTP', () => {
+    test('should call dispatch when using postContribution from MDTP', () => {
+      const mockContribution = { body: 'Hello' };
       const mockDispatch = jest.fn();
-      const actionToDispatch = addComment({body: 'I heart your tech idea', id: 100});
+      const postContribution = jest.fn();
+      const actionToDispatch = postContribution(mockContribution, 6);
       const mappedToProps = mapDispatchToProps(mockDispatch);
-      mappedToProps.addComment({body: 'I heart your tech idea', id: 100});
+      mappedToProps.postContribution();
 
-      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+      expect(mockDispatch).toHaveBeenCalled();
     });
   });
 });
