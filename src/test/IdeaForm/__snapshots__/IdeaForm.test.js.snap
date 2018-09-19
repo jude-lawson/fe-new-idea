@@ -32,7 +32,7 @@ ShallowWrapper {
                     className="idea--title-input"
                     name="title"
                     onChange={[Function]}
-                    placeholder="title"
+                    placeholder="Title"
                     type="text"
                     value=""
           />
@@ -50,7 +50,7 @@ ShallowWrapper {
           </button>
 </form>,
       ],
-      "className": "idea--form-container",
+      "className": "app-container",
     },
     "ref": null,
     "rendered": Array [
@@ -78,7 +78,7 @@ ShallowWrapper {
               className="idea--title-input"
               name="title"
               onChange={[Function]}
-              placeholder="title"
+              placeholder="Title"
               type="text"
               value=""
 />,
@@ -120,7 +120,7 @@ ShallowWrapper {
               "className": "idea--title-input",
               "name": "title",
               "onChange": [Function],
-              "placeholder": "title",
+              "placeholder": "Title",
               "type": "text",
               "value": "",
             },
@@ -182,7 +182,7 @@ ShallowWrapper {
                         className="idea--title-input"
                         name="title"
                         onChange={[Function]}
-                        placeholder="title"
+                        placeholder="Title"
                         type="text"
                         value=""
             />
@@ -200,7 +200,7 @@ ShallowWrapper {
             </button>
 </form>,
         ],
-        "className": "idea--form-container",
+        "className": "app-container",
       },
       "ref": null,
       "rendered": Array [
@@ -228,7 +228,7 @@ ShallowWrapper {
                 className="idea--title-input"
                 name="title"
                 onChange={[Function]}
-                placeholder="title"
+                placeholder="Title"
                 type="text"
                 value=""
 />,
@@ -270,7 +270,7 @@ ShallowWrapper {
                 "className": "idea--title-input",
                 "name": "title",
                 "onChange": [Function],
-                "placeholder": "title",
+                "placeholder": "Title",
                 "type": "text",
                 "value": "",
               },

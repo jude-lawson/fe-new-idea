@@ -25,6 +25,7 @@ ShallowWrapper {
           className="profile-container"
 />,
       ],
+      "className": "app-container",
     },
     "ref": null,
     "rendered": Array [
@@ -64,6 +65,7 @@ ShallowWrapper {
             className="profile-container"
 />,
         ],
+        "className": "app-container",
       },
       "ref": null,
       "rendered": Array [
@@ -150,7 +152,7 @@ ShallowWrapper {
                     style={
                               Object {
                                         "background": "no-repeat url(some-url-here) center center",
-                                        "height": "50vh",
+                                        "height": "60vh",
                                       }
                     }
           >
@@ -160,10 +162,32 @@ ShallowWrapper {
                               <h2>
                                         Joben
                               </h2>
+                              <a
+                                        className="github-link"
+                                        href={undefined}
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                              >
+                                        GitHub
+                              </a>
+                    </div>
+                    <div
+                              className="ideas-container"
+                    >
+                              <h1
+                                        className="profile--ideas-header"
+                              >
+                                         Ideas
+                              </h1>
+                              <Unknown
+                                        className="profile-ideas"
+                                        ideas={Array []}
+                              />
                     </div>
           </div>
 </section>,
       ],
+      "className": "app-container",
     },
     "ref": null,
     "rendered": Array [
@@ -186,7 +210,7 @@ ShallowWrapper {
             style={
                         Object {
                                     "background": "no-repeat url(some-url-here) center center",
-                                    "height": "50vh",
+                                    "height": "60vh",
                                   }
             }
 >
@@ -196,6 +220,27 @@ ShallowWrapper {
                         <h2>
                                     Joben
                         </h2>
+                        <a
+                                    className="github-link"
+                                    href={undefined}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                        >
+                                    GitHub
+                        </a>
+            </div>
+            <div
+                        className="ideas-container"
+            >
+                        <h1
+                                    className="profile--ideas-header"
+                        >
+                                     Ideas
+                        </h1>
+                        <Unknown
+                                    className="profile-ideas"
+                                    ideas={Array []}
+                        />
             </div>
 </div>,
           "className": "profile-container",
@@ -206,44 +251,149 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <div
-              className="profile-card__user"
+            "children": Array [
+              <div
+                className="profile-card__user"
 >
-              <h2>
-                            Joben
-              </h2>
+                <h2>
+                                Joben
+                </h2>
+                <a
+                                className="github-link"
+                                href={undefined}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                >
+                                GitHub
+                </a>
 </div>,
+              <div
+                className="ideas-container"
+>
+                <h1
+                                className="profile--ideas-header"
+                >
+                                 Ideas
+                </h1>
+                <Unknown
+                                className="profile-ideas"
+                                ideas={Array []}
+                />
+</div>,
+            ],
             "className": "profile-card",
             "style": Object {
               "background": "no-repeat url(some-url-here) center center",
-              "height": "50vh",
+              "height": "60vh",
             },
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <h2>
-                Joben
-</h2>,
-              "className": "profile-card__user",
-            },
-            "ref": null,
-            "rendered": Object {
+          "rendered": Array [
+            Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Joben",
+                "children": Array [
+                  <h2>
+                    Joben
+</h2>,
+                  <a
+                    className="github-link"
+                    href={undefined}
+                    rel="noopener noreferrer"
+                    target="_blank"
+>
+                    GitHub
+</a>,
+                ],
+                "className": "profile-card__user",
               },
               "ref": null,
-              "rendered": "Joben",
-              "type": "h2",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Joben",
+                  },
+                  "ref": null,
+                  "rendered": "Joben",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "GitHub",
+                    "className": "github-link",
+                    "href": undefined,
+                    "rel": "noopener noreferrer",
+                    "target": "_blank",
+                  },
+                  "ref": null,
+                  "rendered": "GitHub",
+                  "type": "a",
+                },
+              ],
+              "type": "div",
             },
-            "type": "div",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1
+                    className="profile--ideas-header"
+>
+                     Ideas
+</h1>,
+                  <Unknown
+                    className="profile-ideas"
+                    ideas={Array []}
+/>,
+                ],
+                "className": "ideas-container",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      undefined,
+                      " Ideas",
+                    ],
+                    "className": "profile--ideas-header",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                    " Ideas",
+                  ],
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "profile-ideas",
+                    "ideas": Array [],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
         "type": "section",
@@ -267,7 +417,7 @@ ShallowWrapper {
                         style={
                                     Object {
                                                 "background": "no-repeat url(some-url-here) center center",
-                                                "height": "50vh",
+                                                "height": "60vh",
                                               }
                         }
             >
@@ -277,10 +427,32 @@ ShallowWrapper {
                                     <h2>
                                                 Joben
                                     </h2>
+                                    <a
+                                                className="github-link"
+                                                href={undefined}
+                                                rel="noopener noreferrer"
+                                                target="_blank"
+                                    >
+                                                GitHub
+                                    </a>
+                        </div>
+                        <div
+                                    className="ideas-container"
+                        >
+                                    <h1
+                                                className="profile--ideas-header"
+                                    >
+                                                 Ideas
+                                    </h1>
+                                    <Unknown
+                                                className="profile-ideas"
+                                                ideas={Array []}
+                                    />
                         </div>
             </div>
 </section>,
         ],
+        "className": "app-container",
       },
       "ref": null,
       "rendered": Array [
@@ -303,7 +475,7 @@ ShallowWrapper {
               style={
                             Object {
                                           "background": "no-repeat url(some-url-here) center center",
-                                          "height": "50vh",
+                                          "height": "60vh",
                                         }
               }
 >
@@ -313,6 +485,27 @@ ShallowWrapper {
                             <h2>
                                           Joben
                             </h2>
+                            <a
+                                          className="github-link"
+                                          href={undefined}
+                                          rel="noopener noreferrer"
+                                          target="_blank"
+                            >
+                                          GitHub
+                            </a>
+              </div>
+              <div
+                            className="ideas-container"
+              >
+                            <h1
+                                          className="profile--ideas-header"
+                            >
+                                           Ideas
+                            </h1>
+                            <Unknown
+                                          className="profile-ideas"
+                                          ideas={Array []}
+                            />
               </div>
 </div>,
             "className": "profile-container",
@@ -323,44 +516,149 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <div
-                className="profile-card__user"
+              "children": Array [
+                <div
+                  className="profile-card__user"
 >
-                <h2>
-                                Joben
-                </h2>
+                  <h2>
+                                    Joben
+                  </h2>
+                  <a
+                                    className="github-link"
+                                    href={undefined}
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                  >
+                                    GitHub
+                  </a>
 </div>,
+                <div
+                  className="ideas-container"
+>
+                  <h1
+                                    className="profile--ideas-header"
+                  >
+                                     Ideas
+                  </h1>
+                  <Unknown
+                                    className="profile-ideas"
+                                    ideas={Array []}
+                  />
+</div>,
+              ],
               "className": "profile-card",
               "style": Object {
                 "background": "no-repeat url(some-url-here) center center",
-                "height": "50vh",
+                "height": "60vh",
               },
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <h2>
-                  Joben
-</h2>,
-                "className": "profile-card__user",
-              },
-              "ref": null,
-              "rendered": Object {
+            "rendered": Array [
+              Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Joben",
+                  "children": Array [
+                    <h2>
+                      Joben
+</h2>,
+                    <a
+                      className="github-link"
+                      href={undefined}
+                      rel="noopener noreferrer"
+                      target="_blank"
+>
+                      GitHub
+</a>,
+                  ],
+                  "className": "profile-card__user",
                 },
                 "ref": null,
-                "rendered": "Joben",
-                "type": "h2",
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Joben",
+                    },
+                    "ref": null,
+                    "rendered": "Joben",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "GitHub",
+                      "className": "github-link",
+                      "href": undefined,
+                      "rel": "noopener noreferrer",
+                      "target": "_blank",
+                    },
+                    "ref": null,
+                    "rendered": "GitHub",
+                    "type": "a",
+                  },
+                ],
+                "type": "div",
               },
-              "type": "div",
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h1
+                      className="profile--ideas-header"
+>
+                       Ideas
+</h1>,
+                    <Unknown
+                      className="profile-ideas"
+                      ideas={Array []}
+/>,
+                  ],
+                  "className": "ideas-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        undefined,
+                        " Ideas",
+                      ],
+                      "className": "profile--ideas-header",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                      " Ideas",
+                    ],
+                    "type": "h1",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "profile-ideas",
+                      "ideas": Array [],
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
             "type": "div",
           },
           "type": "section",
