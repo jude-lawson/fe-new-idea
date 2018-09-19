@@ -12,7 +12,7 @@ What things you need to install the software and how to install them
 **Please navigate to the following links to obtain the correct software**
 [Node](https://nodejs.org/en/)
 [Yarn](https://yarnpkg.com/en/)
-[Firebase](https://firebase.google.com/?) _**you will need firbase api keys to run the application**_
+[Firebase](https://firebase.google.com/?) _**you will need firbase api keys to run the application reference env.sample.js**_
 
 ### Installing
 
