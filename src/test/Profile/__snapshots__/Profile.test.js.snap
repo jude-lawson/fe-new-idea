@@ -93,6 +93,24 @@ exports[`<Profile /> should render without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Profile
+    ideas={
+        Array [
+            Object {
+              "body": "dude this is a body",
+              "id": 5,
+              "title": "hey",
+            },
+          ]
+    }
+    myIdeas={
+        Array [
+            Object {
+              "body": "second idea",
+              "id": 8,
+              "title": "hey",
+            },
+          ]
+    }
     user={
         Object {
             "id": "3214adf",
