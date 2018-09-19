@@ -1,4 +1,4 @@
-export const addComment = (comment) => ({
+export const addComment = comment => ({
   type: 'ADD_COMMENT',
   comment
 });
