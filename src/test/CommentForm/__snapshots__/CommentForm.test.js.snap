@@ -17,72 +17,33 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <form
+        className="comment-form"
+        onSubmit={[Function]}
+>
         <h1
-          className="comment--form-header"
->
-          Comment on the Idea
-</h1>,
+                className="comment--form-header"
+        >
+                Contribute to the Idea
+        </h1>
         <textarea
-          className="comment--body-input"
-          name="body"
-          onChange={[Function]}
-          placeholder="Description"
-/>,
+                className="comment--body-input"
+                name="body"
+                onChange={[Function]}
+                placeholder="Description"
+                required={true}
+        />
         <button
-          className="comment--form-btn"
->
-          SUBMIT
-</button>,
-      ],
-      "className": "comment-form",
-      "onSubmit": [Function],
+                className="comment--form-btn btn-grad"
+                id="blue-btn"
+        >
+                SUBMIT
+        </button>
+</form>,
+      "className": "comment--form-container not-hidden",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Comment on the Idea",
-          "className": "comment--form-header",
-        },
-        "ref": null,
-        "rendered": "Comment on the Idea",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "comment--body-input",
-          "name": "body",
-          "onChange": [Function],
-          "placeholder": "Description",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "textarea",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "SUBMIT",
-          "className": "comment--form-btn",
-        },
-        "ref": null,
-        "rendered": "SUBMIT",
-        "type": "button",
-      },
-    ],
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -91,16 +52,18 @@ ShallowWrapper {
           <h1
             className="comment--form-header"
 >
-            Comment on the Idea
+            Contribute to the Idea
 </h1>,
           <textarea
             className="comment--body-input"
             name="body"
             onChange={[Function]}
             placeholder="Description"
+            required={true}
 />,
           <button
-            className="comment--form-btn"
+            className="comment--form-btn btn-grad"
+            id="blue-btn"
 >
             SUBMIT
 </button>,
@@ -115,11 +78,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Comment on the Idea",
+            "children": "Contribute to the Idea",
             "className": "comment--form-header",
           },
           "ref": null,
-          "rendered": "Comment on the Idea",
+          "rendered": "Contribute to the Idea",
           "type": "h1",
         },
         Object {
@@ -131,6 +94,7 @@ ShallowWrapper {
             "name": "body",
             "onChange": [Function],
             "placeholder": "Description",
+            "required": true,
           },
           "ref": null,
           "rendered": null,
@@ -142,7 +106,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "SUBMIT",
-            "className": "comment--form-btn",
+            "className": "comment--form-btn btn-grad",
+            "id": "blue-btn",
           },
           "ref": null,
           "rendered": "SUBMIT",
@@ -150,6 +115,115 @@ ShallowWrapper {
         },
       ],
       "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form
+          className="comment-form"
+          onSubmit={[Function]}
+>
+          <h1
+                    className="comment--form-header"
+          >
+                    Contribute to the Idea
+          </h1>
+          <textarea
+                    className="comment--body-input"
+                    name="body"
+                    onChange={[Function]}
+                    placeholder="Description"
+                    required={true}
+          />
+          <button
+                    className="comment--form-btn btn-grad"
+                    id="blue-btn"
+          >
+                    SUBMIT
+          </button>
+</form>,
+        "className": "comment--form-container not-hidden",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="comment--form-header"
+>
+              Contribute to the Idea
+</h1>,
+            <textarea
+              className="comment--body-input"
+              name="body"
+              onChange={[Function]}
+              placeholder="Description"
+              required={true}
+/>,
+            <button
+              className="comment--form-btn btn-grad"
+              id="blue-btn"
+>
+              SUBMIT
+</button>,
+          ],
+          "className": "comment-form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Contribute to the Idea",
+              "className": "comment--form-header",
+            },
+            "ref": null,
+            "rendered": "Contribute to the Idea",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "comment--body-input",
+              "name": "body",
+              "onChange": [Function],
+              "placeholder": "Description",
+              "required": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "textarea",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SUBMIT",
+              "className": "comment--form-btn btn-grad",
+              "id": "blue-btn",
+            },
+            "ref": null,
+            "rendered": "SUBMIT",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
