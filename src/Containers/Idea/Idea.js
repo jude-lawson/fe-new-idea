@@ -6,6 +6,7 @@ import Contributions from '../../Components/Contributions/Contributions';
 import { getIdeaById } from '../../thunks/getIdea';
 import { GridLoader } from 'halogenium';
 import placeholder from '../../images/place-holder.png';
+import { history } from '../../router/Router';
 
 import './Idea.css';
 
@@ -56,7 +57,7 @@ export class Idea extends Component {
         {idea &&
         <React.Fragment>
           <article className="idea-container">
-            <Link className="btn-grad" id="btn-small" to="/" >Back</Link>
+            <button className="btn-grad" id="btn-small" onClick={() => history.goBack()} >&larr; Back</button>
             <div className="idea">
               <h2 className="idea-title">{idea.title}</h2>
               <p className="idea-author">

@@ -144,11 +144,11 @@ ShallowWrapper {
                 <div
                         className="ideas-container"
                 >
-                        <h1
+                        <h2
                                 className="profile--ideas-header"
                         >
-                                 Ideas
-                        </h1>
+                                : Ideas
+                        </h2>
                         <Unknown
                                 className="profile-ideas"
                                 ideas={Array []}
@@ -191,11 +191,11 @@ ShallowWrapper {
           <div
                     className="ideas-container"
           >
-                    <h1
+                    <h2
                               className="profile--ideas-header"
                     >
-                               Ideas
-                    </h1>
+                              : Ideas
+                    </h2>
                     <Unknown
                               className="profile-ideas"
                               ideas={Array []}
@@ -229,11 +229,11 @@ ShallowWrapper {
             <div
               className="ideas-container"
 >
-              <h1
+              <h2
                             className="profile--ideas-header"
               >
-                             Ideas
-              </h1>
+                            : Ideas
+              </h2>
               <Unknown
                             className="profile-ideas"
                             ideas={Array []}
@@ -305,11 +305,11 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <h1
+                <h2
                   className="profile--ideas-header"
 >
-                   Ideas
-</h1>,
+                  : Ideas
+</h2>,
                 <Unknown
                   className="profile-ideas"
                   ideas={Array []}
@@ -326,16 +326,16 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     undefined,
-                    " Ideas",
+                    ": Ideas",
                   ],
                   "className": "profile--ideas-header",
                 },
                 "ref": null,
                 "rendered": Array [
                   undefined,
-                  " Ideas",
+                  ": Ideas",
                 ],
-                "type": "h1",
+                "type": "h2",
               },
               Object {
                 "instance": null,
@@ -395,11 +395,11 @@ ShallowWrapper {
                     <div
                               className="ideas-container"
                     >
-                              <h1
+                              <h2
                                         className="profile--ideas-header"
                               >
-                                         Ideas
-                              </h1>
+                                        : Ideas
+                              </h2>
                               <Unknown
                                         className="profile-ideas"
                                         ideas={Array []}
@@ -442,11 +442,11 @@ ShallowWrapper {
             <div
                         className="ideas-container"
             >
-                        <h1
+                        <h2
                                     className="profile--ideas-header"
                         >
-                                     Ideas
-                        </h1>
+                                    : Ideas
+                        </h2>
                         <Unknown
                                     className="profile-ideas"
                                     ideas={Array []}
@@ -480,11 +480,11 @@ ShallowWrapper {
               <div
                 className="ideas-container"
 >
-                <h1
+                <h2
                                 className="profile--ideas-header"
                 >
-                                 Ideas
-                </h1>
+                                : Ideas
+                </h2>
                 <Unknown
                                 className="profile-ideas"
                                 ideas={Array []}
@@ -556,11 +556,11 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h1
+                  <h2
                     className="profile--ideas-header"
 >
-                     Ideas
-</h1>,
+                    : Ideas
+</h2>,
                   <Unknown
                     className="profile-ideas"
                     ideas={Array []}
@@ -577,16 +577,16 @@ ShallowWrapper {
                   "props": Object {
                     "children": Array [
                       undefined,
-                      " Ideas",
+                      ": Ideas",
                     ],
                     "className": "profile--ideas-header",
                   },
                   "ref": null,
                   "rendered": Array [
                     undefined,
-                    " Ideas",
+                    ": Ideas",
                   ],
-                  "type": "h1",
+                  "type": "h2",
                 },
                 Object {
                   "instance": null,
