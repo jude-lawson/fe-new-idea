@@ -3,7 +3,7 @@
 exports[`<Contributions /> should render without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Contributions
+  Symbol(enzyme.__unrendered__): <Unknown
     contributions={
         Array [
             Object {
@@ -42,12 +42,6 @@ ShallowWrapper {
                 >
                         Contributions
                 </h2>
-                <button
-                        className="btn-grad btn-small blue-btn"
-                        onClick={[Function]}
-                >
-                        New Contribution
-                </button>
         </div>
         <Connect(CommentForm)
                 hidden={undefined}
@@ -96,12 +90,6 @@ ShallowWrapper {
             >
                         Contributions
             </h2>
-            <button
-                        className="btn-grad btn-small blue-btn"
-                        onClick={[Function]}
-            >
-                        New Contribution
-            </button>
 </div>,
           <Connect(CommentForm)
             hidden={undefined}
@@ -151,12 +139,7 @@ ShallowWrapper {
 >
                 Contributions
 </h2>,
-              <button
-                className="btn-grad btn-small blue-btn"
-                onClick={[Function]}
->
-                New Contribution
-</button>,
+              undefined,
             ],
             "className": "contribution-header",
           },
@@ -174,19 +157,7 @@ ShallowWrapper {
               "rendered": "Contributions",
               "type": "h2",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "New Contribution",
-                "className": "btn-grad btn-small blue-btn",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "New Contribution",
-              "type": "button",
-            },
+            undefined,
           ],
           "type": "div",
         },
@@ -334,12 +305,6 @@ ShallowWrapper {
                     >
                               Contributions
                     </h2>
-                    <button
-                              className="btn-grad btn-small blue-btn"
-                              onClick={[Function]}
-                    >
-                              New Contribution
-                    </button>
           </div>
           <Connect(CommentForm)
                     hidden={undefined}
@@ -388,12 +353,6 @@ ShallowWrapper {
               >
                             Contributions
               </h2>
-              <button
-                            className="btn-grad btn-small blue-btn"
-                            onClick={[Function]}
-              >
-                            New Contribution
-              </button>
 </div>,
             <Connect(CommentForm)
               hidden={undefined}
@@ -443,12 +402,7 @@ ShallowWrapper {
 >
                   Contributions
 </h2>,
-                <button
-                  className="btn-grad btn-small blue-btn"
-                  onClick={[Function]}
->
-                  New Contribution
-</button>,
+                undefined,
               ],
               "className": "contribution-header",
             },
@@ -466,19 +420,7 @@ ShallowWrapper {
                 "rendered": "Contributions",
                 "type": "h2",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "New Contribution",
-                  "className": "btn-grad btn-small blue-btn",
-                  "onClick": [Function],
-                },
-                "ref": null,
-                "rendered": "New Contribution",
-                "type": "button",
-              },
+              undefined,
             ],
             "type": "div",
           },
