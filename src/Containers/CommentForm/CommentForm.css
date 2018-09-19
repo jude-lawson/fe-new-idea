@@ -1,17 +1,19 @@
+.comment--form-container {
+  border-bottom: 1px solid grey;
+}
+
 .comment-form {
   width: 60%;
-  background: var(--primary-red);
   margin: auto;
   padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-
 }
 
 .comment--form-header {
   text-align: center;
-  color: var(--primary-blue);
+  color: var(--primary-dark-grey);
   margin-bottom: 2rem;
 }
 
@@ -31,4 +33,17 @@
   margin: 2rem auto;
   font-weight: 700;
   border-radius: 23px;
+}
+
+.hidden {
+  display: none;
+}
+
+.not-hidden {
+  display: block;
+}
+
+#blue-btn {
+  background-image: linear-gradient(to right, #289dc5, #50b4be);
+  color: var(--primary-white);
 }

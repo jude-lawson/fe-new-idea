@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  {connect } from 'react-redux';
 import { addComment } from '../../actions/comment';
 import PropTypes from 'prop-types';
+
 import './CommentForm.css';
 
 export class CommentForm extends Component {
@@ -21,30 +22,36 @@ export class CommentForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.addComment({...this.state, id: Date.now()});
+    this.props.addComment({ ...this.state });
   }
 
   render() {
+    const { hidden } = this.props;
+
     return (
-      <form
-        onSubmit={this.handleSubmit}
-        className="comment-form"
-      >
-        <h1 className="comment--form-header">Comment on the Idea</h1>
-        <textarea
-          className="comment--body-input"
-          placeholder="Description"
-          name="body"
-          onChange={this.handleChange}
-        />
-        <button className="comment--form-btn">SUBMIT</button>
-      </form>
+      <div className={`comment--form-container ${hidden? 'hidden' : 'not-hidden'}`}>
+        <form
+          onSubmit={this.handleSubmit}
+          className="comment-form"
+        >
+          <h1 className="comment--form-header">Contribute to the Idea</h1>
+          <textarea
+            className="comment--body-input"
+            placeholder="Description"
+            name="body"
+            required
+            onChange={this.handleChange}
+          />
+          <button className="comment--form-btn btn-grad" id="blue-btn">SUBMIT</button>
+        </form>
+      </div>
     );
   }
 }
 
 CommentForm.propTypes = {
-  addComment: PropTypes.func
+  addComment: PropTypes.func,
+  hidden: PropTypes.bool
 };
 
 export const mapStateToProps = state => ({

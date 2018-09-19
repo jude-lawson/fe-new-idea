@@ -16,7 +16,8 @@ export class Idea extends Component {
     this.state = {
       loading: true,
       id: window.location.pathname.replace(/\D+/g, ''),
-      contributions: []
+      contributions: [],
+      hidden: true
     };
   }
 
@@ -38,8 +39,12 @@ export class Idea extends Component {
     this.setState({ contributions });
   }
 
+  toggleCommentForm = () => {
+    this.setState({hidden: !this.state.hidden});
+  }
+
   render() {
-    const { loading, contributions } = this.state;
+    const { loading, contributions, hidden} = this.state;
     const { idea } = this.props;
 
     if (loading) {
@@ -74,7 +79,11 @@ export class Idea extends Component {
               <p className="idea-content">{idea.body}</p>
             </div>
           </article>
-          <Contributions contributions={contributions} />
+          <Contributions
+            contributions={contributions}
+            hidden={hidden}
+            toggleCommentForm={this.toggleCommentForm}
+          />
         </React.Fragment>
         }
       </section>

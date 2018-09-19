@@ -21,7 +21,8 @@
     "test": "react-scripts test --env=jsdom",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "deploy": "yarn run build && mv build/index.html build/200.html && surge build new-idea.surge.sh"
+    "deploy": "yarn run build && mv build/index.html build/200.html && surge build new-idea.surge.sh",
+    "lint": "eslint src/Components src/Containers src/api-calls src/reducers src/actions src/thunks src/router !src/test !src/registerServiceWorker"
   },
   "devDependencies": {
     "dotenv": "6.0.0",

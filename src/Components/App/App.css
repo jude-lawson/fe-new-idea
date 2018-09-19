@@ -21,7 +21,12 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 8rem;
-  min-height: 40vh;
+  min-height: 30vh;
+}
+
+.app-copy--title {
+  font-size: 5rem;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 500px) {

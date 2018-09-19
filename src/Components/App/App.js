@@ -8,7 +8,7 @@ export class App extends Component {
     return (
       <main className="app-container">
         <section className="app-copy">
-          <h1>Some cool description goes here</h1>
+          <h1 className="app-copy--title">Technical Ideas for the people</h1>
         </section>
         <IdeaBox />
       </main>

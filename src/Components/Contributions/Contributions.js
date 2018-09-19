@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import placeholder from '../../images/place-holder.png';
-
+import CommentForm from '../../Containers/CommentForm/CommentForm';
 import './Contributions.css';
 
-const Contributions = ({ contributions }) => {
+const Contributions = ({ contributions, hidden, toggleCommentForm }) => {
   const renderContributions = contributions.map(contribution =>
     <div className="contribution" key={contribution.id}>
       <h2 className="idea-title">{contribution.title}</h2>
@@ -22,26 +22,42 @@ const Contributions = ({ contributions }) => {
   );
 
   return (
-    <section className="contributions-container">
+    <React.Fragment>
       {contributions.length ?
-        <React.Fragment>
+        <section className="contributions-container">
           <div className="contribution-header">
             <h2 className="contribution-title">Contributions</h2>
-            <button className="btn-grad btn-small blue-btn">New Contribution</button>
+            <button
+              onClick={() => toggleCommentForm()}
+              className="btn-grad btn-small blue-btn"
+            >
+            New Contribution
+            </button>
           </div>
+          <CommentForm hidden={hidden}/>
           {renderContributions}
-        </React.Fragment> :
-        <div className="contribution-header">
-          <h2 className="contribution-title">No Contributions Yet</h2>
-          <button className="btn-grad btn-small blue-btn">New Contribution</button>
-        </div>
+        </section> :
+        <section className="contributions-container">
+          <div className="contribution-header">
+            <h2 className="contribution-title">No Contributions Yet</h2>
+            <button
+              onClick={() => toggleCommentForm()}
+              className="btn-grad btn-small blue-btn"
+            >
+            New Contribution
+            </button>
+          </div>
+          <CommentForm hidden={hidden}/>
+        </section>
       }
-    </section>
+    </React.Fragment>
   );
 };
 
 Contributions.propTypes = {
-  contributions: PropTypes.arrayOf(PropTypes.object)
+  contributions: PropTypes.arrayOf(PropTypes.object),
+  hidden: PropTypes.bool,
+  toggleCommentForm: PropTypes.func
 };
 
 export default Contributions;

@@ -21,8 +21,10 @@ ShallowWrapper {
         <section
           className="app-copy"
 >
-          <h1>
-                    Some cool description goes here
+          <h1
+                    className="app-copy--title"
+          >
+                    Technical Ideas for the people
           </h1>
 </section>,
         <Connect(IdeaBox) />,
@@ -36,8 +38,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <h1>
-            Some cool description goes here
+          "children": <h1
+            className="app-copy--title"
+>
+            Technical Ideas for the people
 </h1>,
           "className": "app-copy",
         },
@@ -47,10 +51,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Some cool description goes here",
+            "children": "Technical Ideas for the people",
+            "className": "app-copy--title",
           },
           "ref": null,
-          "rendered": "Some cool description goes here",
+          "rendered": "Technical Ideas for the people",
           "type": "h1",
         },
         "type": "section",
@@ -77,8 +82,10 @@ ShallowWrapper {
           <section
             className="app-copy"
 >
-            <h1>
-                        Some cool description goes here
+            <h1
+                        className="app-copy--title"
+            >
+                        Technical Ideas for the people
             </h1>
 </section>,
           <Connect(IdeaBox) />,
@@ -92,8 +99,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <h1>
-              Some cool description goes here
+            "children": <h1
+              className="app-copy--title"
+>
+              Technical Ideas for the people
 </h1>,
             "className": "app-copy",
           },
@@ -103,10 +112,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Some cool description goes here",
+              "children": "Technical Ideas for the people",
+              "className": "app-copy--title",
             },
             "ref": null,
-            "rendered": "Some cool description goes here",
+            "rendered": "Technical Ideas for the people",
             "type": "h1",
           },
           "type": "section",
