@@ -34,6 +34,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="Description"
                 required={true}
+                value=""
         />
         <button
                 className="comment--form-btn btn-grad"
@@ -62,6 +63,7 @@ ShallowWrapper {
             onChange={[Function]}
             placeholder="Description"
             required={true}
+            value=""
 />,
           <button
             className="comment--form-btn btn-grad"
@@ -97,6 +99,7 @@ ShallowWrapper {
             "onChange": [Function],
             "placeholder": "Description",
             "required": true,
+            "value": "",
           },
           "ref": null,
           "rendered": null,
@@ -141,6 +144,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Description"
                     required={true}
+                    value=""
           />
           <button
                     className="comment--form-btn btn-grad"
@@ -169,6 +173,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="Description"
               required={true}
+              value=""
 />,
             <button
               className="comment--form-btn btn-grad"
@@ -204,6 +209,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "Description",
               "required": true,
+              "value": "",
             },
             "ref": null,
             "rendered": null,

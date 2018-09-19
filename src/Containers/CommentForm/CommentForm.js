@@ -23,6 +23,7 @@ export class CommentForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
     this.props.postContribution({ ...this.state });
+    this.setState({ body: '' });
   }
 
   render() {
@@ -39,6 +40,7 @@ export class CommentForm extends Component {
             className="comment--body-input"
             placeholder="Description"
             name="body"
+            value={this.state.body}
             required
             onChange={this.handleChange}
           />
