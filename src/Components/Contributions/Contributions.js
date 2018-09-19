@@ -25,10 +25,16 @@ const Contributions = ({ contributions }) => {
     <section className="contributions-container">
       {contributions.length ?
         <React.Fragment>
-          <h2 className="contribution-title">Contributions</h2>
+          <div className="contribution-header">
+            <h2 className="contribution-title">Contributions</h2>
+            <button className="btn-grad btn-small blue-btn">New Contribution</button>
+          </div>
           {renderContributions}
         </React.Fragment> :
-        <h2 className="contribution-title">No Contributions Yet</h2>
+        <div className="contribution-header">
+          <h2 className="contribution-title">No Contributions Yet</h2>
+          <button className="btn-grad btn-small blue-btn">New Contribution</button>
+        </div>
       }
     </section>
   );

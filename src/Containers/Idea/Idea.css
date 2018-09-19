@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  color: var(--primary-grey);
+  color: var(--primary-dark-grey);
   background: #ffba49;
   margin: 8rem auto 2rem;
   box-shadow: 8px 10px 30px 0 rgba(46, 61, 73, 0.15);
@@ -13,6 +13,27 @@
 
 .idea {
   padding: 0 4rem;
+}
+
+.idea-button--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.idea-button--container .btn-grad {
+  padding: 1rem 1.5rem;
+}
+
+.idea-button--container .btn-grad a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+.idea-button--container .blue-btn {
+  background-image: linear-gradient(to right, #289dc5, #50b4be);
+  color: var(--primary-white);
 }
 
 .idea-author {
@@ -51,10 +72,6 @@
 
 .scale-up-hor-left {
   animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-#btn-small {
-  padding: 1rem 1.5rem;
 }
 
 /* ----------------------------------------------

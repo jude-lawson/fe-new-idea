@@ -24,8 +24,8 @@ export class Idea extends Component {
     this.setState({ loading: true });
 
     await this.getIdeaByIdFromDb();
-    this.setState({ loading: false });
     this.getContributionsById();
+    this.setState({ loading: false });
   }
 
   getIdeaByIdFromDb = async () => {
@@ -41,7 +41,7 @@ export class Idea extends Component {
   render() {
     const { loading, contributions } = this.state;
     const { idea } = this.props;
-    // console.log(idea);
+
     if (loading) {
       return (
         <div className="app-container">
@@ -57,7 +57,10 @@ export class Idea extends Component {
         {idea &&
         <React.Fragment>
           <article className="idea-container">
-            <button className="btn-grad" id="btn-small" onClick={() => history.goBack()} >&larr; Back</button>
+            <div className="idea-button--container">
+              <button className="btn-grad blue-btn" onClick={() => history.goBack()} >&larr; Back</button>
+              <button className="btn-grad btn-small blue-btn"><Link to="/ideaform">New Idea &rarr;</Link></button>
+            </div>
             <div className="idea">
               <h2 className="idea-title">{idea.title}</h2>
               <p className="idea-author">

@@ -3,6 +3,7 @@ import  { connect } from 'react-redux';
 import { addIdea } from '../../actions/idea';
 import PropTypes from 'prop-types';
 import { postIdea } from '../../api-calls/api-calls';
+import { history } from '../../router/Router';
 
 import './IdeaForm.css';
 
@@ -16,7 +17,7 @@ export class IdeaForm extends Component {
   }
 
   handleChange = (event) => {
-    const {name, value} = event.target;
+    const { name, value } = event.target;
     this.setState({
       [name]: value
     });
@@ -28,6 +29,7 @@ export class IdeaForm extends Component {
     const user = JSON.parse(window.localStorage.getItem('user'));
     await postIdea(user.id, this.state.title, this.state.body);
     this.setState({title: '', body: ''});
+    history.push('/');
   }
 
   render() {
