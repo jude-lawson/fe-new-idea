@@ -43,6 +43,10 @@ export class Idea extends Component {
     this.setState({hidden: !this.state.hidden});
   }
 
+  handleNewContribution = contribution => {
+    // const contributions = [contribution,]
+  }
+
   render() {
     const { loading, contributions, hidden} = this.state;
     const { idea } = this.props;

@@ -3,7 +3,9 @@
 exports[`CommentForm should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CommentForm />,
+  Symbol(enzyme.__unrendered__): <CommentForm
+    postContribution={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -32,6 +34,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="Description"
                 required={true}
+                value=""
         />
         <button
                 className="comment--form-btn btn-grad"
@@ -60,6 +63,7 @@ ShallowWrapper {
             onChange={[Function]}
             placeholder="Description"
             required={true}
+            value=""
 />,
           <button
             className="comment--form-btn btn-grad"
@@ -95,6 +99,7 @@ ShallowWrapper {
             "onChange": [Function],
             "placeholder": "Description",
             "required": true,
+            "value": "",
           },
           "ref": null,
           "rendered": null,
@@ -139,6 +144,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="Description"
                     required={true}
+                    value=""
           />
           <button
                     className="comment--form-btn btn-grad"
@@ -167,6 +173,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="Description"
               required={true}
+              value=""
 />,
             <button
               className="comment--form-btn btn-grad"
@@ -202,6 +209,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "Description",
               "required": true,
+              "value": "",
             },
             "ref": null,
             "rendered": null,

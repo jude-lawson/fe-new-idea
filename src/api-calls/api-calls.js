@@ -33,4 +33,27 @@ const getIdea = async id => {
   return idea;
 };
 
-export { postIdea, getIdeas, getIdea };
+const postContributionToDb = async (contribution, id) => {
+  const user = JSON.parse(localStorage.getItem('user'));
+  // console.log(user);
+  const userId = user.id;
+  const url = `https://whispering-lowlands-31319.herokuapp.com/api/v1/ideas/${37}/contributions`;
+  const newContribution = {...contribution, user_id: userId};
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(newContribution),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  };
+  try {
+    const response = await fetch(url, options);
+    const newContribution = response.json();
+    return newContribution;
+
+  } catch (error) {
+    return error.message;
+  }
+};
+
+export { postIdea, getIdeas, getIdea, postContributionToDb };

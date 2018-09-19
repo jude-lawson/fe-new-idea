@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import  {connect } from 'react-redux';
-import { addComment } from '../../actions/comment';
+import { postContribution } from '../../thunks/post-contribution';
 import PropTypes from 'prop-types';
 
 import './CommentForm.css';
@@ -22,7 +22,8 @@ export class CommentForm extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.addComment({ ...this.state });
+    this.props.postContribution({ ...this.state });
+    this.setState({ body: '' });
   }
 
   render() {
@@ -39,6 +40,7 @@ export class CommentForm extends Component {
             className="comment--body-input"
             placeholder="Description"
             name="body"
+            value={this.state.body}
             required
             onChange={this.handleChange}
           />
@@ -50,7 +52,7 @@ export class CommentForm extends Component {
 }
 
 CommentForm.propTypes = {
-  addComment: PropTypes.func,
+  postContribution: PropTypes.func,
   hidden: PropTypes.bool
 };
 
@@ -59,7 +61,7 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  addComment: comment => dispatch(addComment(comment))
+  postContribution: (comment, id) => dispatch(postContribution(comment, id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CommentForm);
