@@ -3,9 +3,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 15rem;
   padding: 2rem;
   color: var(--primary-grey);
+  background: #ffba49;
+  margin: 8rem auto 2rem;
+  box-shadow: 8px 10px 30px 0 rgba(46, 61, 73, 0.15);
+  max-width: 116rem;
 }
 
 .idea {
@@ -17,7 +20,6 @@
   align-items: center;
   font-size: 2.6rem;
   margin-bottom: 2rem;
-  color: var(--primary-white);
 }
 
 .idea-author span {
@@ -37,17 +39,22 @@
 
 .idea-content {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .loader-wrapper {
   align-items: center;
   display: flex;
-  height: 50vh;
+  height: 100vh;
   justify-content: center;
 }
 
 .scale-up-hor-left {
   animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+#btn-small {
+  padding: 1rem 1.5rem;
 }
 
 /* ----------------------------------------------

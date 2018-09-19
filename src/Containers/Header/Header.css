@@ -1,29 +1,29 @@
 .header--container {
-  position: fixed;
-  height: 8rem;
-  z-index: 2;
-  width: 100vw;
-  float: right;
   background: var(--primary-blue);
+  float: right;
+  height: 8rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
 }
 
 .app--title {
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
   color: var(--primary-white);
   font-size: 4.5rem;
   font-weight: 100;
+  left: 2rem;
+  position: absolute;
+  top: 1rem;
 }
 
 .sign--up-container {
+  color: var(--primary-white);
   display: flex;
-  width: 150px;
   justify-content: space-around;
   position: absolute;
-  color: var(--primary-white);
-  top: 4.5rem;
   right: 5rem;
+  top: 4.5rem;
+  width: 150px;
 }
 
 .menu-content {
@@ -33,10 +33,10 @@
 
 .collapsible--menu {
   background-color: var(--primary-blue);
-  width: 250px;
-  float: right;
   border-bottom-left-radius: 5px;
+  float: right;
   padding-top: 3rem;
+  width: 250px;
 }
 
 .collapsible--menu ul {
@@ -52,14 +52,10 @@
 }
 
 .collapsible--menu li {
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
   color: var(--primary-white);
   cursor: pointer;
-  animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-}
-
-.collapsible--menu li:hover {
-  background-image: linear-gradient( to right, #4381c1, #289dc5, #50b4be, #85c7b7, #b8d8ba );
 }
 
 @keyframes fadein {
@@ -93,16 +89,16 @@
 }
 
 .collapsible--menu label {
-  font-size: 45px;
-  display: block;
-  cursor: pointer;
   background: url(../../resources/menu-open.svg) no-repeat left center;
-  padding: 9px 0 18px 50px;
-  color: var(--primary-white);
   background-size: 26px;
+  color: var(--primary-white);
+  cursor: pointer;
+  display: block;
+  font-size: 45px;
+  padding: 9px 0 18px 50px;
   position: absolute;
-  top: 3rem;
   right: 1rem;
+  top: 3rem;
   transition: 0.2s ease-in-out;
 }
 
@@ -115,16 +111,16 @@ input:checked + label {
 }
 
 .menu-content {
+  font-family: "Oswald", sans-serif;
   max-height: 0;
   overflow: hidden;
-  font-family: "Oswald", sans-serif;
   padding: 0 0 0 50px;
   text-align: left;
 }
 
 .menu-link a {
-  text-decoration: none;
   color: var(--primary-white);
+  text-decoration: none;
 }
 
 input:checked ~ label {
@@ -139,12 +135,15 @@ input:checked ~ .menu-content {
 @media screen and (max-width: 500px) {
   .header--container {
     float: none;
-    position: relative;
   }
 
   .collapsible--menu {
     background-color: var(--primary-blue);
-    width: 100vw;
     border-radius: 0;
+    width: 100vw;
   }
+}
+
+.selected {
+  color: var(--primary-green);
 }

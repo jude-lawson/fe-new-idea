@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import createHistory from 'history/createBrowserHistory';
 
@@ -27,7 +27,7 @@ export const AppRouter = ({ authenticated }) => (
           );
         }} />
         <PrivateRoute authenticated={authenticated} path="/ideaform" exact component={IdeaForm} />
-        <PrivateRoute authenticated={authenticated} path="/profile"   component={Profile} />
+        <PrivateRoute authenticated={authenticated} path="/profile"  exact component={Profile} />
       </Switch>
     </div>
   </Router>

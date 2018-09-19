@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { firebaseLogin, firebaseLogout } from '../../thunks/auth';
 import { retrieveMyIdeas } from '../../actions/userIdeas';
@@ -43,8 +43,6 @@ export class Header extends Component {
     this.props.firebaseLogout();
   }
 
-
-
   render() {
     const { authenticated, firebaseLogin } = this.props;
     if (authenticated) {
@@ -52,7 +50,9 @@ export class Header extends Component {
     }
     return (
       <header className="header--container">
-        <h1 className="app--title">New Idea</h1>
+        <Link to="/">
+          <h1 className="app--title">New Idea</h1>
+        </Link>
         <div className="sign--up-container">
         </div>
         <div className="collapsible--menu">
@@ -61,13 +61,13 @@ export class Header extends Component {
           <div className="menu-content">
             <ul>
               <li className="menu-link">
-                <Link to="/">Home</Link>
+                <NavLink activeClassName="selected" to="/">Home</NavLink>
               </li>
               <li className="menu-link">
-                <Link to="/profile">Profile</Link>
+                <NavLink activeClassName="selected" to="/profile">Profile</NavLink>
               </li>
               <li className="menu-link">
-                <Link to="/ideaform">New Article</Link>
+                <NavLink activeClassName="selected" to="/ideaform">New Idea</NavLink>
               </li>
               {!authenticated ?
                 <li className="menu-link" onClick={() => firebaseLogin()}><a>Sign Up / Sign In</a></li> :

@@ -1,7 +1,13 @@
 export const storageMock = () => {
-  const storage = {
+  let storage = {
     user: 1,
-    ideas: [{id: 1, tile: 'hello'}]
+    id: 1,
+    ideas: [
+      {
+        id: 1,
+        title: 'hello'
+      }
+    ]
   };
 
   return {
@@ -20,6 +26,10 @@ export const storageMock = () => {
     key: function(i) {
       var keys = Object.keys(storage);
       return keys[i] || null;
+    },
+    clear: function () {
+      storage = {}
+      return storage;
     }
   };
 }

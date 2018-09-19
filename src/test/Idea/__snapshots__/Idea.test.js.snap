@@ -5,6 +5,22 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Idea
     getIdeaById={[Function]}
+    idea={
+        Object {
+            "author": Object {
+              "username": "defaultuser",
+            },
+            "body": "World",
+            "contributions": Array [
+              Object {
+                "body": "so much love",
+                "id": 2,
+                "title": "I love hello worlds",
+              },
+            ],
+            "title": "Hello",
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -20,23 +36,52 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="idea-container"
+        className="loader-wrapper"
 >
-        <div
-                className="loader-wrapper"
-        >
-                <GridLoader
-                        color="#ffffff"
-                        loading={true}
-                        margin="2px"
-                        size="15px"
-                />
-        </div>
+        <GridLoader
+                color="#ffffff"
+                loading={true}
+                margin="2px"
+                size="15px"
+        />
 </div>,
       "className": "app-container",
     },
     "ref": null,
     "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <GridLoader
+          color="#ffffff"
+          loading={true}
+          margin="2px"
+          size="15px"
+/>,
+        "className": "loader-wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "color": "#ffffff",
+          "loading": true,
+          "margin": "2px",
+          "size": "15px",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -51,7 +96,7 @@ ShallowWrapper {
                     size="15px"
           />
 </div>,
-        "className": "idea-container",
+        "className": "app-container",
       },
       "ref": null,
       "rendered": Object {
@@ -81,83 +126,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
-        },
-        "type": "div",
-      },
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="idea-container"
->
-          <div
-                    className="loader-wrapper"
-          >
-                    <GridLoader
-                              color="#ffffff"
-                              loading={true}
-                              margin="2px"
-                              size="15px"
-                    />
-          </div>
-</div>,
-        "className": "app-container",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <div
-            className="loader-wrapper"
->
-            <GridLoader
-                        color="#ffffff"
-                        loading={true}
-                        margin="2px"
-                        size="15px"
-            />
-</div>,
-          "className": "idea-container",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <GridLoader
-              color="#ffffff"
-              loading={true}
-              margin="2px"
-              size="15px"
-/>,
-            "className": "loader-wrapper",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "color": "#ffffff",
-              "loading": true,
-              "margin": "2px",
-              "size": "15px",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
         },
         "type": "div",
       },
@@ -192,6 +160,22 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Idea
     getIdeaById={[Function]}
+    idea={
+        Object {
+            "author": Object {
+              "username": "defaultuser",
+            },
+            "body": "World",
+            "contributions": Array [
+              Object {
+                "body": "so much love",
+                "id": 2,
+                "title": "I love hello worlds",
+              },
+            ],
+            "title": "Hello",
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -207,23 +191,52 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="idea-container"
+        className="loader-wrapper"
 >
-        <div
-                className="loader-wrapper"
-        >
-                <GridLoader
-                        color="#ffffff"
-                        loading={true}
-                        margin="2px"
-                        size="15px"
-                />
-        </div>
+        <GridLoader
+                color="#ffffff"
+                loading={true}
+                margin="2px"
+                size="15px"
+        />
 </div>,
       "className": "app-container",
     },
     "ref": null,
     "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <GridLoader
+          color="#ffffff"
+          loading={true}
+          margin="2px"
+          size="15px"
+/>,
+        "className": "loader-wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "color": "#ffffff",
+          "loading": true,
+          "margin": "2px",
+          "size": "15px",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -238,7 +251,7 @@ ShallowWrapper {
                     size="15px"
           />
 </div>,
-        "className": "idea-container",
+        "className": "app-container",
       },
       "ref": null,
       "rendered": Object {
@@ -268,83 +281,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": [Function],
-        },
-        "type": "div",
-      },
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="idea-container"
->
-          <div
-                    className="loader-wrapper"
-          >
-                    <GridLoader
-                              color="#ffffff"
-                              loading={true}
-                              margin="2px"
-                              size="15px"
-                    />
-          </div>
-</div>,
-        "className": "app-container",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <div
-            className="loader-wrapper"
->
-            <GridLoader
-                        color="#ffffff"
-                        loading={true}
-                        margin="2px"
-                        size="15px"
-            />
-</div>,
-          "className": "idea-container",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <GridLoader
-              color="#ffffff"
-              loading={true}
-              margin="2px"
-              size="15px"
-/>,
-            "className": "loader-wrapper",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "color": "#ffffff",
-              "loading": true,
-              "margin": "2px",
-              "size": "15px",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
         },
         "type": "div",
       },
