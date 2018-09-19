@@ -27,7 +27,7 @@ export class Header extends Component {
     await fetch(url, options)
       .then(res => res.json())
       .then(user => {
-        localStorage.setItem('user', JSON.stringify(user))
+        localStorage.setItem('user', JSON.stringify(user));
         return user;
       })
       .then(user => {
@@ -39,8 +39,8 @@ export class Header extends Component {
   }
 
   logOut = () => {
-    this.props.firebaseLogout();
     localStorage.clear();
+    this.props.firebaseLogout();
   }
 
 
@@ -98,8 +98,7 @@ export const mapStateToProps = state => ({
 export const mapDispatchToProps = dispatch => ({
   firebaseLogin: () => dispatch(firebaseLogin()),
   firebaseLogout: () => dispatch(firebaseLogout()),
-  retrieveMyIdeas: (ideas) => dispatch(retrieveMyIdeas(ideas))
-
+  retrieveMyIdeas: ideas => dispatch(retrieveMyIdeas(ideas))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

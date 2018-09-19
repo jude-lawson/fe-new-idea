@@ -1,6 +1,7 @@
 export const storageMock = () => {
   const storage = {
-    user: 1
+    user: 1,
+    ideas: [{id: 1, tile: 'hello'}]
   };
 
   return {

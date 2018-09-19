@@ -844,10 +844,24 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
     authenticated="1234adsf"
+    myIdeas={
+        Array [
+            Object {
+              "id": 1,
+              "title": "helloe",
+            },
+          ]
+    }
     user={
         Object {
             "email": "someemail@mail.com",
             "id": "1234adsf",
+            "ideas": Array [
+              Object {
+                "id": 1,
+                "title": "helloe",
+              },
+            ],
             "name": "Jeff",
           }
     }
