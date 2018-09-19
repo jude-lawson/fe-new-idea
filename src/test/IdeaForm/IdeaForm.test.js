@@ -64,7 +64,7 @@ describe('IdeaForm', () => {
         title: 'hey',
         body: 'you'
       });
-      window.fetch = jest.fn().mockImplementation(() => 
+      window.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({
         ok: true,
         json: () => Promise.resolve('Idea created successfully')

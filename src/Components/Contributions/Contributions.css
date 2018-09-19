@@ -1,0 +1,36 @@
+.contributions-container {
+  background: var(--primary-white);
+  margin: 2rem auto;
+  max-width: 120rem;
+}
+
+.contribution {
+  border-bottom: 1px solid grey;
+  padding: 2rem;
+}
+
+.contribution-title {
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.contribution:first-of-type {
+  border-top: 1px solid grey;
+}
+
+.contribution-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.contribution-header .btn-small {
+  padding: 1rem 1.5rem;
+}
+
+.contribution-header .blue-btn {
+  background-image: linear-gradient(to right, #289dc5, #50b4be);
+  color: var(--primary-white);
+}

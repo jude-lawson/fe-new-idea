@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { IdeaCard } from '../IdeaCard/IdeaCard';
 import { getAllIdeas } from '../../thunks/getAllIdeas';
 
-import './IdeaBox.css'
+import './IdeaBox.css';
 
 export class IdeaBox extends Component {
   constructor() {

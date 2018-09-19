@@ -42,6 +42,7 @@
 .profile--ideas-header {
   color: var(--primary-white);
   font-weight: 400;
+  text-align: center;
 }
 
 .profile-ideas {
@@ -84,20 +85,20 @@
 
 @media screen and (max-width: 500px) {
   .profile-container {
-    padding-top: 0;
+    /* padding-top: 0; */
   }
+
   .profile-card {
     height: 60vh;
-    width: 25rem;
+    width: 30rem;
     margin: auto;
   }
-  
-  
+
   .profile-card__user {
-    bottom: -5rem;
-    width: 21rem;
+    width: 26rem;
+    bottom: 0u;
   }
-  
+
   .ideas-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -105,7 +106,7 @@
     grid-row-gap: 2rem;
     margin: 3rem auto 0;
     padding: 0;
-    padding-top: 51.5rem;
+    padding-top: 60rem;
     padding-bottom: 2rem;
   }
-};
+}

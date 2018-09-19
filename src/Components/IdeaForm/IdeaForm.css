@@ -1,12 +1,8 @@
+.form-container {
+  margin-top: 10rem;
+}
+
 .idea-form {
-  background-image: linear-gradient(
-    to top,
-    #4381c1,
-    #289dc5,
-    #50b4be,
-    #85c7b7,
-    #b8d8ba
-  );
   margin: 10rem auto 4rem;
   border-radius: 20px;
   padding: 2rem 4rem;
@@ -20,36 +16,30 @@
 .idea--form-title {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--primary-blue);
+  font-weight: 100;
+  color: var(--primary-white);
 }
 
 .idea--title-input {
   margin-bottom: 2rem;
   height: 3rem;
-  font-size: 16px;
-  padding: 3px;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  border: 1px solid grey;
+  padding: 1rem;
 }
 
 .idea--body-input {
   height: 49rem;
-  font-size: 14px;
+  font-size: 1.6rem;
   line-height: 1.4;
-  padding: 3px 5px;
+  padding: 1rem;
+  border-radius: 2px;
+  border: 1px solid grey;
 }
 
 .idea--form-btn {
-  margin-top: 4rem;
-  color: var(--primary-blue);
-  background: var(--primary-white);
-  width: 12rem;
-  padding: 1rem;
-  margin: 2rem auto;
-  font-weight: 700;
-  border-radius: 23px;
-}
-
-.idea--form-btn:hover {
-  background: #a7d3b9;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 825px) {
@@ -61,13 +51,11 @@
 @media screen and (max-width: 500px) {
   .idea-form {
     width: 95%;
-    margin: 0rem auto;
-    border-radius: 0px;
+    margin: 0 auto;
+    border-radius: 0;
     height: calc(100vh - 8rem);
     padding: 2.5%;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
 

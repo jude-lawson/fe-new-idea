@@ -18,7 +18,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(Header) />,
+        <section
+          className="app-copy"
+>
+          <h1>
+                    Some cool description goes here
+          </h1>
+</section>,
         <Connect(IdeaBox) />,
       ],
       "className": "app-container",
@@ -28,11 +34,26 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1>
+            Some cool description goes here
+</h1>,
+          "className": "app-copy",
+        },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Some cool description goes here",
+          },
+          "ref": null,
+          "rendered": "Some cool description goes here",
+          "type": "h1",
+        },
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -53,7 +74,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(Header) />,
+          <section
+            className="app-copy"
+>
+            <h1>
+                        Some cool description goes here
+            </h1>
+</section>,
           <Connect(IdeaBox) />,
         ],
         "className": "app-container",
@@ -63,11 +90,26 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+              Some cool description goes here
+</h1>,
+            "className": "app-copy",
+          },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Some cool description goes here",
+            },
+            "ref": null,
+            "rendered": "Some cool description goes here",
+            "type": "h1",
+          },
+          "type": "section",
         },
         Object {
           "instance": null,

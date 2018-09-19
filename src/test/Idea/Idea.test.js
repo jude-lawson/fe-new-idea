@@ -21,7 +21,11 @@ describe('<Idea />', () => {
   };
   const mockGetIdeaById = jest.fn();
 
-  beforeEach(() => wrapper = shallow(<Idea getIdeaById={mockGetIdeaById} />));
+  beforeEach(() => wrapper = shallow(
+    <Idea
+      getIdeaById={mockGetIdeaById}
+      idea={mockIdea}
+    />));
 
   test('should call getIdeaByIdFromDb on componentDidMount', () => {
     const spy = jest.spyOn(wrapper.instance(), 'getIdeaByIdFromDb');
@@ -65,7 +69,7 @@ describe('<Idea />', () => {
 
 
   test('should render when idea present', () => {
-    wrapper = shallow(<Idea idea={mockIdea} />)
+    wrapper = shallow(<Idea idea={mockIdea} contributions={mockIdea.contributions}/>)
   });
 
   test('should render loading when loading is true', () => {

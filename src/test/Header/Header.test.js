@@ -8,8 +8,14 @@ describe('<Header />', () => {
   const mockUser = {
       id: '1234adsf',
       name: 'Jeff',
-      email: 'someemail@mail.com'
-  }
+      email: 'someemail@mail.com',
+      ideas: [
+        {
+          id: 1,
+          title: 'helloe'
+        }
+      ]
+  };
 
   beforeEach(() =>
     wrapper = shallow(<Header />),
@@ -33,18 +39,19 @@ describe('<Header />', () => {
     expect(mockFunc).toHaveBeenCalled();
   });
 
-  test.skip('should call firebaseLogout on click', () => {
+  test('should call firebaseLogout on click', () => {
     const mockFunc = jest.fn();
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       ok: true,
-      json: () => Promise.resolve(mockUser)
+      json: () => Promise.resolve()
     }));
 
     wrapper = shallow(
       <Header
-        authenticated={mockUser.id}
         user={mockUser}
         firebaseLogout={mockFunc}
+        firebaseLogin={mockFunc}
+        myIdeas={mockUser.ideas}
       />);
 
     wrapper.find('li').last().simulate('click');
@@ -52,12 +59,17 @@ describe('<Header />', () => {
   });
 
 
-  test.skip('should render when user authenticated', async () => {
+  test('should render when user authenticated', async () => {
     window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
       ok: true,
       json: () => Promise.resolve(mockUser)
     }));
-    wrapper = shallow(<Header authenticated={mockUser.id} user={mockUser} />);
+    wrapper = shallow(
+    <Header
+      authenticated={mockUser.id}
+      myIdeas={mockUser.ideas}
+      user={mockUser}
+    />);
     expect(wrapper).toMatchSnapshot()
   });
 

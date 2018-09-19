@@ -5,6 +5,22 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Idea
     getIdeaById={[Function]}
+    idea={
+        Object {
+            "author": Object {
+              "username": "defaultuser",
+            },
+            "body": "World",
+            "contributions": Array [
+              Object {
+                "body": "so much love",
+                "id": 2,
+                "title": "I love hello worlds",
+              },
+            ],
+            "title": "Hello",
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -19,54 +35,49 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <Header />,
-        <div
-          className="idea-container"
+      "children": <div
+        className="loader-wrapper"
 >
-          <h1>
-                    loading
-          </h1>
+        <GridLoader
+                color="#ffffff"
+                loading={true}
+                margin="2px"
+                size="15px"
+        />
 </div>,
-      ],
       "className": "app-container",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <GridLoader
+          color="#ffffff"
+          loading={true}
+          margin="2px"
+          size="15px"
+/>,
+        "className": "loader-wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "color": "#ffffff",
+          "loading": true,
+          "margin": "2px",
+          "size": "15px",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <h1>
-            loading
-</h1>,
-          "className": "idea-container",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "loading",
-          },
-          "ref": null,
-          "rendered": "loading",
-          "type": "h1",
-        },
-        "type": "div",
-      },
-    ],
+      "type": "div",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -75,54 +86,49 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <Header />,
-          <div
-            className="idea-container"
+        "children": <div
+          className="loader-wrapper"
 >
-            <h1>
-                        loading
-            </h1>
+          <GridLoader
+                    color="#ffffff"
+                    loading={true}
+                    margin="2px"
+                    size="15px"
+          />
 </div>,
-        ],
         "className": "app-container",
       },
       "ref": null,
-      "rendered": Array [
-        Object {
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <GridLoader
+            color="#ffffff"
+            loading={true}
+            margin="2px"
+            size="15px"
+/>,
+          "className": "loader-wrapper",
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "color": "#ffffff",
+            "loading": true,
+            "margin": "2px",
+            "size": "15px",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <h1>
-              loading
-</h1>,
-            "className": "idea-container",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "loading",
-            },
-            "ref": null,
-            "rendered": "loading",
-            "type": "h1",
-          },
-          "type": "div",
-        },
-      ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],
@@ -154,6 +160,22 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Idea
     getIdeaById={[Function]}
+    idea={
+        Object {
+            "author": Object {
+              "username": "defaultuser",
+            },
+            "body": "World",
+            "contributions": Array [
+              Object {
+                "body": "so much love",
+                "id": 2,
+                "title": "I love hello worlds",
+              },
+            ],
+            "title": "Hello",
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -168,24 +190,49 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <Header />,
-        undefined,
-      ],
+      "children": <div
+        className="loader-wrapper"
+>
+        <GridLoader
+                color="#ffffff"
+                loading={true}
+                margin="2px"
+                size="15px"
+        />
+</div>,
+      "className": "app-container",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <GridLoader
+          color="#ffffff"
+          loading={true}
+          margin="2px"
+          size="15px"
+/>,
+        "className": "loader-wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "color": "#ffffff",
+          "loading": true,
+          "margin": "2px",
+          "size": "15px",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
-      undefined,
-    ],
+      "type": "div",
+    },
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -194,24 +241,49 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <Header />,
-          undefined,
-        ],
+        "children": <div
+          className="loader-wrapper"
+>
+          <GridLoader
+                    color="#ffffff"
+                    loading={true}
+                    margin="2px"
+                    size="15px"
+          />
+</div>,
+        "className": "app-container",
       },
       "ref": null,
-      "rendered": Array [
-        Object {
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <GridLoader
+            color="#ffffff"
+            loading={true}
+            margin="2px"
+            size="15px"
+/>,
+          "className": "loader-wrapper",
+        },
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "color": "#ffffff",
+            "loading": true,
+            "margin": "2px",
+            "size": "15px",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        undefined,
-      ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],
