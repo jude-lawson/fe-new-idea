@@ -64,10 +64,10 @@ export class Header extends Component {
                 <Link to="/">Home</Link>
               </li>
               <li className="menu-link">
-                <Link to="profile">Profile</Link>
+                <Link to="/profile">Profile</Link>
               </li>
               <li className="menu-link">
-                <Link to="ideaform">New Article</Link>
+                <Link to="/ideaform">New Article</Link>
               </li>
               {!authenticated ?
                 <li className="menu-link" onClick={() => firebaseLogin()}><a>Sign Up / Sign In</a></li> :

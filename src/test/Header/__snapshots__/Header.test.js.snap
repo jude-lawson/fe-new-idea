@@ -55,7 +55,7 @@ ShallowWrapper {
                               >
                                         <Link
                                                   replace={false}
-                                                  to="profile"
+                                                  to="/profile"
                                         >
                                                   Profile
                                         </Link>
@@ -65,7 +65,7 @@ ShallowWrapper {
                               >
                                         <Link
                                                   replace={false}
-                                                  to="ideaform"
+                                                  to="/ideaform"
                                         >
                                                   New Article
                                         </Link>
@@ -141,7 +141,7 @@ ShallowWrapper {
                             >
                                           <Link
                                                         replace={false}
-                                                        to="profile"
+                                                        to="/profile"
                                           >
                                                         Profile
                                           </Link>
@@ -151,7 +151,7 @@ ShallowWrapper {
                             >
                                           <Link
                                                         replace={false}
-                                                        to="ideaform"
+                                                        to="/ideaform"
                                           >
                                                         New Article
                                           </Link>
@@ -215,7 +215,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="profile"
+                                                to="/profile"
                                 >
                                                 Profile
                                 </Link>
@@ -225,7 +225,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="ideaform"
+                                                to="/ideaform"
                                 >
                                                 New Article
                                 </Link>
@@ -263,7 +263,7 @@ ShallowWrapper {
 >
                     <Link
                                         replace={false}
-                                        to="profile"
+                                        to="/profile"
                     >
                                         Profile
                     </Link>
@@ -273,7 +273,7 @@ ShallowWrapper {
 >
                     <Link
                                         replace={false}
-                                        to="ideaform"
+                                        to="/ideaform"
                     >
                                         New Article
                     </Link>
@@ -326,7 +326,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Link
                       replace={false}
-                      to="profile"
+                      to="/profile"
 >
                       Profile
 </Link>,
@@ -340,7 +340,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "Profile",
                       "replace": false,
-                      "to": "profile",
+                      "to": "/profile",
                     },
                     "ref": null,
                     "rendered": "Profile",
@@ -355,7 +355,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Link
                       replace={false}
-                      to="ideaform"
+                      to="/ideaform"
 >
                       New Article
 </Link>,
@@ -369,7 +369,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "New Article",
                       "replace": false,
-                      "to": "ideaform",
+                      "to": "/ideaform",
                     },
                     "ref": null,
                     "rendered": "New Article",
@@ -457,7 +457,7 @@ ShallowWrapper {
                                     >
                                                 <Link
                                                             replace={false}
-                                                            to="profile"
+                                                            to="/profile"
                                                 >
                                                             Profile
                                                 </Link>
@@ -467,7 +467,7 @@ ShallowWrapper {
                                     >
                                                 <Link
                                                             replace={false}
-                                                            to="ideaform"
+                                                            to="/ideaform"
                                                 >
                                                             New Article
                                                 </Link>
@@ -543,7 +543,7 @@ ShallowWrapper {
                                 >
                                                 <Link
                                                                 replace={false}
-                                                                to="profile"
+                                                                to="/profile"
                                                 >
                                                                 Profile
                                                 </Link>
@@ -553,7 +553,7 @@ ShallowWrapper {
                                 >
                                                 <Link
                                                                 replace={false}
-                                                                to="ideaform"
+                                                                to="/ideaform"
                                                 >
                                                                 New Article
                                                 </Link>
@@ -617,7 +617,7 @@ ShallowWrapper {
                   >
                                     <Link
                                                       replace={false}
-                                                      to="profile"
+                                                      to="/profile"
                                     >
                                                       Profile
                                     </Link>
@@ -627,7 +627,7 @@ ShallowWrapper {
                   >
                                     <Link
                                                       replace={false}
-                                                      to="ideaform"
+                                                      to="/ideaform"
                                     >
                                                       New Article
                                     </Link>
@@ -665,7 +665,7 @@ ShallowWrapper {
 >
                       <Link
                                             replace={false}
-                                            to="profile"
+                                            to="/profile"
                       >
                                             Profile
                       </Link>
@@ -675,7 +675,7 @@ ShallowWrapper {
 >
                       <Link
                                             replace={false}
-                                            to="ideaform"
+                                            to="/ideaform"
                       >
                                             New Article
                       </Link>
@@ -728,7 +728,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": <Link
                         replace={false}
-                        to="profile"
+                        to="/profile"
 >
                         Profile
 </Link>,
@@ -742,7 +742,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": "Profile",
                         "replace": false,
-                        "to": "profile",
+                        "to": "/profile",
                       },
                       "ref": null,
                       "rendered": "Profile",
@@ -757,7 +757,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": <Link
                         replace={false}
-                        to="ideaform"
+                        to="/ideaform"
 >
                         New Article
 </Link>,
@@ -771,7 +771,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": "New Article",
                         "replace": false,
-                        "to": "ideaform",
+                        "to": "/ideaform",
                       },
                       "ref": null,
                       "rendered": "New Article",
@@ -903,7 +903,7 @@ ShallowWrapper {
                               >
                                         <Link
                                                   replace={false}
-                                                  to="profile"
+                                                  to="/profile"
                                         >
                                                   Profile
                                         </Link>
@@ -913,7 +913,7 @@ ShallowWrapper {
                               >
                                         <Link
                                                   replace={false}
-                                                  to="ideaform"
+                                                  to="/ideaform"
                                         >
                                                   New Article
                                         </Link>
@@ -989,7 +989,7 @@ ShallowWrapper {
                             >
                                           <Link
                                                         replace={false}
-                                                        to="profile"
+                                                        to="/profile"
                                           >
                                                         Profile
                                           </Link>
@@ -999,7 +999,7 @@ ShallowWrapper {
                             >
                                           <Link
                                                         replace={false}
-                                                        to="ideaform"
+                                                        to="/ideaform"
                                           >
                                                         New Article
                                           </Link>
@@ -1063,7 +1063,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="profile"
+                                                to="/profile"
                                 >
                                                 Profile
                                 </Link>
@@ -1073,7 +1073,7 @@ ShallowWrapper {
                 >
                                 <Link
                                                 replace={false}
-                                                to="ideaform"
+                                                to="/ideaform"
                                 >
                                                 New Article
                                 </Link>
@@ -1111,7 +1111,7 @@ ShallowWrapper {
 >
                     <Link
                                         replace={false}
-                                        to="profile"
+                                        to="/profile"
                     >
                                         Profile
                     </Link>
@@ -1121,7 +1121,7 @@ ShallowWrapper {
 >
                     <Link
                                         replace={false}
-                                        to="ideaform"
+                                        to="/ideaform"
                     >
                                         New Article
                     </Link>
@@ -1174,7 +1174,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Link
                       replace={false}
-                      to="profile"
+                      to="/profile"
 >
                       Profile
 </Link>,
@@ -1188,7 +1188,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "Profile",
                       "replace": false,
-                      "to": "profile",
+                      "to": "/profile",
                     },
                     "ref": null,
                     "rendered": "Profile",
@@ -1203,7 +1203,7 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Link
                       replace={false}
-                      to="ideaform"
+                      to="/ideaform"
 >
                       New Article
 </Link>,
@@ -1217,7 +1217,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": "New Article",
                       "replace": false,
-                      "to": "ideaform",
+                      "to": "/ideaform",
                     },
                     "ref": null,
                     "rendered": "New Article",
@@ -1305,7 +1305,7 @@ ShallowWrapper {
                                     >
                                                 <Link
                                                             replace={false}
-                                                            to="profile"
+                                                            to="/profile"
                                                 >
                                                             Profile
                                                 </Link>
@@ -1315,7 +1315,7 @@ ShallowWrapper {
                                     >
                                                 <Link
                                                             replace={false}
-                                                            to="ideaform"
+                                                            to="/ideaform"
                                                 >
                                                             New Article
                                                 </Link>
@@ -1391,7 +1391,7 @@ ShallowWrapper {
                                 >
                                                 <Link
                                                                 replace={false}
-                                                                to="profile"
+                                                                to="/profile"
                                                 >
                                                                 Profile
                                                 </Link>
@@ -1401,7 +1401,7 @@ ShallowWrapper {
                                 >
                                                 <Link
                                                                 replace={false}
-                                                                to="ideaform"
+                                                                to="/ideaform"
                                                 >
                                                                 New Article
                                                 </Link>
@@ -1465,7 +1465,7 @@ ShallowWrapper {
                   >
                                     <Link
                                                       replace={false}
-                                                      to="profile"
+                                                      to="/profile"
                                     >
                                                       Profile
                                     </Link>
@@ -1475,7 +1475,7 @@ ShallowWrapper {
                   >
                                     <Link
                                                       replace={false}
-                                                      to="ideaform"
+                                                      to="/ideaform"
                                     >
                                                       New Article
                                     </Link>
@@ -1513,7 +1513,7 @@ ShallowWrapper {
 >
                       <Link
                                             replace={false}
-                                            to="profile"
+                                            to="/profile"
                       >
                                             Profile
                       </Link>
@@ -1523,7 +1523,7 @@ ShallowWrapper {
 >
                       <Link
                                             replace={false}
-                                            to="ideaform"
+                                            to="/ideaform"
                       >
                                             New Article
                       </Link>
@@ -1576,7 +1576,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": <Link
                         replace={false}
-                        to="profile"
+                        to="/profile"
 >
                         Profile
 </Link>,
@@ -1590,7 +1590,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": "Profile",
                         "replace": false,
-                        "to": "profile",
+                        "to": "/profile",
                       },
                       "ref": null,
                       "rendered": "Profile",
@@ -1605,7 +1605,7 @@ ShallowWrapper {
                     "props": Object {
                       "children": <Link
                         replace={false}
-                        to="ideaform"
+                        to="/ideaform"
 >
                         New Article
 </Link>,
@@ -1619,7 +1619,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": "New Article",
                         "replace": false,
-                        "to": "ideaform",
+                        "to": "/ideaform",
                       },
                       "ref": null,
                       "rendered": "New Article",
