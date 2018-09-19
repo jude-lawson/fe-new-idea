@@ -261,6 +261,7 @@ ShallowWrapper {
                 <a
                                 className="github-link"
                                 href={undefined}
+
                                 rel="noopener noreferrer"
                                 target="_blank"
                 >
@@ -301,6 +302,7 @@ ShallowWrapper {
                   <a
                     className="github-link"
                     href={undefined}
+
                     rel="noopener noreferrer"
                     target="_blank"
 >
@@ -330,6 +332,7 @@ ShallowWrapper {
                     "children": "GitHub",
                     "className": "github-link",
                     "href": undefined,
+
                     "rel": "noopener noreferrer",
                     "target": "_blank",
                   },
@@ -429,7 +432,6 @@ ShallowWrapper {
                                     </h2>
                                     <a
                                                 className="github-link"
-                                                href={undefined}
                                                 rel="noopener noreferrer"
                                                 target="_blank"
                                     >

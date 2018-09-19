@@ -1,7 +1,6 @@
 export const userReducer = (state = {}, action) =>  {
   switch (action.type) {
     case 'LOGIN':
-    console.log(action.newUser)
       return {
         ...state,
         id: action.newUser.user.uid,

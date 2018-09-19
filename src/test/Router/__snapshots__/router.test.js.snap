@@ -24,6 +24,11 @@ ShallowWrapper {
                 path="/"
         />
         <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+        />
+        <Route
                 exact={true}
                 path="/idea/:id"
                 render={[Function]}
@@ -73,6 +78,11 @@ ShallowWrapper {
             path="/"
 />,
           <Route
+            component={[Function]}
+            exact={true}
+            path="/login"
+/>,
+          <Route
             exact={true}
             path="/idea/:id"
             render={[Function]}
@@ -101,6 +111,19 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/login",
           },
           "ref": null,
           "rendered": null,
@@ -165,6 +188,11 @@ ShallowWrapper {
                     path="/"
           />
           <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/login"
+          />
+          <Route
                     exact={true}
                     path="/idea/:id"
                     render={[Function]}
@@ -214,6 +242,11 @@ ShallowWrapper {
               path="/"
 />,
             <Route
+              component={[Function]}
+              exact={true}
+              path="/login"
+/>,
+            <Route
               exact={true}
               path="/idea/:id"
               render={[Function]}
@@ -242,6 +275,19 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/login",
             },
             "ref": null,
             "rendered": null,
@@ -357,6 +403,11 @@ ShallowWrapper {
                 path="/"
         />
         <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+        />
+        <Route
                 exact={true}
                 path="/idea/:id"
                 render={[Function]}
@@ -406,6 +457,11 @@ ShallowWrapper {
             path="/"
 />,
           <Route
+            component={[Function]}
+            exact={true}
+            path="/login"
+/>,
+          <Route
             exact={true}
             path="/idea/:id"
             render={[Function]}
@@ -434,6 +490,19 @@ ShallowWrapper {
             "component": [Function],
             "exact": true,
             "path": "/",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/login",
           },
           "ref": null,
           "rendered": null,
@@ -498,6 +567,11 @@ ShallowWrapper {
                     path="/"
           />
           <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/login"
+          />
+          <Route
                     exact={true}
                     path="/idea/:id"
                     render={[Function]}
@@ -547,6 +621,11 @@ ShallowWrapper {
               path="/"
 />,
             <Route
+              component={[Function]}
+              exact={true}
+              path="/login"
+/>,
+            <Route
               exact={true}
               path="/idea/:id"
               render={[Function]}
@@ -575,6 +654,19 @@ ShallowWrapper {
               "component": [Function],
               "exact": true,
               "path": "/",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/login",
             },
             "ref": null,
             "rendered": null,

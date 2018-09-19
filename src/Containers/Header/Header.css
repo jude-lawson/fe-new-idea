@@ -1,10 +1,10 @@
 .header--container {
   position: fixed;
-    height: 8rem;
-    z-index: 2;
-    width: 100vw;
-    float: right;
-    background: var(--primary-blue);
+  height: 8rem;
+  z-index: 2;
+  width: 100vw;
+  float: right;
+  background: var(--primary-blue);
 }
 
 .app--title {
@@ -13,7 +13,7 @@
   left: 2rem;
   color: var(--primary-white);
   font-size: 4.5rem;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .sign--up-container {
@@ -35,7 +35,7 @@
   background-color: var(--primary-blue);
   width: 250px;
   float: right;
-  border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 5px;
   padding-top: 3rem;
 }
 
@@ -55,7 +55,7 @@
   color: var(--primary-white);
   cursor: pointer;
   animation: fadein 2s;
-    -webkit-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
 }
 
 .collapsible--menu li:hover {
@@ -63,30 +63,34 @@
 }
 
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 
 .collapsible--menu label {
   font-size: 45px;
@@ -99,7 +103,7 @@
   position: absolute;
   top: 3rem;
   right: 1rem;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 input#menu {
@@ -125,7 +129,7 @@ input:checked + label {
 
 input:checked ~ label {
   background-image: url(../../resources/delete-button.svg);
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 input:checked ~ .menu-content {
@@ -141,6 +145,6 @@ input:checked ~ .menu-content {
   .collapsible--menu {
     background-color: var(--primary-blue);
     width: 100vw;
-    border-radius: 0px;
+    border-radius: 0;
   }
 }

@@ -9,6 +9,7 @@ import Profile from '../Containers/Profile/Profile';
 import { PrivateRoute } from './PrivateRoute';
 import IdeaForm from '../Components/IdeaForm/IdeaForm';
 import Idea from '../Containers/Idea/Idea';
+import Login from '../Containers/Login/Login';
 
 export const history = createHistory();
 
@@ -16,13 +17,14 @@ export const AppRouter = ({ authenticated }) => (
   <Router history={history}>
     <Switch>
       <Route path="/" exact component={App} />
+      <Route path="/login" exact component={Login} />
       <Route path="/idea/:id" exact render={() => {
         return (
           <Idea />
         );
       }} />
       <PrivateRoute authenticated={authenticated} path="/ideaform" exact component={IdeaForm} />
-      <PrivateRoute authenticated={authenticated} path="/profile" exact  component={Profile} />
+      <PrivateRoute authenticated={authenticated} path="/profile"   component={Profile} />
     </Switch>
   </Router>
 );
@@ -33,7 +35,7 @@ AppRouter.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  authenticated: state.user.id || true
+  authenticated: state.user.id
 });
 
 export default connect(mapStateToProps)(AppRouter);
