@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './redux-store/configureStore';
 import registerServiceWorker from './registerServiceWorker';
-import { userLoginAction } from './actions/auth';
+// import { userLoginAction } from './actions/auth';
 
 import AppRouter, { history } from './router/Router';
 
